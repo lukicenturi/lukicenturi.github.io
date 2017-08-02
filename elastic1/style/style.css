@@ -1,0 +1,95 @@
+*{
+	box-sizing:border-box;
+	outline:none;
+	max-width:100%;
+}
+html{
+	height:100%;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: Raleway;
+	width:100%;
+	height:100%;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	display:none;	
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+}
+
+.container.active{
+	display: flex;
+}
+#ready{
+	background:rgba(0,0,0,0.9);
+}
+form{
+	background:white;
+	padding:20px;
+	width:400px;
+}
+form label{
+	font-weight:bold;
+	width:100%;
+	font-size:0.9em;
+}
+form input{
+	width:100%;
+	padding:5px 10px;
+}
+form div{
+	margin-bottom:20px;
+}
+
+#drop{
+	height:70px;
+	width:100%;
+	background:#eee;
+	display:flex;
+	align-items:center;
+}
+#preview{
+	background:#ddd;
+	margin:0px;
+	width:70px;
+	height:100%;
+}
+#drop p{
+	margin:0px;
+	padding-left:20px;
+}
+#drop input{
+	display:none;
+}
+.message{
+	color:red;
+	margin-top:20px;
+}
+button{
+	background:#E10053;
+	color:white;
+	font-weight:bold;
+	padding:10px 25px;
+	border:none;
+	cursor:pointer;
+
+}
+.message label{
+	display:block;
+	margin-bottom:20px;
+}
+button:disabled{
+	background:#aaa;
+}
+
+
+.profile{
+	width:100%;
+	height:100%;
+}

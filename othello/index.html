@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Othello</title>
+      <link rel="stylesheet" href="assets/style/style.css">
+      <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript">
+      $(function(){
+         $(".close-button").click(function(){
+            $(".modal").slideUp("slow");
+         });
+         
+         $(".minimize").click(function(e){
+            e.preventDefault();
+            $(".floating-box").animate({"margin-left": '-=300'}); 
+            $(".floating-box-maximize").animate({"margin-left": '+=140'}); 
+         });
+         
+         $(".maximize").click(function(e){
+            e.preventDefault();
+            $(".floating-box").animate({"margin-left": '+=300'}); 
+            $(".floating-box-maximize").animate({"margin-left": '-=140'}); 
+         });
+      });
+      </script>
+   </head>
+   <body>
+      <!-- start game section -->
+      <div class="container" id='ready'>
+         <header class="header-content">
+            <h1>Othello</h1>
+         </header>
+         <div class="body-content">
+            <h2 class="text-center">Start New Game</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <form class="form" enctype="multipart/form-data" method="post">
+                        <div class="form-row">
+                           <div class="form-label">
+                              Upload Photos <span class="small-text">(optional)</span>
+                           </div>
+                           <div class="form-input">
+                              <input type="file" name="picture" class="form-file" id='file'/>
+                           </div>
+                        </div>
+                         <div class="form-row text-center">
+                           <div class="form-button">
+                              <button role="button" class="btn btn-submit" id='start'>Press to Begin</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12">
+                     <p>
+                        <h2>Instruction</h2>
+                        <ul>
+                           <li>Select photo (optional)</li>
+                           <li>Press "Press to Begin"</li>
+                           <li>Play Game: try to mark fields in a vertical, horizontal or diagonal row one move before the computer</li>
+                        </ul>
+                     </p>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+            </div>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+      
+      <!-- game board section -->
+      <div class="container" id='gameboard'>
+         <header class="header-content">
+            <h1>Othello</h1>
+         </header>
+         <div class="body-content">
+            <h2 class="text-center">Game Play</h2>
+            <div class="text-center">Playing Time : <span id='time'>0</span> sec<BR><button role="button" class="btn btn-submit" id='restart'>Press to Restart</button></div>
+            
+            <br />
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-2">
+                     <div class="user-info text-center">
+                        <img src="assets/images/default.png" class="user-picture" alt="player" />
+                        <h3>Player</h3>
+                        <span>Score : <span id="black"></span></span>
+                        <h4>VS</h4>
+                        <img src="assets/images/default.png" class="user-picture" alt="player" />
+                        <h3>Computer</h3>
+                        <span>Score : <span id="white"></span></span>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 game-board">
+                     <!-- first row -->
+                     <canvas id ='canvas' width=800 height=800>
+                     
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+         </div>         
+         <div class="clearfix"></div>
+      </div>
+      <br />
+      <div class="modal" id="over">
+         <div class="modal-body">
+            <h2 class="text-center">Save The High Score</h2>
+            <div class="close-button">x</div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <h3 style="color: #0f9;" class="text-center">Congratulation, you win!</h3>
+                     <form class="form" method="post">
+                        <div class="form-row">
+                           <div class="form-label">
+                              Enter your nickname
+                           </div>
+                           <div class="form-input">
+                              <input type="text" name="name" id="nickname"/>
+                           </div>
+                        </div>
+                         <div class="form-row text-center">
+                           <div class="form-button">
+                              <button role="button" class="btn btn-submit" id='save'>Save</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- high scores section -->
+      <div class="floating-box-maximize">
+         <h4 class="header-toggle">
+            <div class="maximize">&nbsp;>></div>
+         </h4>
+      </div>
+      <div class="floating-box">
+         <!--<div class="toggle show">
+            >>
+         </div>-->
+         <h4 class="header-toggle">High Scores <div class="minimize"><<</div></h4>
+         <div class="list-toggle">
+            <ul>
+               <li id='template'>
+                  <div>
+                     <img src="assets/images/default.png" alt="picture" />
+                     <div class="header-highscore">
+                        <span class="nickname">7. Player</span> 
+                        <span class="winner">5</span> - <span class="loser">4</span>
+                     </div>
+                     <div class="detail-highscore">
+                        <span>26/11/2015</span>
+                        <span>60 sec</span>
+                     </div>
+                     <div class="clearfix"></div>
+                  </div>
+               </li>
+            </ul>
+            <div class="clearfix"></div>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </body>
+      <script type="text/javascript" src="assets/js/script.js"></script>
+</html>

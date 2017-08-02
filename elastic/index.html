@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elastic Pipe</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div class="container active" id='ready'>
+		<form>
+			<h1>Elastic Pipe</h1>
+			<div>
+				<label>Name</label>
+				<input type="text" id='name1'>
+			</div>
+			<div>
+				<label>Radius</label>
+				<input type="number" id='radius1' value='5'>
+			</div>
+			<div id='drop'>
+				<div id='preview'>
+					
+				</div>
+				<p> Drop or click 
+					<label for='file'>
+					here
+					</label>
+				</p>
+				<input type='file' id='file' accept="images/*">
+			</div>
+			<button id="start">Start</button>
+			<div class="message">
+				
+			</div>
+		</form>
+	</div>	
+	<div class="container" id='gameplay'>
+		<canvas id='canvas'>
+			
+		</canvas>
+	</div>
+	<div class="container" id="over">
+		<h1>Your score : <span id="score"></span></h1>
+		<button id='restart'>Restart</button>
+	</div>
+</body>
+	<script src="js/Form.js"></script>
+	<script src="js/Tile.js"></script>
+	<script src="js/Line.js"></script>
+	<script src="js/PlayTile.js"></script>
+	<script src="js/Main.js"></script>
+</html>

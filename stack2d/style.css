@@ -1,0 +1,70 @@
+*{
+	box-sizing:border-box;
+	outline:none;
+	font-family: Raleway;
+}
+body,html{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+}
+.gameplay{
+	width:1500px;
+	height:1000px;
+	border:1px solid black;
+	/*margin-bottom:-30px;*/
+	overflow:hidden;
+}
+.wrapper{
+	flex-direction:column-reverse;
+	width:100%;
+	display:flex;
+	height:100%;
+	justify-content:flex-start;
+	position:relative;
+}
+.block{
+	background:#E24939;
+	width:500px;
+	height:30px;
+}
+.block:first-child{
+	margin-left:500px;
+}
+.block#play{
+	background:red;
+}
+#lose{
+	text-align:center;
+	display:none;
+}
+#lose.active{
+	display:block;
+}
+button{
+	display:block;
+	margin:0 auto;
+	font-size:1em;
+	background:white;
+	border:1px solid #aaa;
+	padding:6px 10px;
+
+}
+/*@keyframes move{
+	0%{
+		margin-left:0px;
+	}
+	100%{
+		margin-left:500px;
+	}
+}*/
