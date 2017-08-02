@@ -1,89 +1,78 @@
-window.onload = function(){
-	setImage();
+window.onload = init();
+
+function init(){
 	setCanvas();
-	config();
-	setFirst();
-	drag();
-	startClick();
+	setImage();
+	setConfig();
+	startPlay();
+	listener();
+}
+
+function setCanvas(){
+	$ = document.querySelector.bind(document);
+	canvas.width = window.innerWidth - 20;
+	canvas.height = window.innerHeight - 20;
+	cw = canvas.width;
+	ch = canvas.height;	
+	ctx = canvas.getContext('2d');
 }
 
 function setImage(){
 	imgtile = new Image();
-	imgtile.src = 'img/img.png';
+	imgtile.src = 'img/img.png';	
 }
 
-function setCanvas(){
-	canvas = document.getElementById('canvas');
-	ctx = canvas.getContext('2d');
-	canvas.width = window.innerWidth - 20;
-	cw = canvas.width;
-	canvas.height = window.innerHeight - 20;
-	ch = canvas.height;
-}
-
-function config(){
-	name = '';
-	level = radius1.value;
-	img = '';
+function setConfig(){
 	width = 400;
 	height = 346;
-	isStart = false;
-	isPause = false;
-	isLose = false;
-	isSwap = false;
-	closeList = {};
+	name = name1.value;
+	radius = radius1.value;
+	scale = (ch / 350) / (radius * 2 + 3);
 	openList = [];
-	tiles = [];
-	scores = 0;
+	closeList = {};
 	boundaryMap = {};
-	scale = 0;
+	tiles = [];
+	swap = false;
+	rotate = false;
+	start = false;
+	lose = false;
+	score = 0;
 	speed = 10;
-	opacity = 1;
 	queue = 0;
 	cur = 1;
+	dashSpeed = 30;
 }
 
-function setFirst(){
-	ready.classList.add('active');
-	gameplay.classList.remove('active');
-	over.classList.remove('active');
-	name1.focus();
-}
-
-function startClick(){
-	scale = 3 / (level * 2 + 3);
-	name = name1.value;
+function startPlay(){
 	ready.classList.remove('active');
 	gameplay.classList.add('active');
+	start = true;
 
-	var x = (cw / scale / 2) - (400 / 2),
-		y = (ch / scale / 2) - (346 / 2);
+	let x = Math.round((cw / scale / 2) - (width / 2)),
+		y = Math.round((ch / scale / 2) - (height / 2));
 
 	centerTile = new Tile({
-		x:Math.floor(x),
-		y:Math.floor(y),
-		sx:3 * width,
-		sy:0
+		x: x,
+		y: y,
+		sx: 4 * width,
+		sy: 0
 	});
 
 	openList.push([centerTile.x, centerTile.y, 1]);
-	boundaryMap[centerTile.x + "|" + centerTile.y] = centerTile;
+	boundaryMap[centerTile.x +"|"+ centerTile.y] = centerTile;
 
 	PlayTile.selectedTile = PlayTile.create({
-		x:centerTile.x,
-		y:centerTile.y-height,
-		ready:true
-	});
+		x: x,
+		y: y - height,
+	})
 
 	PlayTile.swapTile = PlayTile.create({
-		x:0,
-		y:Math.floor((ch / scale) - height)
-	});
+		x: 0,
+		y: Math.round((ch / scale) - height),
+	})
 
-	generateTile(level);
+	Tile.generateTile(radius);
 	drawTile();
-
-	isStart = true;
 }
 
 function drawTile(){
@@ -91,54 +80,65 @@ function drawTile(){
 	ctx.save();
 	ctx.scale(scale,scale);
 
-	tiles.forEach((tile)=>{
+	PlayTile.update();
+	
+	tiles.forEach(function(tile){
 		tile.draw();
-	});
+	})
 
-	for(var key in boundaryMap){
+	for(let key in boundaryMap){
 		boundaryMap[key].draw();
 	}
 
-	for(var key in PlayTile.madeTile){
+	for(let key in PlayTile.madeTile){
 		PlayTile.madeTile[key].draw();
-		PlayTile.madeTile[key].lines.forEach(function(line){
+		PlayTile.madeTile[key].lines.forEach(line=>{
 			line.draw();
 		})
 	}
 
-	PlayTile.update();
 
 	ctx.restore();
+
 	requestAnimationFrame(drawTile);
 }
 
-function endGame(){
-	for(key in PlayTile.madeTile){
-		PlayTile.madeTile[key].lines.forEach(function(line){
-			if(line.linestate != 'white'){
-				line.linestate = 'hidden';
+function listener(){
+	window.addEventListener('keydown',function(e){
+		if(start && !lose){
+			a = e.keyCode;
+			if(a == 37){
+				PlayTile.selectedTile.tr -= 60;
+			}else if(a == 39){
+				PlayTile.selectedTile.tr += 60;
+			}else if(a == 13){
+				PlayTile.next();
+			}else if(a == 83){
+				if(!swap)
+				PlayTile.swap();
 			}
+		}
+	})
+
+	restart.onclick = function(){
+		location.reload();
+	}
+}
+
+function endGame(){
+	lose = true;
+	for(let key in PlayTile.madeTile){
+		PlayTile.madeTile[key].lines.forEach(function(line){
+			if(line.linestate != Line.State.SELECTED) line.linestate = Line.State.HIDDEN								
 		})
 	}
 	setTimeout(function(){
-		isLose = true;
+		score1.innerHTML = score;
 		gameplay.classList.remove('active');
 		over.classList.add('active');
-		score.innerHTML = scores;
-	}, 5000);
+	},3000)	
 }
 
-window.addEventListener('keydown',function(e){
-	if(!isStart || isLose) return;
-	a = e.keyCode;
-	if(a == 37){
-		PlayTile.selectedTile.tr -= 60;
-	}else if(a == 39){
-		PlayTile.selectedTile.tr += 60;
-	}else if(a == 13){
-		PlayTile.next();
-	}else if(a==83){
-		if(isSwap) return;
-		PlayTile.swap();
-	}
-})
+function save(){
+	
+}

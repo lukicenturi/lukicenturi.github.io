@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dragon Game</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<canvas id="canvas" width="800" height="480"></canvas>
+	</div>
+
+	<div class="container-flex" id="ready">
+		<div class="wrapper">
+			<h2>Dragon Game</h2>
+			<button id="playbtn" class="btn">Play</button>
+		</div>
+	</div>
+
+	<div class="container-flex" id="over">
+		<div class="wrapper">
+			<h2 id="highscore">Highscore : </h2>
+			<button id="restart" class="btn">retry</button>
+		</div>
+	</div>
+
+	<script src="js/Config.js"></script>
+	<script src="js/Background.js"></script>
+	<script src="js/Dragon.js"></script>
+	<script src="js/Coin.js"></script>
+	<script src="js/Obstacle.js"></script>
+	<script src="js/Game.js"></script>
+	<script src="js/Main.js"></script>
+</body>
+</html>

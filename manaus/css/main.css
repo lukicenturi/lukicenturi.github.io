@@ -1,0 +1,382 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial",sans-serif;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: #1C4935 url(../imgs/pattern.jpg) repeat;
+}
+/*LOGO*/
+#logo a{
+	display: block;
+	text-indent: -9999px;
+	width: 159px;
+	height: 131px;
+	background: url(../imgs/logo.jpg) no-repeat;
+	position: fixed;
+	left: 20px;
+	top: 0px;
+	z-index: 9999;
+}
+/*MAP*/
+
+#portOfManausStart .animation > svg > g > g > g,
+#portOfManausEnd .animation > svg > g > g > g{
+	transform-origin:100% 50%;
+}
+#map{
+	width: 350px;
+	height: 150px;
+	position: fixed;
+	z-index: 9999;
+	background: #1C4935 url(../imgs/pattern.jpg) repeat;
+	bottom: 20px;
+	right: 20px;
+	border: solid 7px white;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+#map .cruise{
+	position: absolute;
+	left: 15px;
+	top: 20px;
+	height: 20px;
+}
+
+#map .cruise img{
+	height: 100%;
+}
+#map .river{
+	position: relative;
+	margin-top: 43px;
+	background: url(../imgs/riveramazon.jpg);
+	width: 100%;
+	height: 60px;
+}
+#map .bullets{
+	padding: 0px 20px;
+	position: absolute;
+	left: 0px;
+	top: 21px;
+}
+#map .bullets li{
+	float: left;
+	margin-right: 54px;
+}
+#map .bullets li:nth-child(even){
+	margin-top: 87px;
+}
+#map .bullets li:last-child{
+	margin-right: 0px;
+}
+#map .bullets a{
+	display: block;
+	border-radius: 50%;
+	height: 16px;
+	width: 16px;
+	text-indent: -9999px;
+	border: solid 3px white;
+	background: #CCC;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+#map .bullets .active a{
+	background: #059AD6;
+}
+/*CRUISE*/
+#cruise{
+	position: absolute;
+	left: 525px;
+	top: 370px;
+}
+#content{
+	background: url(../imgs/riveramazon2.jpg);
+	height: 786px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -393px;
+	min-width: 100%;
+}
+/*POINTS CONTAINER*/
+#pointsContainer{
+	width: 8000px;
+}
+#pointsContainer > section{
+	width: 1200px;
+	float: left;
+	height: 100%;
+	position: relative;
+}
+/*GROUND*/
+.ground .top,
+.ground .bottom{
+	height: 150px;
+	background: #1C4935 url(../imgs/pattern.jpg) repeat;
+	position: absolute;
+	border-left: 0px;
+	border-right: 0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.ground .top{
+	z-index: 11;
+	border-top: 0px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: url(../imgs/top.png) repeat-x;
+}
+.ground .bottom{
+	z-index: 11;
+	border-bottom: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background: url(../imgs/bottom.png) repeat-x;
+}
+/*PORT OF MANAUS*/
+#portOfManausStart{
+	background: url(../imgs/riveramazon.jpg);
+}
+#portOfManausStart .top{
+	background: none;
+	border: none;
+	top: -147px;
+	background: url(../imgs/riveramazon.jpg);
+}
+#portOfManausStart .info-box{
+	left: 726px;
+	bottom: -344px;
+}
+#portOfManausStart .info-box::before{
+	content: "";
+	display: block;
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	top: inherit;
+	bottom: 50px;
+	left: -40px;
+	border: solid 20px transparent;
+	border-right: solid 20px white;
+}
+
+.porto{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -82px;
+}
+.info-box{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	display: block;
+	background: white;
+	width: 350px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	z-index: 10;
+}
+.info-box::before{
+	content: "";
+	display: block;
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	left: 153px;
+	top: 100%;
+	border: solid 20px transparent;
+	border-top: solid 20px white;
+}
+.info-box p{
+	margin-top: 10px;
+}
+
+.info-box figure img{
+	width: 100%;
+	display: block;
+}
+.info-box .text{
+	padding: 20px;
+}
+.animation{
+	position: relative;
+	z-index: 10;
+}
+.animation img{
+	display: block;
+	margin: auto;
+}
+/*MEETING WATERS*/
+#meetingWaters{
+	background: url(../imgs/riveramazon.jpg);
+}
+#meetingWaters .animation{
+	position: absolute;
+	right: 0px;
+	top: 140px;
+}
+#meetingWaters .info-box{
+	margin-left: -217px;
+	left: 50%;
+	bottom: 50%;
+	z-index: 15;
+	margin-bottom: 30px;
+}
+
+
+/*CLASSICMUSIC*/
+#classicMusic .top img{
+	display: block;
+	margin: auto;
+}
+#classicMusic .animation{
+	padding-top: 30px;
+	z-index: 15;
+}
+
+/*PIRANHAS*/
+#piranhas .animation{
+	padding-top: 150px;
+}
+#piranhas .info-box{
+	margin-left: -175px;
+	left: 50%;
+	bottom: 50%;
+	z-index: 15;
+	margin-bottom: 30px;
+}
+
+/*ALLIGATOR*/
+#alligator .animation{
+	padding-top: 260px;
+}
+#alligator .info-box{
+	margin-left: -175px;
+	left: 50%;
+	bottom: 50%;
+	z-index: 15;
+	margin-bottom: 30px;
+}
+
+/*PORT OF MANAUS*/
+#pointsContainer #portOfManausEnd{
+	width: 2000px;
+	background: url(../imgs/riveramazon.jpg);
+}
+#portOfManausEnd .top{
+	background: none;
+	border: none;
+	top: -147px;
+	background: url(../imgs/riveramazon.jpg);
+}
+#portOfManausEnd .info-box{
+	left: 426px;
+	bottom: -312px;
+}
+#portOfManausEnd .porto{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 700px;
+}
+
+
+/*MODAL*/
+#modal{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	visibility: hidden;
+	opacity: 0;
+}
+#modal.active{
+	visibility: visible;
+	opacity: 1;
+}
+#modal .box{
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 20px;
+	border-radius: 4px;
+	background: white;
+	width: 50%;
+	margin: auto;
+	margin-top: 140px;
+}
+#modal .box::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#modal .box .col{ 
+	float: left;
+	width: 33.33%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 20px;
+	height: 200px;
+}
+#modal .box .col h4{
+	text-align: center;
+}
+
+#modal .box .col .progress .complete{
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	border-radius: 3px;
+	background: #3891B6;
+}
+#modal .box .col .progress{
+	width: 100%;
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	border-radius: 3px;
+	background: rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+}
+#modal .percent{
+	text-align: center;
+	display: block;
+}
+.btn{
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	background: #3891B6;
+	border-bottom: solid 2px rgba(0,0,0,0.2);
+}
+.btn-close{
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	font-weight: bold;
+	color: white;
+	height: 20px;
+	width: 20px;
+	font-family: "Verdana";
+}
+
+#portOfManausStart .animation,
+#portOfManausEnd .animation{
+	z-index: 12;
+}

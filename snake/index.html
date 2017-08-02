@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html,body{
+				padding:0px;
+				margin:0px;
+				font-family:Segoe UI;
+				width:100%;
+				height:100%;
+			}
+			*{
+				box-sizing:border-box;
+			}
+			.container-flex{
+				/*display:flex;*/
+				display:none;
+				width:100%;
+				height:100%;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+			}
+			.container-flex.active{
+				display:flex;
+			}
+			button{
+				text-transform:uppercase;
+				padding:10px 35px;
+				color:white;
+				font-size:0.7em;
+				font-weight:bold;
+				border-radius:2px;
+				border:none;
+				background:#34495e;
+				box-shadow:0px 5px 5px rgba(0,0,0,0.2);
+				transition:0.5s all;
+				cursor:pointer;
+			}
+			button:hover{
+				transform:translateY(3px);
+				box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+			}
+			button:active{
+				background:#2c3e50;
+			}
+			canvas{
+				border:1px solid #efefef;
+			}
+		</style>
+	</head>
+	<body>
+	<div class='container-flex active' id='ready'>
+		<h2>Highscore: <span id='highscore1'></span></h2>
+		<button id='start'>START GAME</button>
+	</div>	
+	<div class='container-flex' id='gamearea'>
+		<h2>Score: <span id='showscore'></span></h2>
+		<canvas id='canvas'></canvas>
+	</div>
+	<div class='container-flex' id='over'>
+		<h2>Score: <span id='score1'></span></h2>
+		<button id='restart'>RESTART GAME</button>
+	</div>	
+	</body>
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/Board.js'></script>
+	<script type='text/javascript' src='js/Game.js'></script>
+	<script type='text/javascript' src='js/main.js'></script>
+</html>

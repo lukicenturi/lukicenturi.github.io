@@ -1,0 +1,1480 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0029)http://oscarotero.com/jquery/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+		 
+<META http-equiv="content-type" content="text/html; charset=UTF-8">
+		 <TITLE>jQuery Cheatsheet</TITLE>		 <LINK href="favicon.ico" rel="shortcut icon" 
+type="image/x-icon">		 
+<META name="author" content="Oscar Otero - http://oscarotero.com">		 
+<META name="title" content="jQuery Cheatsheet">		 
+<META name="description" content="jQuery Cheatsheet in HTML with links to the original API documentation">
+		 
+<META name="keywords" content="jQuery, javascript, cheatsheet, api, resource, web developer">
+		 
+<META content="jQuery Cheatsheet" property="og:title">		 
+<META content="http://oscarotero.com/jquery/jquery.png" property="og:image">		 
+<META content="jQuery Cheatsheet in HTML with links to the original API documentation" 
+property="og:description">		 <LINK href="jQuery%20Cheatsheet_arquivos/styles.css" 
+rel="stylesheet" type="text/css">		 
+<SCRIPT src="jQuery%20Cheatsheet_arquivos/main.js" type="text/javascript"></SCRIPT>
+	 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17924"></HEAD>	 
+<BODY><HEADER class="main">
+<H1><STRONG><A title="Go to jQuery site" 
+href="http://jquery.com/">jQuery</A></STRONG>				Quick API Reference			 </H1>
+<DIV class="filter filter-version"><SELECT id="version" data-placeholder="Version..."><OPTION 
+  value="1.10" data-source="2.0.3">1.10 / 2.0</OPTION>										 <OPTION value="1.9" 
+  data-source="1.9.1">1.9</OPTION>										 <OPTION value="1.8" data-source="1.8.3">1.8</OPTION>
+  										 <OPTION value="1.7" data-source="1.7.2">1.7</OPTION>
+  										 <OPTION value="1.6" data-source="1.6.2">1.6</OPTION>
+  										 <OPTION value="1.5" data-source="1.5">1.5</OPTION>
+  										 <OPTION value="1.4.4" data-source="1.4.3">1.4.4</OPTION>
+  										 <OPTION value="1.4.3" data-source="1.4.3">1.4.3</OPTION>
+  										 <OPTION value="1.4.2" data-source="1.4.2">1.4.2</OPTION>
+  										 <OPTION value="1.4.1" data-source="1.4.1">1.4.1</OPTION>
+  										 <OPTION value="1.4" data-source="1.4.1">1.4</OPTION>
+  										 <OPTION value="1.3" data-source="1.3.2">1.3</OPTION>
+  										 <OPTION value="1.2.6" data-source="1.2.6">1.2.6</OPTION>
+  										 <OPTION value="1.2.3" data-source="">1.2.3</OPTION>
+  										 <OPTION value="1.2" data-source="">1.2</OPTION>										 <OPTION 
+  value="1.1.3" data-source="">1.1.3</OPTION>										 <OPTION value="1.1.3" 
+  data-source="">1.1.3</OPTION>										 <OPTION value="1.1.2" 
+  data-source="">1.1.2</OPTION>										 <OPTION value="1.1" 
+  data-source="">1.1</OPTION>										 <OPTION value="1.0.4" 
+  data-source="">1.0.4</OPTION>										 <OPTION value="1.0" 
+  data-source="">1.0</OPTION>									 </SELECT>			 </DIV>
+<DIV class="filter filter-search"><SELECT id="search" 
+  placeholder="Search..."><OPTION></OPTION>					 <OPTION value="all-selector" 
+  data-data='{"sort":"","from":"1.0","type":"selectors"}'>*</OPTION><OPTION 
+  value="class-selector" data-data='{"sort":"class","from":"1.0","type":"selectors"}'>.class</OPTION><OPTION 
+  value="element-selector" data-data='{"sort":"element","from":"1.0","type":"selectors"}'>element</OPTION><OPTION 
+  value="id-selector" 
+  data-data='{"sort":"id","from":"1.0","type":"selectors"}'>#id</OPTION><OPTION 
+  value="multiple-selector" data-data='{"sort":"selector1selectorN","from":"1.0","type":"selectors"}'>selector1, 
+  selectorN, ...</OPTION><OPTION value="child-selector" data-data='{"sort":"parentgtchild","from":"1.0","type":"selectors"}'>parent 
+  &gt; child</OPTION><OPTION value="descendant-selector" data-data='{"sort":"ancestordescendant","from":"1.0","type":"selectors"}'>ancestor 
+  descendant</OPTION><OPTION value="next-adjacent-Selector" data-data='{"sort":"prevnext","from":"1.0","type":"selectors"}'>prev 
+  + next</OPTION><OPTION value="next-siblings-selector" data-data='{"sort":"prevsiblings","from":"1.0","type":"selectors"}'>prev 
+  ~ siblings</OPTION><OPTION value="animated-selector" data-data='{"sort":"animated","from":"1.2","type":"selectors"}'>:animated</OPTION><OPTION 
+  value="eq-selector" 
+  data-data='{"sort":"eq","from":"1.0","type":"selectors"}'>:eq()</OPTION><OPTION 
+  value="even-selector" data-data='{"sort":"even","from":"1.0","type":"selectors"}'>:even</OPTION><OPTION 
+  value="first-selector" data-data='{"sort":"first","from":"1.0","type":"selectors"}'>:first</OPTION><OPTION 
+  value="gt-selector" 
+  data-data='{"sort":"gt","from":"1.0","type":"selectors"}'>:gt()</OPTION><OPTION 
+  value="header-selector" data-data='{"sort":"header","from":"1.2","type":"selectors"}'>:header</OPTION><OPTION 
+  value="lang-selector" data-data='{"sort":"lang","from":"1.9","type":"selectors"}'>:lang()</OPTION><OPTION 
+  value="last-selector" data-data='{"sort":"last","from":"1.0","type":"selectors"}'>:last</OPTION><OPTION 
+  value="lt-selector" 
+  data-data='{"sort":"lt","from":"1.0","type":"selectors"}'>:lt()</OPTION><OPTION 
+  value="not-selector" data-data='{"sort":"not","from":"1.0","type":"selectors"}'>:not()</OPTION><OPTION 
+  value="odd-selector" data-data='{"sort":"odd","from":"1.0","type":"selectors"}'>:odd</OPTION><OPTION 
+  value="root-selector" data-data='{"sort":"root","from":"1.9","type":"selectors"}'>:root</OPTION><OPTION 
+  value="target-selector" data-data='{"sort":"target","from":"1.9","type":"selectors"}'>:target</OPTION><OPTION 
+  value="contains-selector" data-data='{"sort":"contains","from":"1.1.4","type":"selectors"}'>:contains()</OPTION><OPTION 
+  value="empty-selector" data-data='{"sort":"empty","from":"1.0","type":"selectors"}'>:empty</OPTION><OPTION 
+  value="has-selector" data-data='{"sort":"has","from":"1.1.4","type":"selectors"}'>:has()</OPTION><OPTION 
+  value="parent-selector" data-data='{"sort":"parent","from":"1.0","type":"selectors"}'>:parent</OPTION><OPTION 
+  value="hidden-selector" data-data='{"sort":"hidden","from":"1.0","type":"selectors"}'>:hidden</OPTION><OPTION 
+  value="visible-selector" data-data='{"sort":"visible","from":"1.0","type":"selectors"}'>:visible</OPTION><OPTION 
+  value="attribute-contains-prefix-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name|="value"]</OPTION><OPTION 
+  value="attribute-contains-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name*="value"]</OPTION><OPTION 
+  value="attribute-contains-word-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name~="value"]</OPTION><OPTION 
+  value="attribute-ends-with-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name$="value"]</OPTION><OPTION 
+  value="attribute-equals-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name="value"]</OPTION><OPTION 
+  value="attribute-not-equal-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name!="value"]</OPTION><OPTION 
+  value="attribute-starts-with-selector" data-data='{"sort":"namevalue","from":"1.0","type":"selectors"}'>[name^="value"]</OPTION><OPTION 
+  value="has-attribute-selector" data-data='{"sort":"name","from":"1.0","type":"selectors"}'>[name]</OPTION><OPTION 
+  value="multiple-attribute-selector" data-data='{"sort":"namevaluename2value2","from":"1.0","type":"selectors"}'>[name="value"][name2="value2"]</OPTION><OPTION 
+  value="first-child-selector" data-data='{"sort":"firstchild","from":"1.1.4","type":"selectors"}'>:first-child</OPTION><OPTION 
+  value="first-of-type-selector" data-data='{"sort":"firstoftype","from":"1.9","type":"selectors"}'>:first-of-type</OPTION><OPTION 
+  value="last-child-selector" data-data='{"sort":"lastchild","from":"1.1.4","type":"selectors"}'>:last-child</OPTION><OPTION 
+  value="last-of-type-selector" data-data='{"sort":"lastoftype","from":"1.9","type":"selectors"}'>:last-of-type</OPTION><OPTION 
+  value="nth-child-selector" data-data='{"sort":"nthchild","from":"1.1.4","type":"selectors"}'>:nth-child()</OPTION><OPTION 
+  value="nth-last-child-selector" data-data='{"sort":"nthlastchild","from":"1.9","type":"selectors"}'>:nth-last-child()</OPTION><OPTION 
+  value="nth-last-of-type-selector" data-data='{"sort":"nthlastoftype","from":"1.9","type":"selectors"}'>:nth-last-of-type()</OPTION><OPTION 
+  value="nth-of-type-selector" data-data='{"sort":"nthoftype","from":"1.9","type":"selectors"}'>:nth-of-type()</OPTION><OPTION 
+  value="only-child-selector" data-data='{"sort":"onlychild","from":"1.1.4","type":"selectors"}'>:only-child</OPTION><OPTION 
+  value="only-of-type-selector" data-data='{"sort":"onlyoftype","from":"1.9","type":"selectors"}'>:only-of-type()</OPTION><OPTION 
+  value="button-selector" data-data='{"sort":"button","from":"1.0","type":"selectors"}'>:button</OPTION><OPTION 
+  value="checkbox-selector" data-data='{"sort":"checkbox","from":"1.0","type":"selectors"}'>:checkbox</OPTION><OPTION 
+  value="checked-selector" data-data='{"sort":"checked","from":"1.0","type":"selectors"}'>:checked</OPTION><OPTION 
+  value="disabled-selector" data-data='{"sort":"disabled","from":"1.0","type":"selectors"}'>:disabled</OPTION><OPTION 
+  value="enabled-selector" data-data='{"sort":"enabled","from":"1.0","type":"selectors"}'>:enabled</OPTION><OPTION 
+  value="focus-selector" data-data='{"sort":"focus","from":"1.6","type":"selectors"}'>:focus</OPTION><OPTION 
+  value="file-selector" data-data='{"sort":"file","from":"1.0","type":"selectors"}'>:file</OPTION><OPTION 
+  value="image-selector" data-data='{"sort":"image","from":"1.0","type":"selectors"}'>:image</OPTION><OPTION 
+  value="input-selector" data-data='{"sort":"input","from":"1.0","type":"selectors"}'>:input</OPTION><OPTION 
+  value="password-selector" data-data='{"sort":"password","from":"1.0","type":"selectors"}'>:password</OPTION><OPTION 
+  value="radio-selector" data-data='{"sort":"radio","from":"1.0","type":"selectors"}'>:radio</OPTION><OPTION 
+  value="reset-selector" data-data='{"sort":"reset","from":"1.0","type":"selectors"}'>:reset</OPTION><OPTION 
+  value="selected-selector" data-data='{"sort":"selected","from":"1.0","type":"selectors"}'>:selected</OPTION><OPTION 
+  value="submit-selector" data-data='{"sort":"submit","from":"1.0","type":"selectors"}'>:submit</OPTION><OPTION 
+  value="text-selector" data-data='{"sort":"text","from":"1.0","type":"selectors"}'>:text</OPTION><OPTION 
+  value="attr" 
+  data-data='{"sort":"attr","from":"1.0","type":"attributes"}'>.attr()</OPTION><OPTION 
+  value="prop" 
+  data-data='{"sort":"prop","from":"1.6","type":"attributes"}'>.prop()</OPTION><OPTION 
+  value="removeAttr" data-data='{"sort":"removeAttr","from":"1.0","type":"attributes"}'>.removeAttr()</OPTION><OPTION 
+  value="removeProp" data-data='{"sort":"removeProp","from":"1.6","type":"attributes"}'>.removeProp()</OPTION><OPTION 
+  value="val" 
+  data-data='{"sort":"val","from":"1.0","type":"attributes"}'>.val()</OPTION><OPTION 
+  value="addClass" data-data='{"sort":"addClass","from":"1.0","type":"attributes"}'>.addClass()</OPTION><OPTION 
+  value="css" 
+  data-data='{"sort":"css","from":"1.0","type":"attributes"}'>.css()</OPTION><OPTION 
+  value="jQuery.cssHooks" data-data='{"sort":"jQuerycssHooks","from":"1.4.3","type":"attributes"}'>jQuery.cssHooks</OPTION><OPTION 
+  value="hasClass" data-data='{"sort":"hasClass","from":"1.2","type":"attributes"}'>.hasClass()</OPTION><OPTION 
+  value="removeClass" data-data='{"sort":"removeClass","from":"1.0","type":"attributes"}'>.removeClass()</OPTION><OPTION 
+  value="toggleClass" data-data='{"sort":"toggleClass","from":"1.0","type":"attributes"}'>.toggleClass()</OPTION><OPTION 
+  value="height" 
+  data-data='{"sort":"height","from":"1.0","type":"attributes"}'>.height()</OPTION><OPTION 
+  value="innerHeight" data-data='{"sort":"innerHeight","from":"1.2.6","type":"attributes"}'>.innerHeight()</OPTION><OPTION 
+  value="innerWidth" data-data='{"sort":"innerWidth","from":"1.2.6","type":"attributes"}'>.innerWidth()</OPTION><OPTION 
+  value="outerHeight" data-data='{"sort":"outerHeight","from":"1.2.6","type":"attributes"}'>.outerHeight()</OPTION><OPTION 
+  value="outerWidth" data-data='{"sort":"outerWidth","from":"1.2.6","type":"attributes"}'>.outerWidth()</OPTION><OPTION 
+  value="width" 
+  data-data='{"sort":"width","from":"1.0","type":"attributes"}'>.width()</OPTION><OPTION 
+  value="offset" 
+  data-data='{"sort":"offset","from":"1.2","type":"attributes"}'>.offset()</OPTION><OPTION 
+  value="offsetParent" data-data='{"sort":"offsetParent","from":"1.2.6","type":"attributes"}'>.offsetParent()</OPTION><OPTION 
+  value="position" data-data='{"sort":"position","from":"1.2","type":"attributes"}'>.position()</OPTION><OPTION 
+  value="scrollLeft" data-data='{"sort":"scrollLeft","from":"1.2.6","type":"attributes"}'>.scrollLeft()</OPTION><OPTION 
+  value="scrollTop" data-data='{"sort":"scrollTop","from":"1.2.6","type":"attributes"}'>.scrollTop()</OPTION><OPTION 
+  value="jQuery.data" data-data='{"sort":"jQuerydata","from":"1.2.3","type":"attributes"}'>jQuery.data()</OPTION><OPTION 
+  value="data" 
+  data-data='{"sort":"data","from":"1.2.3","type":"attributes"}'>.data()</OPTION><OPTION 
+  value="jQuery.hasData" data-data='{"sort":"jQueryhasData","from":"1.5","type":"attributes"}'>jQuery.hasData()</OPTION><OPTION 
+  value="jQuery.removeData" data-data='{"sort":"jQueryremoveData","from":"1.2.3","type":"attributes"}'>jQuery.removeData()</OPTION><OPTION 
+  value="removeData" data-data='{"sort":"removeData","from":"1.2.3","type":"attributes"}'>.removeData()</OPTION><OPTION 
+  value="clone" 
+  data-data='{"sort":"clone","from":"1.0","type":"manipulation"}'>.clone()</OPTION><OPTION 
+  value="wrap" 
+  data-data='{"sort":"wrap","from":"1.0","type":"manipulation"}'>.wrap()</OPTION><OPTION 
+  value="wrapAll" data-data='{"sort":"wrapAll","from":"1.2","type":"manipulation"}'>.wrapAll()</OPTION><OPTION 
+  value="wrapInner" data-data='{"sort":"wrapInner","from":"1.2","type":"manipulation"}'>.wrapInner()</OPTION><OPTION 
+  value="append" data-data='{"sort":"append","from":"1.0","type":"manipulation"}'>.append()</OPTION><OPTION 
+  value="appendTo" data-data='{"sort":"appendTo","from":"1.0","type":"manipulation"}'>.appendTo()</OPTION><OPTION 
+  value="html" 
+  data-data='{"sort":"html","from":"1.0","type":"manipulation"}'>.html()</OPTION><OPTION 
+  value="prepend" data-data='{"sort":"prepend","from":"1.0","type":"manipulation"}'>.prepend()</OPTION><OPTION 
+  value="prependTo" data-data='{"sort":"prependTo","from":"1.0","type":"manipulation"}'>.prependTo()</OPTION><OPTION 
+  value="text" 
+  data-data='{"sort":"text","from":"1.0","type":"manipulation"}'>.text()</OPTION><OPTION 
+  value="after" 
+  data-data='{"sort":"after","from":"1.0","type":"manipulation"}'>.after()</OPTION><OPTION 
+  value="before" data-data='{"sort":"before","from":"1.0","type":"manipulation"}'>.before()</OPTION><OPTION 
+  value="insertAfter" data-data='{"sort":"insertAfter","from":"1.0","type":"manipulation"}'>.insertAfter()</OPTION><OPTION 
+  value="insertBefore" data-data='{"sort":"insertBefore","from":"1.0","type":"manipulation"}'>.insertBefore()</OPTION><OPTION 
+  value="detach" data-data='{"sort":"detach","from":"1.4","type":"manipulation"}'>.detach()</OPTION><OPTION 
+  value="empty" 
+  data-data='{"sort":"empty","from":"1.0","type":"manipulation"}'>.empty()</OPTION><OPTION 
+  value="remove" data-data='{"sort":"remove","from":"1.0","type":"manipulation"}'>.remove()</OPTION><OPTION 
+  value="unwrap" data-data='{"sort":"unwrap","from":"1.4","type":"manipulation"}'>.unwrap()</OPTION><OPTION 
+  value="replaceAll" data-data='{"sort":"replaceAll","from":"1.2","type":"manipulation"}'>.replaceAll()</OPTION><OPTION 
+  value="replaceWith" data-data='{"sort":"replaceWith","from":"1.2","type":"manipulation"}'>.replaceWith()</OPTION><OPTION 
+  value="eq" 
+  data-data='{"sort":"eq","from":"1.1.2","type":"traversing"}'>.eq()</OPTION><OPTION 
+  value="filter" 
+  data-data='{"sort":"filter","from":"1.0","type":"traversing"}'>.filter()</OPTION><OPTION 
+  value="first" 
+  data-data='{"sort":"first","from":"1.4","type":"traversing"}'>.first()</OPTION><OPTION 
+  value="has" 
+  data-data='{"sort":"has","from":"1.4","type":"traversing"}'>.has()</OPTION><OPTION 
+  value="is" 
+  data-data='{"sort":"is","from":"1.0","type":"traversing"}'>.is()</OPTION><OPTION 
+  value="last" 
+  data-data='{"sort":"last","from":"1.4","type":"traversing"}'>.last()</OPTION><OPTION 
+  value="map" 
+  data-data='{"sort":"map","from":"1.2","type":"traversing"}'>.map()</OPTION><OPTION 
+  value="not" 
+  data-data='{"sort":"not","from":"1.0","type":"traversing"}'>.not()</OPTION><OPTION 
+  value="slice" 
+  data-data='{"sort":"slice","from":"1.1.4","type":"traversing"}'>.slice()</OPTION><OPTION 
+  value="add" 
+  data-data='{"sort":"add","from":"1.0","type":"traversing"}'>.add()</OPTION><OPTION 
+  value="andSelf" data-data="{&quot;sort&quot;:&quot;andSelf&quot;,&quot;from&quot;:&quot;1.2&quot;,&quot;type&quot;:&quot;traversing&quot;,&quot;deprecated&quot;:&quot;1.8'&quot;}">.andSelf()</OPTION><OPTION 
+  value="contents" data-data='{"sort":"contents","from":"1.2","type":"traversing"}'>.contents()</OPTION><OPTION 
+  value="each" 
+  data-data='{"sort":"each","from":"1.0","type":"traversing"}'>.each()</OPTION><OPTION 
+  value="end" 
+  data-data='{"sort":"end","from":"1.0","type":"traversing"}'>.end()</OPTION><OPTION 
+  value="addBack" data-data='{"sort":"addBack","from":"1.8","type":"traversing"}'>.addBack()</OPTION><OPTION 
+  value="children" data-data='{"sort":"children","from":"1.0","type":"traversing"}'>.children()</OPTION><OPTION 
+  value="closest" data-data='{"sort":"closest","from":"1.3","type":"traversing"}'>.closest()</OPTION><OPTION 
+  value="find" 
+  data-data='{"sort":"find","from":"1.0","type":"traversing"}'>.find()</OPTION><OPTION 
+  value="next" 
+  data-data='{"sort":"next","from":"1.0","type":"traversing"}'>.next()</OPTION><OPTION 
+  value="nextAll" data-data='{"sort":"nextAll","from":"1.2","type":"traversing"}'>.nextAll()</OPTION><OPTION 
+  value="nextUntil" data-data='{"sort":"nextUntil","from":"1.4","type":"traversing"}'>.nextUntil()</OPTION><OPTION 
+  value="parent" 
+  data-data='{"sort":"parent","from":"1.0","type":"traversing"}'>.parent()</OPTION><OPTION 
+  value="parents" data-data='{"sort":"parents","from":"1.0","type":"traversing"}'>.parents()</OPTION><OPTION 
+  value="parentsUntil" data-data='{"sort":"parentsUntil","from":"1.4","type":"traversing"}'>.parentsUntil()</OPTION><OPTION 
+  value="prev" 
+  data-data='{"sort":"prev","from":"1.0","type":"traversing"}'>.prev()</OPTION><OPTION 
+  value="prevAll" data-data='{"sort":"prevAll","from":"1.2","type":"traversing"}'>.prevAll()</OPTION><OPTION 
+  value="prevUntil" data-data='{"sort":"prevUntil","from":"1.4","type":"traversing"}'>.prevUntil()</OPTION><OPTION 
+  value="siblings" data-data='{"sort":"siblings","from":"1.0","type":"traversing"}'>.siblings()</OPTION><OPTION 
+  value="error" data-data='{"sort":"error","from":"1.0","type":"events","deprecated":"1.8"}'>.error()</OPTION><OPTION 
+  value="resize" 
+  data-data='{"sort":"resize","from":"1.0","type":"events"}'>.resize()</OPTION><OPTION 
+  value="scroll" 
+  data-data='{"sort":"scroll","from":"1.0","type":"events"}'>.scroll()</OPTION><OPTION 
+  value="jQuery.holdReady" data-data='{"sort":"holdReady","from":"1.6","type":"events"}'>.holdReady()</OPTION><OPTION 
+  value="load-event" data-data='{"sort":"load","from":"1.0","type":"events","deprecated":"1.8"}'>.load()</OPTION><OPTION 
+  value="ready" 
+  data-data='{"sort":"ready","from":"1.0","type":"events"}'>.ready()</OPTION><OPTION 
+  value="unload" data-data='{"sort":"unload","from":"1.0","type":"events","deprecated":"1.8"}'>.unload()</OPTION><OPTION 
+  value="bind" 
+  data-data='{"sort":"bind","from":"1.0","type":"events"}'>.bind()</OPTION><OPTION 
+  value="delegate" data-data='{"sort":"delegate","from":"1.4.2","type":"events"}'>.delegate()</OPTION><OPTION 
+  value="die" data-data='{"sort":"die","from":"1.3","type":"events","deprecated":"1.7","removed":"1.9"}'>.die()</OPTION><OPTION 
+  value="live" data-data='{"sort":"live","from":"1.3","type":"events","deprecated":"1.7","removed":"1.9"}'>.live()</OPTION><OPTION 
+  value="off" 
+  data-data='{"sort":"off","from":"1.7","type":"events"}'>.off()</OPTION><OPTION 
+  value="on" 
+  data-data='{"sort":"on","from":"1.7","type":"events"}'>.on()</OPTION><OPTION 
+  value="one" 
+  data-data='{"sort":"one","from":"1.1","type":"events"}'>.one()</OPTION><OPTION 
+  value="trigger" 
+  data-data='{"sort":"trigger","from":"1.0","type":"events"}'>.trigger()</OPTION><OPTION 
+  value="triggerHandler" data-data='{"sort":"triggerHandler","from":"1.2","type":"events"}'>.triggerHandler()</OPTION><OPTION 
+  value="unbind" 
+  data-data='{"sort":"unbind","from":"1.0","type":"events"}'>.unbind()</OPTION><OPTION 
+  value="undelegate" data-data='{"sort":"undelegate","from":"1.4.2","type":"events"}'>.undelegate()</OPTION><OPTION 
+  value="blur" 
+  data-data='{"sort":"blur","from":"1.0","type":"events"}'>.blur()</OPTION><OPTION 
+  value="change" 
+  data-data='{"sort":"change","from":"1.0","type":"events"}'>.change()</OPTION><OPTION 
+  value="focus" 
+  data-data='{"sort":"focus","from":"1.0","type":"events"}'>.focus()</OPTION><OPTION 
+  value="select" 
+  data-data='{"sort":"select","from":"1.0","type":"events"}'>.select()</OPTION><OPTION 
+  value="submit" 
+  data-data='{"sort":"submit","from":"1.0","type":"events"}'>.submit()</OPTION><OPTION 
+  value="keydown" 
+  data-data='{"sort":"keydown","from":"1.0","type":"events"}'>.keydown()</OPTION><OPTION 
+  value="keypress" 
+  data-data='{"sort":"keypress","from":"1.0","type":"events"}'>.keypress()</OPTION><OPTION 
+  value="keyup" 
+  data-data='{"sort":"keyup","from":"1.0","type":"events"}'>.keyup()</OPTION><OPTION 
+  value="click" 
+  data-data='{"sort":"click","from":"1.0","type":"events"}'>.click()</OPTION><OPTION 
+  value="dblclick" 
+  data-data='{"sort":"dblclick","from":"1.0","type":"events"}'>.dblclick()</OPTION><OPTION 
+  value="focusin" 
+  data-data='{"sort":"focusin","from":"1.4","type":"events"}'>.focusin()</OPTION><OPTION 
+  value="focusout" 
+  data-data='{"sort":"focusout","from":"1.4","type":"events"}'>.focusout()</OPTION><OPTION 
+  value="hover" 
+  data-data='{"sort":"hover","from":"1.0","type":"events"}'>.hover()</OPTION><OPTION 
+  value="mousedown" data-data='{"sort":"mousedown","from":"1.0","type":"events"}'>.mousedown()</OPTION><OPTION 
+  value="mouseenter" data-data='{"sort":"mouseenter","from":"1.0","type":"events"}'>.mouseenter()</OPTION><OPTION 
+  value="mouseleave" data-data='{"sort":"mouseleave","from":"1.0","type":"events"}'>.mouseleave()</OPTION><OPTION 
+  value="mousemove" data-data='{"sort":"mousemove","from":"1.0","type":"events"}'>.mousemove()</OPTION><OPTION 
+  value="mouseout" 
+  data-data='{"sort":"mouseout","from":"1.0","type":"events"}'>.mouseout()</OPTION><OPTION 
+  value="mouseover" data-data='{"sort":"mouseover","from":"1.0","type":"events"}'>.mouseover()</OPTION><OPTION 
+  value="mouseup" 
+  data-data='{"sort":"mouseup","from":"1.0","type":"events"}'>.mouseup()</OPTION><OPTION 
+  value="toggle-event" data-data='{"sort":"toggle","from":"1.0","type":"events","deprecated":"1.8","removed":"1.9"}'>.toggle()</OPTION><OPTION 
+  value="event.currentTarget" data-data='{"sort":"eventcurrentTarget","from":"1.3","type":"events"}'>event.currentTarget</OPTION><OPTION 
+  value="event.data" data-data='{"sort":"eventdata","from":"1.1","type":"events"}'>event.data</OPTION><OPTION 
+  value="event.isDefaultPrevented" data-data='{"sort":"eventisDefaultPrevented","from":"1.3","type":"events"}'>event.isDefaultPrevented()</OPTION><OPTION 
+  value="event.isImmediatePropagationStopped" data-data='{"sort":"eventisImmediatePropagationStopped","from":"1.3","type":"events"}'>event.isImmediatePropagationStopped()</OPTION><OPTION 
+  value="event.isPropagationStopped" data-data='{"sort":"eventisPropagationStopped","from":"1.3","type":"events"}'>event.isPropagationStopped()</OPTION><OPTION 
+  value="event.namespace" data-data='{"sort":"eventnamespace","from":"1.4.3","type":"events"}'>event.namespace</OPTION><OPTION 
+  value="event.pageX" data-data='{"sort":"eventpageX","from":"1.0.4","type":"events"}'>event.pageX</OPTION><OPTION 
+  value="event.pageY" data-data='{"sort":"eventpageY","from":"1.0.4","type":"events"}'>event.pageY</OPTION><OPTION 
+  value="event.preventDefault" data-data='{"sort":"eventpreventDefault","from":"1.0","type":"events"}'>event.preventDefault()</OPTION><OPTION 
+  value="event.relatedTarget" data-data='{"sort":"eventrelatedTarget","from":"1.1.4","type":"events"}'>event.relatedTarget</OPTION><OPTION 
+  value="event.result" data-data='{"sort":"eventresult","from":"1.3","type":"events"}'>event.result</OPTION><OPTION 
+  value="event.stopImmediatePropagation" data-data='{"sort":"eventstopImmediatePropagation","from":"1.3","type":"events"}'>event.stopImmediatePropagation()</OPTION><OPTION 
+  value="event.stopPropagation" data-data='{"sort":"eventstopPropagation","from":"1.0","type":"events"}'>event.stopPropagation()</OPTION><OPTION 
+  value="event.target" data-data='{"sort":"eventtarget","from":"1.0","type":"events"}'>event.target</OPTION><OPTION 
+  value="event.timeStamp" data-data='{"sort":"eventtimeStamp","from":"1.2.6","type":"events"}'>event.timeStamp</OPTION><OPTION 
+  value="event.type" data-data='{"sort":"eventtype","from":"1.0","type":"events"}'>event.type</OPTION><OPTION 
+  value="event.which" data-data='{"sort":"eventwhich","from":"1.1.3","type":"events"}'>event.which</OPTION><OPTION 
+  value="hide" 
+  data-data='{"sort":"hide","from":"1.0","type":"effects"}'>.hide()</OPTION><OPTION 
+  value="show" 
+  data-data='{"sort":"show","from":"1.0","type":"effects"}'>.show()</OPTION><OPTION 
+  value="toggle" 
+  data-data='{"sort":"toggle","from":"1.0","type":"effects"}'>.toggle()</OPTION><OPTION 
+  value="animate" 
+  data-data='{"sort":"animate","from":"1.0","type":"effects"}'>.animate()</OPTION><OPTION 
+  value="clearQueue" data-data='{"sort":"clearQueue","from":"1.4","type":"effects"}'>.clearQueue()</OPTION><OPTION 
+  value="delay" 
+  data-data='{"sort":"delay","from":"1.4","type":"effects"}'>.delay()</OPTION><OPTION 
+  value="dequeue" 
+  data-data='{"sort":"dequeue","from":"1.2","type":"effects"}'>.dequeue()</OPTION><OPTION 
+  value="jQuery.dequeue" data-data='{"sort":"jQuerydequeue","from":"1.3","type":"effects"}'>jQuery.dequeue()</OPTION><OPTION 
+  value="finish" 
+  data-data='{"sort":"finish","from":"1.9","type":"effects"}'>.finish()</OPTION><OPTION 
+  value="jQuery.fx.interval" data-data='{"sort":"jQueryfxinterval","from":"1.4.3","type":"effects"}'>jQuery.fx.interval</OPTION><OPTION 
+  value="jQuery.fx.off" data-data='{"sort":"jQueryfxoff","from":"1.3","type":"effects"}'>jQuery.fx.off</OPTION><OPTION 
+  value="queue" 
+  data-data='{"sort":"queue","from":"1.2","type":"effects"}'>.queue()</OPTION><OPTION 
+  value="jQuery.queue" data-data='{"sort":"jQueryqueue","from":"1.3","type":"effects"}'>jQuery.queue()</OPTION><OPTION 
+  value="stop" 
+  data-data='{"sort":"stop","from":"1.2","type":"effects"}'>.stop()</OPTION><OPTION 
+  value="fadeIn" 
+  data-data='{"sort":"fadeIn","from":"1.0","type":"effects"}'>.fadeIn()</OPTION><OPTION 
+  value="fadeOut" 
+  data-data='{"sort":"fadeOut","from":"1.0","type":"effects"}'>.fadeOut()</OPTION><OPTION 
+  value="fadeTo" 
+  data-data='{"sort":"fadeTo","from":"1.0","type":"effects"}'>.fadeTo()</OPTION><OPTION 
+  value="fadeToggle" data-data='{"sort":"fadeToggle","from":"1.4.4","type":"effects"}'>.fadeToggle()</OPTION><OPTION 
+  value="slideDown" data-data='{"sort":"slideDown","from":"1.0","type":"effects"}'>.slideDown()</OPTION><OPTION 
+  value="slideToggle" data-data='{"sort":"slideToggle","from":"1.0","type":"effects"}'>.slideToggle()</OPTION><OPTION 
+  value="slideUp" 
+  data-data='{"sort":"slideUp","from":"1.0","type":"effects"}'>.slideUp()</OPTION><OPTION 
+  value="ajaxComplete" data-data='{"sort":"ajaxComplete","from":"1.0","type":"ajax"}'>.ajaxComplete()</OPTION><OPTION 
+  value="ajaxError" 
+  data-data='{"sort":"ajaxError","from":"1.0","type":"ajax"}'>.ajaxError()</OPTION><OPTION 
+  value="ajaxSend" 
+  data-data='{"sort":"ajaxSend","from":"1.0","type":"ajax"}'>.ajaxSend()</OPTION><OPTION 
+  value="ajaxStart" 
+  data-data='{"sort":"ajaxStart","from":"1.0","type":"ajax"}'>.ajaxStart()</OPTION><OPTION 
+  value="ajaxStop" 
+  data-data='{"sort":"ajaxStop","from":"1.0","type":"ajax"}'>.ajaxStop()</OPTION><OPTION 
+  value="ajaxSuccess" data-data='{"sort":"ajaxSuccess","from":"1.0","type":"ajax"}'>.ajaxSuccess()</OPTION><OPTION 
+  value="jQuery.param" data-data='{"sort":"jQueryparam","from":"1.2","type":"ajax"}'>jQuery.param()</OPTION><OPTION 
+  value="serialize" 
+  data-data='{"sort":"serialize","from":"1.0","type":"ajax"}'>.serialize()</OPTION><OPTION 
+  value="serializeArray" data-data='{"sort":"serializeArray","from":"1.2","type":"ajax"}'>.serializeArray()</OPTION><OPTION 
+  value="jQuery.ajax" data-data='{"sort":"jQueryajax","from":"1.0","type":"ajax"}'>jQuery.ajax()</OPTION><OPTION 
+  value="jQuery.ajaxSetup" data-data='{"sort":"jQueryajaxSetup","from":"1.1","type":"ajax"}'>jQuery.ajaxSetup()</OPTION><OPTION 
+  value="jQuery.get" 
+  data-data='{"sort":"jQueryget","from":"1.0","type":"ajax"}'>jQuery.get()</OPTION><OPTION 
+  value="jQuery.getJSON" data-data='{"sort":"jQuerygetJSON","from":"1.0","type":"ajax"}'>jQuery.getJSON()</OPTION><OPTION 
+  value="jQuery.getScript" data-data='{"sort":"jQuerygetScript","from":"1.0","type":"ajax"}'>jQuery.getScript()</OPTION><OPTION 
+  value="load" 
+  data-data='{"sort":"load","from":"1.0","type":"ajax"}'>.load()</OPTION><OPTION 
+  value="jQuery.post" data-data='{"sort":"jQuerypost","from":"1.0","type":"ajax"}'>jQuery.post()</OPTION><OPTION 
+  value="jQuery" 
+  data-data='{"sort":"jQuery","from":"1.0","type":"core"}'>jQuery()</OPTION><OPTION 
+  value="jQuery.noConflict" data-data='{"sort":"jQuerynoConflict","from":"1.0","type":"core"}'>jQuery.noConflict()</OPTION><OPTION 
+  value="jQuery.sub" data-data='{"sort":"jQuerysub","from":"1.5","type":"core","deprecated":"1.7","removed":"1.9"}'>jQuery.sub()</OPTION><OPTION 
+  value="jQuery.when" data-data='{"sort":"jQuerywhen","from":"1.5","type":"core"}'>jQuery.when()</OPTION><OPTION 
+  value="jQuery.boxModel" data-data='{"sort":"jQueryboxModel","from":"1.0","type":"core","deprecated":"1.3"}'>jQuery.boxModel</OPTION><OPTION 
+  value="jQuery.browser" data-data='{"sort":"jQuerybrowser","from":"1.0","type":"core","deprecated":"1.3","removed":"1.9"}'>jQuery.browser</OPTION><OPTION 
+  value="jQuery.contains" data-data='{"sort":"jQuerycontains","from":"1.4","type":"core"}'>jQuery.contains()</OPTION><OPTION 
+  value="jQuery.each" data-data='{"sort":"jQueryeach","from":"1.0","type":"core"}'>jQuery.each()</OPTION><OPTION 
+  value="jQuery.extend" data-data='{"sort":"jQueryextend","from":"1.0","type":"core"}'>jQuery.extend()</OPTION><OPTION 
+  value="jQuery.globalEval" data-data='{"sort":"jQueryglobalEval","from":"1.0.4","type":"core"}'>jQuery.globalEval()</OPTION><OPTION 
+  value="jQuery.grep" data-data='{"sort":"jQuerygrep","from":"1.0","type":"core"}'>jQuery.grep()</OPTION><OPTION 
+  value="jQuery.inArray" data-data='{"sort":"jQueryinArray","from":"1.2","type":"core"}'>jQuery.inArray()</OPTION><OPTION 
+  value="jQuery.isArray" data-data='{"sort":"jQueryisArray","from":"1.3","type":"core"}'>jQuery.isArray()</OPTION><OPTION 
+  value="jQuery.isEmptyObject" data-data='{"sort":"jQueryisEmptyObject","from":"1.4","type":"core"}'>jQuery.isEmptyObject()</OPTION><OPTION 
+  value="jQuery.isFunction" data-data='{"sort":"jQueryisFunction","from":"1.2","type":"core"}'>jQuery.isFunction()</OPTION><OPTION 
+  value="jQuery.isNumeric" data-data='{"sort":"jQueryisNumeric","from":"1.7","type":"core"}'>jQuery.isNumeric()</OPTION><OPTION 
+  value="jQuery.isPlainObject" data-data='{"sort":"jQueryisPlainObject","from":"1.4","type":"core"}'>jQuery.isPlainObject()</OPTION><OPTION 
+  value="jQuery.isWindow" data-data='{"sort":"jQueryisWindow","from":"1.4.3","type":"core"}'>jQuery.isWindow()</OPTION><OPTION 
+  value="jQuery.isXMLDoc" data-data='{"sort":"jQueryisXMLDoc","from":"1.1.4","type":"core"}'>jQuery.isXMLDoc()</OPTION><OPTION 
+  value="jQuery.makeArray" data-data='{"sort":"jQuerymakeArray","from":"1.2","type":"core"}'>jQuery.makeArray()</OPTION><OPTION 
+  value="jQuery.map" 
+  data-data='{"sort":"jQuerymap","from":"1.0","type":"core"}'>jQuery.map()</OPTION><OPTION 
+  value="jQuery.merge" data-data='{"sort":"jQuerymerge","from":"1.0","type":"core"}'>jQuery.merge()</OPTION><OPTION 
+  value="jQuery.noop" data-data='{"sort":"jQuerynoop","from":"1.4","type":"core"}'>jQuery.noop()</OPTION><OPTION 
+  value="jQuery.now" data-data='{"sort":"jQuerynow","from":"1.4.3","type":"core"}'>jQuery.now()</OPTION><OPTION 
+  value="jQuery.parseHTML" data-data='{"sort":"jQueryparseHTML","from":"1.8","type":"core"}'>jQuery.parseHTML()</OPTION><OPTION 
+  value="jQuery.parseJSON" data-data='{"sort":"jQueryparseJSON","from":"1.4.1","type":"core"}'>jQuery.parseJSON()</OPTION><OPTION 
+  value="jQuery.parseXML" data-data='{"sort":"jQueryparseXML","from":"1.5","type":"core"}'>jQuery.parseXML()</OPTION><OPTION 
+  value="jQuery.proxy" data-data='{"sort":"jQueryproxy","from":"1.4","type":"core"}'>jQuery.proxy()</OPTION><OPTION 
+  value="jQuery.support" data-data='{"sort":"jQuerysupport","from":"1.3","type":"core"}'>jQuery.support</OPTION><OPTION 
+  value="jQuery.trim" data-data='{"sort":"jQuerytrim","from":"1.0","type":"core"}'>jQuery.trim()</OPTION><OPTION 
+  value="jQuery.type" data-data='{"sort":"jQuerytype","from":"1.4.3","type":"core"}'>jQuery.type()</OPTION><OPTION 
+  value="jQuery.unique" data-data='{"sort":"jQueryunique","from":"1.1.3","type":"core"}'>jQuery.unique()</OPTION><OPTION 
+  value="get" 
+  data-data='{"sort":"get","from":"1.0","type":"core"}'>.get()</OPTION><OPTION 
+  value="index" 
+  data-data='{"sort":"index","from":"1.0","type":"core"}'>.index()</OPTION><OPTION 
+  value="size" data-data='{"sort":"size","from":"1.0","type":"core","deprecated":"1.8"}'>.size()</OPTION><OPTION 
+  value="toArray" 
+  data-data='{"sort":"toArray","from":"1.4","type":"core"}'>.toArray()</OPTION><OPTION 
+  value="jquery-2" 
+  data-data='{"sort":"jquery","from":"1.0","type":"core"}'>.jquery</OPTION><OPTION 
+  value="context" data-data='{"sort":"context","from":"1.3","type":"core","deprecated":"1-10"}'>.context</OPTION><OPTION 
+  value="jQuery.error" data-data='{"sort":"jQueryerror","from":"1.4.1","type":"core"}'>jQuery.error()</OPTION><OPTION 
+  value="length" 
+  data-data='{"sort":"length","from":"1.0","type":"core"}'>.length</OPTION><OPTION 
+  value="pushStack" 
+  data-data='{"sort":"pushStack","from":"1.0","type":"core"}'>.pushStack()</OPTION><OPTION 
+  value="selector" 
+  data-data='{"sort":"selector","from":"1.3","type":"core"}'>.selector</OPTION><OPTION 
+  value="deferred.always" data-data='{"sort":"deferredalways","from":"1.6","type":"core"}'>deferred.always()</OPTION><OPTION 
+  value="deferred.done" data-data='{"sort":"deferreddone","from":"1.5","type":"core"}'>deferred.done()</OPTION><OPTION 
+  value="deferred.fail" data-data='{"sort":"deferredfail","from":"1.5","type":"core"}'>deferred.fail()</OPTION><OPTION 
+  value="deferred.isRejected" data-data='{"sort":"deferredisRejected","from":"1.5","type":"core","deprecated":"1.7","removed":"1.8"}'>deferred.isRejected()</OPTION><OPTION 
+  value="deferred.isResolved" data-data='{"sort":"deferredisResolved","from":"1.5","type":"core","deprecated":"1.7","removed":"1.8"}'>deferred.isResolved()</OPTION><OPTION 
+  value="deferred.notify" data-data='{"sort":"deferrednotify","from":"1.7","type":"core"}'>deferred.notify()</OPTION><OPTION 
+  value="deferred.notifyWith" data-data='{"sort":"deferrednotifyWith","from":"1.7","type":"core"}'>deferred.notifyWith()</OPTION><OPTION 
+  value="deferred.pipe" data-data='{"sort":"deferredpipe","from":"1.6","type":"core","deprecated":"1.8"}'>deferred.pipe()</OPTION><OPTION 
+  value="deferred.progress" data-data='{"sort":"deferredprogress","from":"1.7","type":"core"}'>deferred.progress()</OPTION><OPTION 
+  value="deferred.promise" data-data='{"sort":"deferredpromise","from":"1.5","type":"core"}'>deferred.promise()</OPTION><OPTION 
+  value="deferred.reject" data-data='{"sort":"deferredreject","from":"1.5","type":"core"}'>deferred.reject()</OPTION><OPTION 
+  value="deferred.rejectWith" data-data='{"sort":"deferredrejectWith","from":"1.5","type":"core"}'>deferred.rejectWith()</OPTION><OPTION 
+  value="deferred.resolve" data-data='{"sort":"deferredresolve","from":"1.5","type":"core"}'>deferred.resolve()</OPTION><OPTION 
+  value="deferred.resolveWith" data-data='{"sort":"deferredresolveWith","from":"1.5","type":"core"}'>deferred.resolveWith()</OPTION><OPTION 
+  value="deferred.state" data-data='{"sort":"deferredstate","from":"1.7","type":"core"}'>deferred.state()</OPTION><OPTION 
+  value="deferred.then" data-data='{"sort":"deferredthen","from":"1.5","type":"core"}'>deferred.then()</OPTION><OPTION 
+  value="promise" 
+  data-data='{"sort":"promise","from":"1.6","type":"core"}'>.promise()</OPTION><OPTION 
+  value="jQuery.Callbacks" data-data='{"sort":"jQueryCallbacks","from":"1.7","type":"core"}'>jQuery.Callbacks()</OPTION><OPTION 
+  value="callbacks.add" data-data='{"sort":"callbacksadd","from":"1.7","type":"core"}'>callbacks.add()</OPTION><OPTION 
+  value="callbacks.disable" data-data='{"sort":"callbacksdisable","from":"1.7","type":"core"}'>callbacks.disable()</OPTION><OPTION 
+  value="callbacks.empty" data-data='{"sort":"callbacksempty","from":"1.7","type":"core"}'>callbacks.empty()</OPTION><OPTION 
+  value="callbacks.fire" data-data='{"sort":"callbacksfire","from":"1.7","type":"core"}'>callbacks.fire()</OPTION><OPTION 
+  value="callbacks.fired" data-data='{"sort":"callbacksfired","from":"1.7","type":"core"}'>callbacks.fired()</OPTION><OPTION 
+  value="callbacks.fireWith" data-data='{"sort":"callbacksfireWith","from":"1.7","type":"core"}'>callbacks.fireWith()</OPTION><OPTION 
+  value="callbacks.has" data-data='{"sort":"callbackshas","from":"1.7","type":"core"}'>callbacks.has()</OPTION><OPTION 
+  value="callbacks.lock" data-data='{"sort":"callbackslock","from":"1.7","type":"core"}'>callbacks.lock()</OPTION><OPTION 
+  value="callbacks.locked" data-data='{"sort":"callbackslocked","from":"1.7","type":"core"}'>callbacks.locked()</OPTION><OPTION 
+  value="callbacks.remove" data-data='{"sort":"callbacksremove","from":"1.7","type":"core"}'>callbacks.remove()</OPTION>				</SELECT>
+			 </DIV><A class="about" id="about-link" href="http://oscarotero.com/jquery/#about">About...</A>
+		 </HEADER>
+<DIV class="content"><ARTICLE class="selectors" id="selectors">
+<H1>Selectors</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Basics</H2>
+<UL>
+  <LI><A title="Selects all elements." class="v1-0 all-selector" href="http://api.jquery.com/all-selector/" 
+  data-src="">				*			</A></LI>
+  <LI><A title="Selects all elements with the given class." class="v1-0 class-selector" 
+  href="http://api.jquery.com/class-selector/" data-src="">
+				.class			</A></LI>
+  <LI><A title="Selects all elements with the given tag name." class="v1-0 element-selector" 
+  href="http://api.jquery.com/element-selector/" data-src="">
+  				element			</A></LI>
+  <LI><A title="Selects a single element with the given id attribute." class="v1-0 id-selector" 
+  href="http://api.jquery.com/id-selector/" data-src="">				#id			</A></LI>
+  <LI><A title="Selects the combined results of all the specified selectors." 
+  class="v1-0 multiple-selector" href="http://api.jquery.com/multiple-selector/" 
+  data-src="">				selector1, selectorN, ...			</A></LI></UL></SECTION><SECTION>
+<H2>Hierarchy</H2>
+<UL>
+  <LI><A title="Selects all direct child elements specified by 'child' of elements specified by 'parent'." 
+  class="v1-0 child-selector" href="http://api.jquery.com/child-selector/" 
+  data-src="">				parent &gt; child			</A></LI>
+  <LI><A title="Selects all elements that are descendants of a given ancestor." 
+  class="v1-0 descendant-selector" href="http://api.jquery.com/descendant-selector/" 
+  data-src="">				ancestor descendant			</A></LI>
+  <LI><A title="Selects all next elements matching 'next' that are immediately preceded by a sibling 'prev'." 
+  class="v1-0 next-adjacent-Selector" href="http://api.jquery.com/next-adjacent-Selector/" 
+  data-src="">				prev + next			</A></LI>
+  <LI><A title="Selects all sibling elements that follow after the 'prev' element, have the same parent, and match the filtering 'siblings' selector." 
+  class="v1-0 next-siblings-selector" href="http://api.jquery.com/next-siblings-selector/" 
+  data-src="">				prev ~ siblings			</A></LI></UL></SECTION><SECTION>
+<H2>Basic Filters</H2>
+<UL>
+  <LI><A title="Select all elements that are in the progress of an animation at the time the selector is run." 
+  class="v1-2 animated-selector" href="http://api.jquery.com/animated-selector/" 
+  data-src="">				:animated			</A></LI>
+  <LI><A title="Select the element at index n within the matched set." class="v1-0 eq-selector" 
+  href="http://api.jquery.com/eq-selector/" data-src="">				:eq()			</A></LI>
+  <LI><A title="Selects even elements, zero-indexed. See also odd." class="v1-0 even-selector" 
+  href="http://api.jquery.com/even-selector/" data-src="">				:even			</A></LI>
+  <LI><A title="Selects the first matched element." class="v1-0 first-selector" 
+  href="http://api.jquery.com/first-selector/" data-src="">
+				:first			</A></LI>
+  <LI><A title="Select all elements at an index greater than index within the matched set." 
+  class="v1-0 gt-selector" href="http://api.jquery.com/gt-selector/" 
+  data-src="">				:gt()			</A></LI>
+  <LI><A title="Selects all elements that are headers, like h1, h2, h3 and so on." 
+  class="v1-2 header-selector" href="http://api.jquery.com/header-selector/" 
+  data-src="">				:header			</A></LI>
+  <LI><A title="Selects all elements of the specified language." class="v1-9 lang-selector" 
+  href="http://api.jquery.com/lang-selector/" data-src="">
+				:lang()			</A></LI>
+  <LI><A title="Selects the last matched element." class="v1-0 last-selector" 
+  href="http://api.jquery.com/last-selector/" data-src="">				:last			</A></LI>
+  <LI><A title="Select all elements at an index less than index within the matched set." 
+  class="v1-0 lt-selector" href="http://api.jquery.com/lt-selector/" 
+  data-src="">				:lt()			</A></LI>
+  <LI><A title="Selects all elements that do not match the given selector." 
+  class="v1-0 not-selector" href="http://api.jquery.com/not-selector/" data-src="">
+  				:not()			</A></LI>
+  <LI><A title="Selects odd elements, zero-indexed. See also even." class="v1-0 odd-selector" 
+  href="http://api.jquery.com/odd-selector/" data-src="">				:odd			</A></LI>
+  <LI><A title="Selects the element that is the root of the document." class="v1-9 root-selector" 
+  href="http://api.jquery.com/root-selector/" data-src="">				:root			</A></LI>
+  <LI><A title="Selects the target element indicated by the fragment identifier of the document's URI." 
+  class="v1-9 target-selector" href="http://api.jquery.com/target-selector/" 
+  data-src="">				:target			</A></LI></UL></SECTION><SECTION>
+<H2>Content Filters</H2>
+<UL>
+  <LI><A title="Select all elements that contain the specified text." class="v1-1-4 contains-selector" 
+  href="http://api.jquery.com/contains-selector/" data-src="">
+  				:contains()			</A></LI>
+  <LI><A title="Select all elements that have no children (including text nodes)." 
+  class="v1-0 empty-selector" href="http://api.jquery.com/empty-selector/" 
+  data-src="">				:empty			</A></LI>
+  <LI><A title="Selects elements which contain at least one element that matches the specified selector." 
+  class="v1-1-4 has-selector" href="http://api.jquery.com/has-selector/" 
+  data-src="">				:has()			</A></LI>
+  <LI><A title="Select all elements that are the parent of another element, including text nodes." 
+  class="v1-0 parent-selector" href="http://api.jquery.com/parent-selector/" 
+  data-src="">				:parent			</A></LI></UL></SECTION></DIV>
+<DIV><SECTION>
+<H2>Visibility Filters</H2>
+<UL>
+  <LI><A title="Selects all elements that are hidden." class="v1-0 hidden-selector" 
+  href="http://api.jquery.com/hidden-selector/" data-src="">
+  				:hidden			</A></LI>
+  <LI><A title="Selects all elements that are visible." class="v1-0 visible-selector" 
+  href="http://api.jquery.com/visible-selector/" data-src="">
+  				:visible			</A></LI></UL></SECTION><SECTION>
+<H2>Attribute</H2>
+<UL>
+  <LI><A title="Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-)." 
+  class="v1-0 attribute-contains-prefix-selector" href="http://api.jquery.com/attribute-contains-prefix-selector/" 
+  data-src="">				[name|="value"]			</A></LI>
+  <LI><A title="Selects elements that have the specified attribute with a value containing the a given substring." 
+  class="v1-0 attribute-contains-selector" href="http://api.jquery.com/attribute-contains-selector/" 
+  data-src="">				[name*="value"]			</A></LI>
+  <LI><A title="Selects elements that have the specified attribute with a value containing a given word, delimited by spaces." 
+  class="v1-0 attribute-contains-word-selector" href="http://api.jquery.com/attribute-contains-word-selector/" 
+  data-src="">				[name~="value"]			</A></LI>
+  <LI><A title="Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive." 
+  class="v1-0 attribute-ends-with-selector" href="http://api.jquery.com/attribute-ends-with-selector/" 
+  data-src="">				[name$="value"]			</A></LI>
+  <LI><A title="Selects elements that have the specified attribute with a value exactly equal to a certain value." 
+  class="v1-0 attribute-equals-selector" href="http://api.jquery.com/attribute-equals-selector/" 
+  data-src="">				[name="value"]			</A></LI>
+  <LI><A title="Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value." 
+  class="v1-0 attribute-not-equal-selector" href="http://api.jquery.com/attribute-not-equal-selector/" 
+  data-src="">				[name!="value"]			</A></LI>
+  <LI><A title="Selects elements that have the specified attribute with a value beginning exactly with a given string." 
+  class="v1-0 attribute-starts-with-selector" href="http://api.jquery.com/attribute-starts-with-selector/" 
+  data-src="">				[name^="value"]			</A></LI>
+  <LI><A title="Selects elements that have the specified attribute, with any value." 
+  class="v1-0 has-attribute-selector" href="http://api.jquery.com/has-attribute-selector/" 
+  data-src="">				[name]			</A></LI>
+  <LI><A title="Matches elements that match all of the specified attribute filters." 
+  class="v1-0 multiple-attribute-selector" href="http://api.jquery.com/multiple-attribute-selector/" 
+  data-src="">
+				[name="value"][name2="value2"]			</A></LI></UL></SECTION><SECTION>
+<H2>Child Filters</H2>
+<UL>
+  <LI><A title="Selects all elements that are the first child of their parent." 
+  class="v1-1-4 first-child-selector" href="http://api.jquery.com/first-child-selector/" 
+  data-src="">				:first-child			</A></LI>
+  <LI><A title="Selects all elements that are the first among siblings of the same element name." 
+  class="v1-9 first-of-type-selector" href="http://api.jquery.com/first-of-type-selector/" 
+  data-src="">				:first-of-type			</A></LI>
+  <LI><A title="Selects all elements that are the last child of their parent." 
+  class="v1-1-4 last-child-selector" href="http://api.jquery.com/last-child-selector/" 
+  data-src="">				:last-child			</A></LI>
+  <LI><A title="Selects all elements that are the last among siblings of the same element name." 
+  class="v1-9 last-of-type-selector" href="http://api.jquery.com/last-of-type-selector/" 
+  data-src="">				:last-of-type			</A></LI>
+  <LI><A title="Selects all elements that are the nth-child of their parent." 
+  class="v1-1-4 nth-child-selector" href="http://api.jquery.com/nth-child-selector/" 
+  data-src="">				:nth-child()			</A></LI>
+  <LI><A title="Selects all elements that are the nth-child of their parent, counting from the last element to the first." 
+  class="v1-9 nth-last-child-selector" href="http://api.jquery.com/nth-last-child-selector/" 
+  data-src="">				:nth-last-child()			</A></LI>
+  <LI><A title="Selects all elements that are the nth-child of their parent, counting from the last element to the first." 
+  class="v1-9 nth-last-of-type-selector" href="http://api.jquery.com/nth-last-of-type-selector/" 
+  data-src="">				:nth-last-of-type()			</A></LI>
+  <LI><A title="Selects all elements that are the nth child of their parent in relation to siblings with the same element name." 
+  class="v1-9 nth-of-type-selector" href="http://api.jquery.com/nth-of-type-selector/" 
+  data-src="">				:nth-of-type()			</A></LI>
+  <LI><A title="Selects all elements that are the only child of their parent." 
+  class="v1-1-4 only-child-selector" href="http://api.jquery.com/only-child-selector/" 
+  data-src="">				:only-child			</A></LI>
+  <LI><A title="Selects all elements that have no siblings with the same element name." 
+  class="v1-9 only-of-type-selector" href="http://api.jquery.com/only-of-type-selector/" 
+  data-src="">				:only-of-type()			</A></LI></UL></SECTION></DIV>
+<DIV><SECTION>
+<H2>Forms</H2>
+<UL>
+  <LI><A title="Selects all button elements and elements of type button." class="v1-0 button-selector" 
+  href="http://api.jquery.com/button-selector/" data-src="">
+  				:button			</A></LI>
+  <LI><A title="Selects all elements of type checkbox." class="v1-0 checkbox-selector" 
+  href="http://api.jquery.com/checkbox-selector/" data-src="">
+  				:checkbox			</A></LI>
+  <LI><A title="Matches all elements that are checked." class="v1-0 checked-selector" 
+  href="http://api.jquery.com/checked-selector/" data-src="">
+  				:checked			</A></LI>
+  <LI><A title="Selects all elements that are disabled." class="v1-0 disabled-selector" 
+  href="http://api.jquery.com/disabled-selector/" data-src="">
+  				:disabled			</A></LI>
+  <LI><A title="Selects all elements that are enabled." class="v1-0 enabled-selector" 
+  href="http://api.jquery.com/enabled-selector/" data-src="">
+  				:enabled			</A></LI>
+  <LI><A title="Selects element if it is currently focused." class="v1-6 focus-selector" 
+  href="http://api.jquery.com/focus-selector/" data-src="">
+				:focus			</A></LI>
+  <LI><A title="Selects all elements of type file." class="v1-0 file-selector" 
+  href="http://api.jquery.com/file-selector/" data-src="">				:file			</A></LI>
+  <LI><A title="Selects all elements of type image." class="v1-0 image-selector" 
+  href="http://api.jquery.com/image-selector/" data-src="">
+				:image			</A></LI>
+  <LI><A title="Selects all input, textarea, select and button elements." class="v1-0 input-selector" 
+  href="http://api.jquery.com/input-selector/" data-src="">
+				:input			</A></LI>
+  <LI><A title="Selects all elements of type password." class="v1-0 password-selector" 
+  href="http://api.jquery.com/password-selector/" data-src="">
+  				:password			</A></LI>
+  <LI><A title="Selects all elements of type radio." class="v1-0 radio-selector" 
+  href="http://api.jquery.com/radio-selector/" data-src="">
+				:radio			</A></LI>
+  <LI><A title="Selects all elements of type reset." class="v1-0 reset-selector" 
+  href="http://api.jquery.com/reset-selector/" data-src="">
+				:reset			</A></LI>
+  <LI><A title="Selects all elements that are selected." class="v1-0 selected-selector" 
+  href="http://api.jquery.com/selected-selector/" data-src="">
+  				:selected			</A></LI>
+  <LI><A title="Selects all elements of type submit." class="v1-0 submit-selector" 
+  href="http://api.jquery.com/submit-selector/" data-src="">
+  				:submit			</A></LI>
+  <LI><A title="Selects all elements of type text." class="v1-0 text-selector" 
+  href="http://api.jquery.com/text-selector/" data-src="">
+				:text			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE class="attributes" 
+id="attributes">
+<H1>Attributes / CSS</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Attributes</H2>
+<UL>
+  <LI><A title="Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element." 
+  class="v1-0 attr" href="http://api.jquery.com/attr/" 
+  data-src="jQuery.fn.attr">				.attr()			</A></LI>
+  <LI><A title="Get the value of a property for the first element in the set of matched elements or set one or more properties for every matched element." 
+  class="v1-6 prop" href="http://api.jquery.com/prop/" 
+  data-src="jQuery.fn.prop">				.prop()			</A></LI>
+  <LI><A title="Remove an attribute from each element in the set of matched elements." 
+  class="v1-0 removeAttr" href="http://api.jquery.com/removeAttr/" data-src="jQuery.fn.removeAttr">
+  				.removeAttr()			</A></LI>
+  <LI><A title="Remove a property for the set of matched elements." class="v1-6 removeProp" 
+  href="http://api.jquery.com/removeProp/" data-src="jQuery.fn.removeProp">
+  				.removeProp()			</A></LI>
+  <LI><A title="Get the current value of the first element in the set of matched elements or set the value of every matched element." 
+  class="v1-0 val" href="http://api.jquery.com/val/" data-src="jQuery.fn.val">
+  				.val()			</A></LI></UL></SECTION><SECTION>
+<H2>CSS</H2>
+<UL>
+  <LI><A title="Adds the specified class(es) to each of the set of matched elements." 
+  class="v1-0 addClass" href="http://api.jquery.com/addClass/" data-src="jQuery.fn.addClass">
+  				.addClass()			</A></LI>
+  <LI><A title="Get the value of a style property for the first element in the set of matched elements or set one or more CSS properties for every matched element." 
+  class="v1-0 css" href="http://api.jquery.com/css/" data-src="jQuery.fn.css">
+  				.css()			</A></LI>
+  <LI><A title="Provides a way to hook directly into jQuery to override how particular CSS properties are retrieved or set. Amongst other uses, cssHooks can be used to create custom, browser-normalized properties for CSS3 features such as box-shadows and gradients." 
+  class="v1-4-3 jQuery-cssHooks" href="http://api.jquery.com/jQuery.cssHooks/" 
+  data-src="jQuery.cssHooks">				jQuery.cssHooks			</A></LI>
+  <LI><A title="Determine whether any of the matched elements are assigned the given class." 
+  class="v1-2 hasClass" href="http://api.jquery.com/hasClass/" data-src="jQuery.fn.hasClass">
+  				.hasClass()			</A></LI>
+  <LI><A title="Remove a single class, multiple classes, or all classes from each element in the set of matched elements." 
+  class="v1-0 removeClass" href="http://api.jquery.com/removeClass/" data-src="jQuery.fn.removeClass">
+  				.removeClass()			</A></LI>
+  <LI><A title="Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument." 
+  class="v1-0 toggleClass" href="http://api.jquery.com/toggleClass/" data-src="jQuery.fn.toggleClass">
+  				.toggleClass()			</A></LI></UL></SECTION><SECTION>
+<H2>Dimensions</H2>
+<UL>
+  <LI><A title="Get the current computed height for the first element in the set of matched elements or set the height of every matched element." 
+  class="v1-0 height" href="http://api.jquery.com/height/" data-src="jQuery.fn.height">
+  				.height()			</A></LI>
+  <LI><A title="Get the current computed height for the first element in the set of matched elements, including padding but not border." 
+  class="v1-2-6 innerHeight" href="http://api.jquery.com/innerHeight/" data-src="jQuery.fn.innerHeight">
+  				.innerHeight()			</A></LI>
+  <LI><A title="Get the current computed width for the first element in the set of matched elements, including padding but not border." 
+  class="v1-2-6 innerWidth" href="http://api.jquery.com/innerWidth/" data-src="jQuery.fn.innerWidth">
+  				.innerWidth()			</A></LI>
+  <LI><A title="Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin." 
+  class="v1-2-6 outerHeight" href="http://api.jquery.com/outerHeight/" data-src="jQuery.fn.outerHeight">
+  				.outerHeight()			</A></LI>
+  <LI><A title="Get the current computed width for the first element in the set of matched elements, including padding and border." 
+  class="v1-2-6 outerWidth" href="http://api.jquery.com/outerWidth/" data-src="jQuery.fn.outerWidth">
+  				.outerWidth()			</A></LI>
+  <LI><A title="Get the current computed width for the first element in the set of matched elements or set the width of every matched element." 
+  class="v1-0 width" href="http://api.jquery.com/width/" data-src="jQuery.fn.width">
+  				.width()			</A></LI></UL></SECTION><SECTION>
+<H2>Offset</H2>
+<UL>
+  <LI><A title="Get the current coordinates of the first element, or set the coordinates of every element, in the set of matched elements, relative to the document." 
+  class="v1-2 offset" href="http://api.jquery.com/offset/" data-src="jQuery.fn.offset">
+  				.offset()			</A></LI>
+  <LI><A title="Get the closest ancestor element that is positioned." class="v1-2-6 offsetParent" 
+  href="http://api.jquery.com/offsetParent/" data-src="jQuery.fn.offsetParent">
+  				.offsetParent()			</A></LI>
+  <LI><A title="Get the current coordinates of the first element in the set of matched elements, relative to the offset parent." 
+  class="v1-2 position" href="http://api.jquery.com/position/" data-src="jQuery.fn.position">
+  				.position()			</A></LI>
+  <LI><A title="Get the current horizontal position of the scroll bar for the first element in the set of matched elements or set the horizontal position of the scroll bar for every matched element." 
+  class="v1-2-6 scrollLeft" href="http://api.jquery.com/scrollLeft/" data-src="jQuery.fn.scrollLeft">
+  				.scrollLeft()			</A></LI>
+  <LI><A title="Get the current vertical position of the scroll bar for the first element in the set of matched elements or set the vertical position of the scroll bar for every matched element." 
+  class="v1-2-6 scrollTop" href="http://api.jquery.com/scrollTop/" data-src="jQuery.fn.scrollTop">
+  				.scrollTop()			</A></LI></UL></SECTION><SECTION>
+<H2>Data</H2>
+<UL>
+  <LI><A title="Store arbitrary data associated with the specified element and/or return the value that was set." 
+  class="v1-2-3 jQuery-data" href="http://api.jquery.com/jQuery.data/" data-src="jQuery.data">
+  				jQuery.data()			</A></LI>
+  <LI><A title="Store arbitrary data associated with the matched elements or return the value at the named data store for the first element in the set of matched elements." 
+  class="v1-2-3 data" href="http://api.jquery.com/data/" data-src="jQuery.fn.data">
+  				.data()			</A></LI>
+  <LI><A title="Determine whether an element has any jQuery data associated with it." 
+  class="v1-5 jQuery-hasData" href="http://api.jquery.com/jQuery.hasData/" 
+  data-src="jQuery.hasData">				jQuery.hasData()			</A></LI>
+  <LI><A title="Remove a previously-stored piece of data." class="v1-2-3 jQuery-removeData" 
+  href="http://api.jquery.com/jQuery.removeData/" data-src="jQuery.removeData">
+  				jQuery.removeData()			</A></LI>
+  <LI><A title="Remove a previously-stored piece of data." class="v1-2-3 removeData" 
+  href="http://api.jquery.com/removeData/" data-src="jQuery.fn.removeData">
+  				.removeData()			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE 
+class="manipulation" id="manipulation">
+<H1>Manipulation</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Copying</H2>
+<UL>
+  <LI><A title="Create a deep copy of the set of matched elements." class="v1-0 clone" 
+  href="http://api.jquery.com/clone/" data-src="jQuery.fn.clone">
+  				.clone()			</A></LI></UL></SECTION><SECTION>
+<H2>DOM Insertion, Around</H2>
+<UL>
+  <LI><A title="Wrap an HTML structure around each element in the set of matched elements." 
+  class="v1-0 wrap" href="http://api.jquery.com/wrap/" 
+  data-src="jQuery.fn.wrap">				.wrap()			</A></LI>
+  <LI><A title="Wrap an HTML structure around all elements in the set of matched elements." 
+  class="v1-2 wrapAll" href="http://api.jquery.com/wrapAll/" data-src="jQuery.fn.wrapAll">
+  				.wrapAll()			</A></LI>
+  <LI><A title="Wrap an HTML structure around the content of each element in the set of matched elements." 
+  class="v1-2 wrapInner" href="http://api.jquery.com/wrapInner/" data-src="jQuery.fn.wrapInner">
+  				.wrapInner()			</A></LI></UL></SECTION><SECTION>
+<H2>DOM Insertion, Inside</H2>
+<UL>
+  <LI><A title="Insert content, specified by the parameter, to the end of each element in the set of matched elements." 
+  class="v1-0 append" href="http://api.jquery.com/append/" data-src="jQuery.fn.append">
+  				.append()			</A></LI>
+  <LI><A title="Insert every element in the set of matched elements to the end of the target." 
+  class="v1-0 appendTo" href="http://api.jquery.com/appendTo/" data-src="jQuery.fn.appendTo">
+  				.appendTo()			</A></LI>
+  <LI><A title="Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element." 
+  class="v1-0 html" href="http://api.jquery.com/html/" 
+  data-src="jQuery.fn.html">				.html()			</A></LI>
+  <LI><A title="Insert content, specified by the parameter, to the beginning of each element in the set of matched elements." 
+  class="v1-0 prepend" href="http://api.jquery.com/prepend/" data-src="jQuery.fn.prepend">
+  				.prepend()			</A></LI>
+  <LI><A title="Insert every element in the set of matched elements to the beginning of the target." 
+  class="v1-0 prependTo" href="http://api.jquery.com/prependTo/" data-src="jQuery.fn.prependTo">
+  				.prependTo()			</A></LI>
+  <LI><A title="Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements." 
+  class="v1-0 text" href="http://api.jquery.com/text/" 
+  data-src="jQuery.fn.text">				.text()			</A></LI></UL></SECTION><SECTION>
+<H2>DOM Insertion, Outside</H2>
+<UL>
+  <LI><A title="Insert content, specified by the parameter, after each element in the set of matched elements." 
+  class="v1-0 after" href="http://api.jquery.com/after/" data-src="jQuery.fn.after">
+  				.after()			</A></LI>
+  <LI><A title="Insert content, specified by the parameter, before each element in the set of matched elements." 
+  class="v1-0 before" href="http://api.jquery.com/before/" data-src="jQuery.fn.before">
+  				.before()			</A></LI>
+  <LI><A title="Insert every element in the set of matched elements after the target." 
+  class="v1-0 insertAfter" href="http://api.jquery.com/insertAfter/" data-src="jQuery.fn.insertAfter">
+  				.insertAfter()			</A></LI>
+  <LI><A title="Insert every element in the set of matched elements before the target." 
+  class="v1-0 insertBefore" href="http://api.jquery.com/insertBefore/" data-src="jQuery.fn.insertBefore">
+  				.insertBefore()			</A></LI></UL></SECTION><SECTION>
+<H2>DOM Removal</H2>
+<UL>
+  <LI><A title="Remove the set of matched elements from the DOM." class="v1-4 detach" 
+  href="http://api.jquery.com/detach/" data-src="jQuery.fn.detach">
+  				.detach()			</A></LI>
+  <LI><A title="Remove all child nodes of the set of matched elements from the DOM." 
+  class="v1-0 empty" href="http://api.jquery.com/empty/" data-src="jQuery.fn.empty">
+  				.empty()			</A></LI>
+  <LI><A title="Remove the set of matched elements from the DOM." class="v1-0 remove" 
+  href="http://api.jquery.com/remove/" data-src="jQuery.fn.remove">
+  				.remove()			</A></LI>
+  <LI><A title="Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place." 
+  class="v1-4 unwrap" href="http://api.jquery.com/unwrap/" data-src="jQuery.fn.unwrap">
+  				.unwrap()			</A></LI></UL></SECTION><SECTION>
+<H2>DOM Replacement</H2>
+<UL>
+  <LI><A title="Replace each target element with the set of matched elements." 
+  class="v1-2 replaceAll" href="http://api.jquery.com/replaceAll/" data-src="jQuery.fn.replaceAll">
+  				.replaceAll()			</A></LI>
+  <LI><A title="Replace each element in the set of matched elements with the provided new content." 
+  class="v1-2 replaceWith" href="http://api.jquery.com/replaceWith/" data-src="jQuery.fn.replaceWith">
+  				.replaceWith()			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE 
+class="traversing" id="traversing">
+<H1>Traversing</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Filtering</H2>
+<UL>
+  <LI><A title="Reduce the set of matched elements to the one at the specified index." 
+  class="v1-1-2 eq" href="http://api.jquery.com/eq/" data-src="jQuery.fn.eq">
+  				.eq()			</A></LI>
+  <LI><A title="Reduce the set of matched elements to those that match the selector or pass the function's test." 
+  class="v1-0 filter" href="http://api.jquery.com/filter/" data-src="jQuery.fn.filter">
+  				.filter()			</A></LI>
+  <LI><A title="Reduce the set of matched elements to the first in the set." 
+  class="v1-4 first" href="http://api.jquery.com/first/" data-src="jQuery.fn.first">
+  				.first()			</A></LI>
+  <LI><A title="Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element." 
+  class="v1-4 has" href="http://api.jquery.com/has/" data-src="jQuery.fn.has">
+  				.has()			</A></LI>
+  <LI><A title="Check the current matched set of elements against a selector and return true if at least one of these elements matches the selector." 
+  class="v1-0 is" href="http://api.jquery.com/is/" data-src="jQuery.fn.is">
+  				.is()			</A></LI>
+  <LI><A title="Reduce the set of matched elements to the final one in the set." 
+  class="v1-4 last" href="http://api.jquery.com/last/" 
+  data-src="jQuery.fn.last">				.last()			</A></LI>
+  <LI><A title="Pass each element in the current matched set through a function, producing a new jQuery object containing the return values." 
+  class="v1-2 map" href="http://api.jquery.com/map/" data-src="jQuery.fn.map">
+  				.map()			</A></LI>
+  <LI><A title="Remove elements from the set of matched elements." class="v1-0 not" 
+  href="http://api.jquery.com/not/" data-src="jQuery.fn.not">
+  				.not()			</A></LI>
+  <LI><A title="Reduce the set of matched elements to a subset specified by a range of indices." 
+  class="v1-1-4 slice" href="http://api.jquery.com/slice/" data-src="jQuery.fn.slice">
+  				.slice()			</A></LI></UL></SECTION><SECTION>
+<H2>Miscellaneous Traversing</H2>
+<UL>
+  <LI><A title="Add elements to the set of matched elements." class="v1-0 add" 
+  href="http://api.jquery.com/add/" data-src="jQuery.fn.add">
+  				.add()			</A></LI>
+  <LI><A title="Add the previous set of elements on the stack to the current set." 
+  class="v1-2 andSelf v1-8'-d" href="http://api.jquery.com/andSelf/" data-src="jQuery.fn.andSelf">
+  				.andSelf()			</A></LI>
+  <LI><A title="Get the children of each element in the set of matched elements, including text and comment nodes." 
+  class="v1-2 contents" href="http://api.jquery.com/contents/" data-src="jQuery.fn.contents">
+  				.contents()			</A></LI>
+  <LI><A title="Iterate over a jQuery object, executing a function for each matched element." 
+  class="v1-0 each" href="http://api.jquery.com/each/" 
+  data-src="jQuery.fn.each">				.each()			</A></LI>
+  <LI><A title="End the most recent filtering operation in the current chain and return the set of matched elements to its previous state." 
+  class="v1-0 end" href="http://api.jquery.com/end/" data-src="jQuery.fn.end">
+  				.end()			</A></LI></UL></SECTION><SECTION>
+<H2>Tree Traversal</H2>
+<UL>
+  <LI><A title="Add the previous set of elements on the stack to the current set, optionally filtered by a selector." 
+  class="v1-8 addBack" href="http://api.jquery.com/addBack/" data-src="jQuery.fn.addBack">
+  				.addBack()			</A></LI>
+  <LI><A title="Get the children of each element in the set of matched elements, optionally filtered by a selector." 
+  class="v1-0 children" href="http://api.jquery.com/children/" data-src="jQuery.fn.children">
+  				.children()			</A></LI>
+  <LI><A title="Get the first ancestor element that matches the selector, beginning at the current element and progressing up through the DOM tree." 
+  class="v1-3 closest" href="http://api.jquery.com/closest/" data-src="jQuery.fn.closest">
+  				.closest()			</A></LI>
+  <LI><A title="Get the descendants of each element in the current set of matched elements, filtered by a selector." 
+  class="v1-0 find" href="http://api.jquery.com/find/" 
+  data-src="jQuery.fn.find">				.find()			</A></LI>
+  <LI><A title="Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector." 
+  class="v1-0 next" href="http://api.jquery.com/next/" 
+  data-src="jQuery.fn.next">				.next()			</A></LI>
+  <LI><A title="Get all following siblings of each element in the set of matched elements, optionally filtered by a selector." 
+  class="v1-2 nextAll" href="http://api.jquery.com/nextAll/" data-src="jQuery.fn.nextAll">
+  				.nextAll()			</A></LI>
+  <LI><A title="Get all following siblings of each element up to but not including the element matched by the selector." 
+  class="v1-4 nextUntil" href="http://api.jquery.com/nextUntil/" data-src="jQuery.fn.nextUntil">
+  				.nextUntil()			</A></LI>
+  <LI><A title="Get the parent of each element in the current set of matched elements, optionally filtered by a selector." 
+  class="v1-0 parent" href="http://api.jquery.com/parent/" data-src="jQuery.fn.parent">
+  				.parent()			</A></LI>
+  <LI><A title="Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector." 
+  class="v1-0 parents" href="http://api.jquery.com/parents/" data-src="jQuery.fn.parents">
+  				.parents()			</A></LI>
+  <LI><A title="Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector." 
+  class="v1-4 parentsUntil" href="http://api.jquery.com/parentsUntil/" data-src="jQuery.fn.parentsUntil">
+  				.parentsUntil()			</A></LI>
+  <LI><A title="Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector." 
+  class="v1-0 prev" href="http://api.jquery.com/prev/" 
+  data-src="jQuery.fn.prev">				.prev()			</A></LI>
+  <LI><A title="Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector." 
+  class="v1-2 prevAll" href="http://api.jquery.com/prevAll/" data-src="jQuery.fn.prevAll">
+  				.prevAll()			</A></LI>
+  <LI><A title="Get all preceding siblings of each element up to but not including the element matched by the selector." 
+  class="v1-4 prevUntil" href="http://api.jquery.com/prevUntil/" data-src="jQuery.fn.prevUntil">
+  				.prevUntil()			</A></LI>
+  <LI><A title="Get the siblings of each element in the set of matched elements, optionally filtered by a selector." 
+  class="v1-0 siblings" href="http://api.jquery.com/siblings/" data-src="jQuery.fn.siblings">
+  				.siblings()			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE class="events" 
+id="events">
+<H1>Events</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Browser Events</H2>
+<UL>
+  <LI><A title="Bind an event handler to the 'error' JavaScript event." class="v1-0 error v1-8-d" 
+  href="http://api.jquery.com/error/" data-src="jQuery.fn.error">
+  				.error()			</A></LI>
+  <LI><A title="Bind an event handler to the 'resize' JavaScript event, or trigger that event on an element." 
+  class="v1-0 resize" href="http://api.jquery.com/resize/" data-src="jQuery.fn.resize">
+  				.resize()			</A></LI>
+  <LI><A title="Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element." 
+  class="v1-0 scroll" href="http://api.jquery.com/scroll/" data-src="jQuery.fn.scroll">
+  				.scroll()			</A></LI></UL></SECTION><SECTION>
+<H2>Document Loading</H2>
+<UL>
+  <LI><A title="Holds or releases the execution of jQuery's ready event." class="v1-6 jQuery-holdReady" 
+  href="http://api.jquery.com/jQuery.holdReady/" data-src="jQuery.holdReady">
+  				.holdReady()			</A></LI>
+  <LI><A title="Bind an event handler to the 'load' JavaScript event." class="v1-0 load-event v1-8-d" 
+  href="http://api.jquery.com/load-event/" data-src="jQuery.fn.load">
+  				.load()			</A></LI>
+  <LI><A title="Specify a function to execute when the DOM is fully loaded." 
+  class="v1-0 ready" href="http://api.jquery.com/ready/" data-src="jQuery.fn.ready">
+  				.ready()			</A></LI>
+  <LI><A title="Bind an event handler to the 'unload' JavaScript event." class="v1-0 unload v1-8-d" 
+  href="http://api.jquery.com/unload/" data-src="jQuery.fn.unload">
+  				.unload()			</A></LI></UL></SECTION><SECTION>
+<H2>Event Handler Attachment</H2>
+<UL>
+  <LI><A title="Attach a handler to an event for the elements." class="v1-0 bind" 
+  href="http://api.jquery.com/bind/" data-src="jQuery.fn.bind">
+  				.bind()			</A></LI>
+  <LI><A title="Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements." 
+  class="v1-4-2 delegate" href="http://api.jquery.com/delegate/" data-src="jQuery.fn.delegate">
+  				.delegate()			</A></LI>
+  <LI><A title="Remove all event handlers previously attached using .live() from the elements." 
+  class="v1-3 die v1-7-d v1-9-r" href="http://api.jquery.com/die/" data-src="jQuery.fn.die">
+  				.die()			</A></LI>
+  <LI><A title="Attach a handler to the event for all elements which match the current selector, now and in the future." 
+  class="v1-3 live v1-7-d v1-9-r" href="http://api.jquery.com/live/" data-src="jQuery.fn.live">
+  				.live()			</A></LI>
+  <LI><A title="Remove an event handler." class="v1-7 off" href="http://api.jquery.com/off/" 
+  data-src="jQuery.fn.off">				.off()			</A></LI>
+  <LI><A title="Attach an event handler function for one or more events to the selected elements." 
+  class="v1-7 on" href="http://api.jquery.com/on/" data-src="jQuery.fn.on">
+  				.on()			</A></LI>
+  <LI><A title="Attach a handler to an event for the elements. The handler is executed at most once per element." 
+  class="v1-1 one" href="http://api.jquery.com/one/" data-src="jQuery.fn.one">
+  				.one()			</A></LI>
+  <LI><A title="Execute all handlers and behaviors attached to the matched elements for the given event type." 
+  class="v1-0 trigger" href="http://api.jquery.com/trigger/" data-src="jQuery.fn.trigger">
+  				.trigger()			</A></LI>
+  <LI><A title="Execute all handlers attached to an element for an event." 
+  class="v1-2 triggerHandler" href="http://api.jquery.com/triggerHandler/" 
+  data-src="jQuery.fn.triggerHandler">				.triggerHandler()			</A></LI>
+  <LI><A title="Remove a previously-attached event handler from the elements." 
+  class="v1-0 unbind" href="http://api.jquery.com/unbind/" data-src="jQuery.fn.unbind">
+  				.unbind()			</A></LI>
+  <LI><A title="Remove a handler from the event for all elements which match the current selector, now or in the future, based upon a specific set of root elements." 
+  class="v1-4-2 undelegate" href="http://api.jquery.com/undelegate/" data-src="jQuery.fn.undelegate">
+  				.undelegate()			</A></LI></UL></SECTION><SECTION>
+<H2>Form Events</H2>
+<UL>
+  <LI><A title="Bind an event handler to the 'blur' JavaScript event, or trigger that event on an element." 
+  class="v1-0 blur" href="http://api.jquery.com/blur/" 
+  data-src="jQuery.fn.blur">				.blur()			</A></LI>
+  <LI><A title="Bind an event handler to the 'change' JavaScript event, or trigger that event on an element." 
+  class="v1-0 change" href="http://api.jquery.com/change/" data-src="jQuery.fn.change">
+  				.change()			</A></LI>
+  <LI><A title="Bind an event handler to the 'focus' JavaScript event, or trigger that event on an element." 
+  class="v1-0 focus" href="http://api.jquery.com/focus/" data-src="jQuery.fn.focus">
+  				.focus()			</A></LI>
+  <LI><A title="Bind an event handler to the 'select' JavaScript event, or trigger that event on an element." 
+  class="v1-0 select" href="http://api.jquery.com/select/" data-src="jQuery.fn.select">
+  				.select()			</A></LI>
+  <LI><A title="Bind an event handler to the 'submit' JavaScript event, or trigger that event on an element." 
+  class="v1-0 submit" href="http://api.jquery.com/submit/" data-src="jQuery.fn.submit">
+  				.submit()			</A></LI></UL></SECTION><SECTION>
+<H2>Keyboard Events</H2>
+<UL>
+  <LI><A title="Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element." 
+  class="v1-0 keydown" href="http://api.jquery.com/keydown/" data-src="jQuery.fn.keydown">
+  				.keydown()			</A></LI>
+  <LI><A title="Bind an event handler to the 'keypress' JavaScript event, or trigger that event on an element." 
+  class="v1-0 keypress" href="http://api.jquery.com/keypress/" data-src="jQuery.fn.keypress">
+  				.keypress()			</A></LI>
+  <LI><A title="Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element." 
+  class="v1-0 keyup" href="http://api.jquery.com/keyup/" data-src="jQuery.fn.keyup">
+  				.keyup()			</A></LI></UL></SECTION></DIV>
+<DIV><SECTION>
+<H2>Mouse Events</H2>
+<UL>
+  <LI><A title="Bind an event handler to the 'click' JavaScript event, or trigger that event on an element." 
+  class="v1-0 click" href="http://api.jquery.com/click/" data-src="jQuery.fn.click">
+  				.click()			</A></LI>
+  <LI><A title="Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element." 
+  class="v1-0 dblclick" href="http://api.jquery.com/dblclick/" data-src="jQuery.fn.dblclick">
+  				.dblclick()			</A></LI>
+  <LI><A title="Bind an event handler to the 'focusin' JavaScript event." class="v1-4 focusin" 
+  href="http://api.jquery.com/focusin/" data-src="jQuery.fn.focusin">
+  				.focusin()			</A></LI>
+  <LI><A title="Bind an event handler to the 'focusout' JavaScript event." 
+  class="v1-4 focusout" href="http://api.jquery.com/focusout/" data-src="jQuery.fn.focusout">
+  				.focusout()			</A></LI>
+  <LI><A title="Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements." 
+  class="v1-0 hover" href="http://api.jquery.com/hover/" data-src="jQuery.fn.hover">
+  				.hover()			</A></LI>
+  <LI><A title="Bind an event handler to the 'mousedown' JavaScript event, or trigger that event on an element." 
+  class="v1-0 mousedown" href="http://api.jquery.com/mousedown/" data-src="jQuery.fn.mousedown">
+  				.mousedown()			</A></LI>
+  <LI><A title="Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element." 
+  class="v1-0 mouseenter" href="http://api.jquery.com/mouseenter/" data-src="jQuery.fn.mouseenter">
+  				.mouseenter()			</A></LI>
+  <LI><A title="Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element." 
+  class="v1-0 mouseleave" href="http://api.jquery.com/mouseleave/" data-src="jQuery.fn.mouseleave">
+  				.mouseleave()			</A></LI>
+  <LI><A title="Bind an event handler to the 'mousemove' JavaScript event, or trigger that event on an element." 
+  class="v1-0 mousemove" href="http://api.jquery.com/mousemove/" data-src="jQuery.fn.mousemove">
+  				.mousemove()			</A></LI>
+  <LI><A title="Bind an event handler to the 'mouseout' JavaScript event, or trigger that event on an element." 
+  class="v1-0 mouseout" href="http://api.jquery.com/mouseout/" data-src="jQuery.fn.mouseout">
+  				.mouseout()			</A></LI>
+  <LI><A title="Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element." 
+  class="v1-0 mouseover" href="http://api.jquery.com/mouseover/" data-src="jQuery.fn.mouseover">
+  				.mouseover()			</A></LI>
+  <LI><A title="Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element." 
+  class="v1-0 mouseup" href="http://api.jquery.com/mouseup/" data-src="jQuery.fn.mouseup">
+  				.mouseup()			</A></LI>
+  <LI><A title="Bind two or more handlers to the matched elements, to be executed on alternate clicks." 
+  class="v1-0 toggle-event v1-8-d v1-9-r" href="http://api.jquery.com/toggle-event/" 
+  data-src="jQuery.fn.toggle">				.toggle()			</A></LI></UL></SECTION><SECTION>
+<H2>Event Object</H2>
+<UL>
+  <LI><A title="The current DOM element within the event bubbling phase." class="v1-3 event-currentTarget" 
+  href="http://api.jquery.com/event.currentTarget/" data-src="">
+  				event.currentTarget			</A></LI>
+  <LI><A title="The optional data passed to jQuery.fn.bind when the current executing handler was bound." 
+  class="v1-1 event-data" href="http://api.jquery.com/event.data/" data-src="">
+  				event.data			</A></LI>
+  <LI><A title="Returns whether event.preventDefault() was ever called on this event object." 
+  class="v1-3 event-isDefaultPrevented" href="http://api.jquery.com/event.isDefaultPrevented/" 
+  data-src="">				event.isDefaultPrevented()			</A></LI>
+  <LI><A title="Returns whether event.stopImmediatePropagation() was ever called on this event object." 
+  class="v1-3 event-isImmediatePropagationStopped" href="http://api.jquery.com/event.isImmediatePropagationStopped/" 
+  data-src="">				event.isImmediatePropagationStopped()			</A></LI>
+  <LI><A title="Returns whether event.stopPropagation() was ever called on this event object." 
+  class="v1-3 event-isPropagationStopped" href="http://api.jquery.com/event.isPropagationStopped/" 
+  data-src="">				event.isPropagationStopped()			</A></LI>
+  <LI><A title="The namespace specified when the event was triggered." class="v1-4-3 event-namespace" 
+  href="http://api.jquery.com/event.namespace/" data-src="">
+  				event.namespace			</A></LI>
+  <LI><A title="The mouse position relative to the left edge of the document." 
+  class="v1-0-4 event-pageX" href="http://api.jquery.com/event.pageX/" data-src="">
+  				event.pageX			</A></LI>
+  <LI><A title="The mouse position relative to the top edge of the document." 
+  class="v1-0-4 event-pageY" href="http://api.jquery.com/event.pageY/" data-src="">
+  				event.pageY			</A></LI>
+  <LI><A title="If this method is called, the default action of the event will not be triggered." 
+  class="v1-0 event-preventDefault" href="http://api.jquery.com/event.preventDefault/" 
+  data-src="">				event.preventDefault()			</A></LI>
+  <LI><A title="The other DOM element involved in the event, if any." class="v1-1-4 event-relatedTarget" 
+  href="http://api.jquery.com/event.relatedTarget/" data-src="">
+  				event.relatedTarget			</A></LI>
+  <LI><A title="The last value returned by an event handler that was triggered by this event, unless the value was undefined." 
+  class="v1-3 event-result" href="http://api.jquery.com/event.result/" data-src="">
+  				event.result			</A></LI>
+  <LI><A title="Prevents other event handlers from being called." class="v1-3 event-stopImmediatePropagation" 
+  href="http://api.jquery.com/event.stopImmediatePropagation/" data-src="">
+  				event.stopImmediatePropagation()			</A></LI>
+  <LI><A title="Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event." 
+  class="v1-0 event-stopPropagation" href="http://api.jquery.com/event.stopPropagation/" 
+  data-src="">				event.stopPropagation()			</A></LI>
+  <LI><A title="The DOM element that initiated the event." class="v1-0 event-target" 
+  href="http://api.jquery.com/event.target/" data-src="">
+  				event.target			</A></LI>
+  <LI><A title="The difference in milliseconds between the time an event is triggered and January 1, 1970." 
+  class="v1-2-6 event-timeStamp" href="http://api.jquery.com/event.timeStamp/" 
+  data-src="">				event.timeStamp			</A></LI>
+  <LI><A title="Describes the nature of the event." class="v1-0 event-type" 
+  href="http://api.jquery.com/event.type/" data-src="">
+				event.type			</A></LI>
+  <LI><A title="For key or button events, this attribute indicates the specific button or key that was pressed." 
+  class="v1-1-3 event-which" href="http://api.jquery.com/event.which/" data-src="">
+  				event.which			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE class="effects" 
+id="effects">
+<H1>Effects</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Basics</H2>
+<UL>
+  <LI><A title="Hide the matched elements." class="v1-0 hide" href="http://api.jquery.com/hide/" 
+  data-src="jQuery.fn.hide">				.hide()			</A></LI>
+  <LI><A title="Display the matched elements." class="v1-0 show" href="http://api.jquery.com/show/" 
+  data-src="jQuery.fn.show">				.show()			</A></LI>
+  <LI><A title="Display or hide the matched elements." class="v1-0 toggle" href="http://api.jquery.com/toggle/" 
+  data-src="jQuery.fn.toggle">				.toggle()			</A></LI></UL></SECTION><SECTION>
+<H2>Custom</H2>
+<UL>
+  <LI><A title="Perform a custom animation of a set of CSS properties." class="v1-0 animate" 
+  href="http://api.jquery.com/animate/" data-src="jQuery.fn.animate">
+  				.animate()			</A></LI>
+  <LI><A title="Remove from the queue all items that have not yet been run." 
+  class="v1-4 clearQueue" href="http://api.jquery.com/clearQueue/" data-src="jQuery.fn.clearQueue">
+  				.clearQueue()			</A></LI>
+  <LI><A title="Set a timer to delay execution of subsequent items in the queue." 
+  class="v1-4 delay" href="http://api.jquery.com/delay/" data-src="jQuery.fn.delay">
+  				.delay()			</A></LI>
+  <LI><A title="Execute the next function on the queue for the matched elements." 
+  class="v1-2 dequeue" href="http://api.jquery.com/dequeue/" data-src="jQuery.fn.dequeue">
+  				.dequeue()			</A></LI>
+  <LI><A title="Execute the next function on the queue for the matched element." 
+  class="v1-3 jQuery-dequeue" href="http://api.jquery.com/jQuery.dequeue/" 
+  data-src="jQuery.dequeue">				jQuery.dequeue()			</A></LI>
+  <LI><A title="Stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements." 
+  class="v1-9 finish" href="http://api.jquery.com/finish/" data-src="jQuery.fn.finish">
+  				.finish()			</A></LI>
+  <LI><A title="The rate (in milliseconds) at which animations fire." class="v1-4-3 jQuery-fx-interval" 
+  href="http://api.jquery.com/jQuery.fx.interval/" 
+  data-src="jQuery.fx.interval">				jQuery.fx.interval			</A></LI>
+  <LI><A title="Globally disable all animations." class="v1-3 jQuery-fx-off" 
+  href="http://api.jquery.com/jQuery.fx.off/" data-src="jQuery.fx.off">
+  				jQuery.fx.off			</A></LI>
+  <LI><A title="Show or manipulate the queue of functions to be executed on the matched elements." 
+  class="v1-2 queue" href="http://api.jquery.com/queue/" data-src="jQuery.fn.queue">
+  				.queue()			</A></LI>
+  <LI><A title="Show or manipulate the queue of functions to be executed on the matched element." 
+  class="v1-3 jQuery-queue" href="http://api.jquery.com/jQuery.queue/" data-src="jQuery.queue">
+  				jQuery.queue()			</A></LI>
+  <LI><A title="Stop the currently-running animation on the matched elements." 
+  class="v1-2 stop" href="http://api.jquery.com/stop/" 
+  data-src="jQuery.fn.stop">				.stop()			</A></LI></UL></SECTION><SECTION>
+<H2>Fading</H2>
+<UL>
+  <LI><A title="Display the matched elements by fading them to opaque." class="v1-0 fadeIn" 
+  href="http://api.jquery.com/fadeIn/" data-src="jQuery.fn.fadeIn">
+  				.fadeIn()			</A></LI>
+  <LI><A title="Hide the matched elements by fading them to transparent." class="v1-0 fadeOut" 
+  href="http://api.jquery.com/fadeOut/" data-src="jQuery.fn.fadeOut">
+  				.fadeOut()			</A></LI>
+  <LI><A title="Adjust the opacity of the matched elements." class="v1-0 fadeTo" 
+  href="http://api.jquery.com/fadeTo/" data-src="jQuery.fn.fadeTo">
+  				.fadeTo()			</A></LI>
+  <LI><A title="Display or hide the matched elements by animating their opacity." 
+  class="v1-4-4 fadeToggle" href="http://api.jquery.com/fadeToggle/" data-src="jQuery.fn.fadeToggle">
+  				.fadeToggle()			</A></LI></UL></SECTION><SECTION>
+<H2>Sliding</H2>
+<UL>
+  <LI><A title="Display the matched elements with a sliding motion." class="v1-0 slideDown" 
+  href="http://api.jquery.com/slideDown/" data-src="jQuery.fn.slideDown">
+  				.slideDown()			</A></LI>
+  <LI><A title="Display or hide the matched elements with a sliding motion." 
+  class="v1-0 slideToggle" href="http://api.jquery.com/slideToggle/" data-src="jQuery.fn.slideToggle">
+  				.slideToggle()			</A></LI>
+  <LI><A title="Hide the matched elements with a sliding motion." class="v1-0 slideUp" 
+  href="http://api.jquery.com/slideUp/" data-src="jQuery.fn.slideUp">
+  				.slideUp()			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE class="ajax" 
+id="ajax">
+<H1>Ajax</H1>
+<DIV>
+<DIV><SECTION>
+<H2>Global Ajax Event Handlers</H2>
+<UL>
+  <LI><A title="Register a handler to be called when Ajax requests complete. This is an Ajax Event." 
+  class="v1-0 ajaxComplete" href="http://api.jquery.com/ajaxComplete/" data-src="jQuery.fn.ajaxComplete">
+  				.ajaxComplete()			</A></LI>
+  <LI><A title="Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event." 
+  class="v1-0 ajaxError" href="http://api.jquery.com/ajaxError/" data-src="jQuery.fn.ajaxError">
+  				.ajaxError()			</A></LI>
+  <LI><A title="Attach a function to be executed before an Ajax request is sent. This is an Ajax Event." 
+  class="v1-0 ajaxSend" href="http://api.jquery.com/ajaxSend/" data-src="jQuery.fn.ajaxSend">
+  				.ajaxSend()			</A></LI>
+  <LI><A title="Register a handler to be called when the first Ajax request begins. This is an Ajax Event." 
+  class="v1-0 ajaxStart" href="http://api.jquery.com/ajaxStart/" data-src="jQuery.fn.ajaxStart">
+  				.ajaxStart()			</A></LI>
+  <LI><A title="Register a handler to be called when all Ajax requests have completed. This is an Ajax Event." 
+  class="v1-0 ajaxStop" href="http://api.jquery.com/ajaxStop/" data-src="jQuery.fn.ajaxStop">
+  				.ajaxStop()			</A></LI>
+  <LI><A title="Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event." 
+  class="v1-0 ajaxSuccess" href="http://api.jquery.com/ajaxSuccess/" data-src="jQuery.fn.ajaxSuccess">
+  				.ajaxSuccess()			</A></LI></UL></SECTION><SECTION>
+<H2>Helper Functions</H2>
+<UL>
+  <LI><A title="Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request." 
+  class="v1-2 jQuery-param" href="http://api.jquery.com/jQuery.param/" data-src="jQuery.param">
+  				jQuery.param()			</A></LI>
+  <LI><A title="Encode a set of form elements as a string for submission." 
+  class="v1-0 serialize" href="http://api.jquery.com/serialize/" data-src="jQuery.fn.serialize">
+  				.serialize()			</A></LI>
+  <LI><A title="Encode a set of form elements as an array of names and values." 
+  class="v1-2 serializeArray" href="http://api.jquery.com/serializeArray/" 
+  data-src="jQuery.fn.serializeArray">
+				.serializeArray()			</A></LI></UL></SECTION><SECTION>
+<H2>Low-Level Interface</H2>
+<UL>
+  <LI><A title="Perform an asynchronous HTTP (Ajax) request." class="v1-0 jQuery-ajax" 
+  href="http://api.jquery.com/jQuery.ajax/" data-src="jQuery.ajax">
+  				jQuery.ajax()			</A></LI>
+  <LI><A title="Set default values for future Ajax requests." class="v1-1 jQuery-ajaxSetup" 
+  href="http://api.jquery.com/jQuery.ajaxSetup/" data-src="jQuery.ajaxSetup">
+  				jQuery.ajaxSetup()			</A></LI></UL></SECTION><SECTION>
+<H2>Shorthand Methods</H2>
+<UL>
+  <LI><A title="Load data from the server using a HTTP GET request." class="v1-0 jQuery-get" 
+  href="http://api.jquery.com/jQuery.get/" data-src="jQuery.get">
+  				jQuery.get()			</A></LI>
+  <LI><A title="Load JSON-encoded data from the server using a GET HTTP request." 
+  class="v1-0 jQuery-getJSON" href="http://api.jquery.com/jQuery.getJSON/" 
+  data-src="jQuery.getJSON">				jQuery.getJSON()			</A></LI>
+  <LI><A title="Load a JavaScript file from the server using a GET HTTP request, then execute it." 
+  class="v1-0 jQuery-getScript" href="http://api.jquery.com/jQuery.getScript/" 
+  data-src="jQuery.getScript">				jQuery.getScript()			</A></LI>
+  <LI><A title="Load data from the server and place the returned HTML into the matched element." 
+  class="v1-0 load" href="http://api.jquery.com/load/" 
+  data-src="jQuery.fn.load">				.load()			</A></LI>
+  <LI><A title="Load data from the server using a HTTP POST request." class="v1-0 jQuery-post" 
+  href="http://api.jquery.com/jQuery.post/" data-src="jQuery.post">
+  				jQuery.post()			</A></LI></UL></SECTION></DIV></DIV></ARTICLE><ARTICLE 
+class="core" id="core">
+<H1>Core</H1>
+<DIV>
+<DIV><SECTION>
+<H2>jQuery Object</H2>
+<UL>
+  <LI><A title="Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string." 
+  class="v1-0 jQuery" href="http://api.jquery.com/jQuery/" data-src="jQuery">
+  				jQuery()			</A></LI>
+  <LI><A title="Relinquish jQuery's control of the $ variable." class="v1-0 jQuery-noConflict" 
+  href="http://api.jquery.com/jQuery.noConflict/" data-src="jQuery.noConflict">
+  				jQuery.noConflict()			</A></LI>
+  <LI><A title="Creates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object." 
+  class="v1-5 jQuery-sub v1-7-d v1-9-r" href="http://api.jquery.com/jQuery.sub/" 
+  data-src="jQuery.sub">				jQuery.sub()			</A></LI>
+  <LI><A title="Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events." 
+  class="v1-5 jQuery-when" href="http://api.jquery.com/jQuery.when/" data-src="jQuery.when">
+  				jQuery.when()			</A></LI></UL></SECTION><SECTION>
+<H2>Utilities</H2>
+<UL>
+  <LI><A title="States if the current page, in the user's browser, is being rendered using the W3C CSS Box Model." 
+  class="v1-0 jQuery-boxModel v1-3-d" href="http://api.jquery.com/jQuery.boxModel/" 
+  data-src="jQuery.boxModel">				jQuery.boxModel			</A></LI>
+  <LI><A title="Contains flags for the useragent, read from navigator.userAgent. We recommend against using this property; please try to use feature detection instead (see jQuery.support). jQuery.browser may be moved to a plugin in a future release of jQuery." 
+  class="v1-0 jQuery-browser v1-3-d v1-9-r" href="http://api.jquery.com/jQuery.browser/" 
+  data-src="jQuery.browser">				jQuery.browser			</A></LI>
+  <LI><A title="Check to see if a DOM node is within another DOM node." class="v1-4 jQuery-contains" 
+  href="http://api.jquery.com/jQuery.contains/" data-src="jQuery.contains">
+  				jQuery.contains()			</A></LI>
+  <LI><A title="A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties." 
+  class="v1-0 jQuery-each" href="http://api.jquery.com/jQuery.each/" data-src="jQuery.each">
+  				jQuery.each()			</A></LI>
+  <LI><A title="Merge the contents of two or more objects together into the first object." 
+  class="v1-0 jQuery-extend" href="http://api.jquery.com/jQuery.extend/" 
+  data-src="jQuery.extend">				jQuery.extend()			</A></LI>
+  <LI><A title="Execute some JavaScript code globally." class="v1-0-4 jQuery-globalEval" 
+  href="http://api.jquery.com/jQuery.globalEval/" data-src="jQuery.globalEval">
+  				jQuery.globalEval()			</A></LI>
+  <LI><A title="Finds the elements of an array which satisfy a filter function. The original array is not affected." 
+  class="v1-0 jQuery-grep" href="http://api.jquery.com/jQuery.grep/" data-src="jQuery.grep">
+  				jQuery.grep()			</A></LI>
+  <LI><A title="Search for a specified value within an array and return its index (or -1 if not found)." 
+  class="v1-2 jQuery-inArray" href="http://api.jquery.com/jQuery.inArray/" 
+  data-src="jQuery.inArray">				jQuery.inArray()			</A></LI>
+  <LI><A title="Determine whether the argument is an array." class="v1-3 jQuery-isArray" 
+  href="http://api.jquery.com/jQuery.isArray/" data-src="jQuery.isArray">
+  				jQuery.isArray()			</A></LI>
+  <LI><A title="Check to see if an object is empty (contains no properties)." 
+  class="v1-4 jQuery-isEmptyObject" href="http://api.jquery.com/jQuery.isEmptyObject/" 
+  data-src="jQuery.isEmptyObject">				jQuery.isEmptyObject()			</A></LI>
+  <LI><A title="Determine if the argument passed is a Javascript function object." 
+  class="v1-2 jQuery-isFunction" href="http://api.jquery.com/jQuery.isFunction/" 
+  data-src="jQuery.isFunction">				jQuery.isFunction()			</A></LI>
+  <LI><A title="Determines whether its argument is a number." class="v1-7 jQuery-isNumeric" 
+  href="http://api.jquery.com/jQuery.isNumeric/" data-src="jQuery.isNumeric">
+  				jQuery.isNumeric()			</A></LI>
+  <LI><A title="Check to see if an object is a plain object (created using '{}' or 'new Object')." 
+  class="v1-4 jQuery-isPlainObject" href="http://api.jquery.com/jQuery.isPlainObject/" 
+  data-src="jQuery.isPlainObject">				jQuery.isPlainObject()			</A></LI>
+  <LI><A title="Determine whether the argument is a window." class="v1-4-3 jQuery-isWindow" 
+  href="http://api.jquery.com/jQuery.isWindow/" data-src="jQuery.isWindow">
+  				jQuery.isWindow()			</A></LI>
+  <LI><A title="Check to see if a DOM node is within an XML document (or is an XML document)." 
+  class="v1-1-4 jQuery-isXMLDoc" href="http://api.jquery.com/jQuery.isXMLDoc/" 
+  data-src="jQuery.isXMLDoc">				jQuery.isXMLDoc()			</A></LI>
+  <LI><A title="Convert an array-like object into a true JavaScript array." 
+  class="v1-2 jQuery-makeArray" href="http://api.jquery.com/jQuery.makeArray/" 
+  data-src="jQuery.makeArray">				jQuery.makeArray()			</A></LI>
+  <LI><A title="Translate all items in an array or array-like object to another array of items." 
+  class="v1-0 jQuery-map" href="http://api.jquery.com/jQuery.map/" data-src="jQuery.map">
+  				jQuery.map()			</A></LI>
+  <LI><A title="Merge the contents of two arrays together into the first array." 
+  class="v1-0 jQuery-merge" href="http://api.jquery.com/jQuery.merge/" data-src="jQuery.merge">
+  				jQuery.merge()			</A></LI>
+  <LI><A title="An empty function." class="v1-4 jQuery-noop" href="http://api.jquery.com/jQuery.noop/" 
+  data-src="jQuery.noop">				jQuery.noop()			</A></LI>
+  <LI><A title="Return a number representing the current time." class="v1-4-3 jQuery-now" 
+  href="http://api.jquery.com/jQuery.now/" data-src="jQuery.now">
+  				jQuery.now()			</A></LI>
+  <LI><A title="Parses a string into an array of DOM nodes." class="v1-8 jQuery-parseHTML" 
+  href="http://api.jquery.com/jQuery.parseHTML/" data-src="jQuery.parseHTML">
+  				jQuery.parseHTML()			</A></LI>
+  <LI><A title="Takes a well-formed JSON string and returns the resulting JavaScript object." 
+  class="v1-4-1 jQuery-parseJSON" href="http://api.jquery.com/jQuery.parseJSON/" 
+  data-src="jQuery.parseJSON">				jQuery.parseJSON()			</A></LI>
+  <LI><A title="Parses a string into an XML document." class="v1-5 jQuery-parseXML" 
+  href="http://api.jquery.com/jQuery.parseXML/" data-src="jQuery.parseXML">
+  				jQuery.parseXML()			</A></LI>
+  <LI><A title="Takes a function and returns a new one that will always have a particular context." 
+  class="v1-4 jQuery-proxy" href="http://api.jquery.com/jQuery.proxy/" data-src="jQuery.proxy">
+  				jQuery.proxy()			</A></LI>
+  <LI><A title="A collection of properties that represent the presence of different browser features or bugs." 
+  class="v1-3 jQuery-support" href="http://api.jquery.com/jQuery.support/" 
+  data-src="jQuery.support">				jQuery.support			</A></LI>
+  <LI><A title="Remove the whitespace from the beginning and end of a string." 
+  class="v1-0 jQuery-trim" href="http://api.jquery.com/jQuery.trim/" data-src="jQuery.trim">
+  				jQuery.trim()			</A></LI>
+  <LI><A title="Determine the internal JavaScript [[Class]] of an object." 
+  class="v1-4-3 jQuery-type" href="http://api.jquery.com/jQuery.type/" data-src="jQuery.type">
+  				jQuery.type()			</A></LI>
+  <LI><A title="Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers." 
+  class="v1-1-3 jQuery-unique" href="http://api.jquery.com/jQuery.unique/" 
+  data-src="jQuery.unique">				jQuery.unique()			</A></LI></UL></SECTION></DIV>
+<DIV><SECTION>
+<H2>DOM Element Methods</H2>
+<UL>
+  <LI><A title="Retrieve the DOM elements matched by the jQuery object." class="v1-0 get" 
+  href="http://api.jquery.com/get/" data-src="jQuery.fn.get">
+  				.get()			</A></LI>
+  <LI><A title="Search for a given element from among the matched elements." 
+  class="v1-0 index" href="http://api.jquery.com/index/" data-src="jQuery.fn.index">
+  				.index()			</A></LI>
+  <LI><A title="Return the number of elements in the jQuery object." class="v1-0 size v1-8-d" 
+  href="http://api.jquery.com/size/" data-src="jQuery.fn.size">
+  				.size()			</A></LI>
+  <LI><A title="Retrieve all the DOM elements contained in the jQuery set, as an array." 
+  class="v1-4 toArray" href="http://api.jquery.com/toArray/" data-src="jQuery.fn.toArray">
+  				.toArray()			</A></LI></UL></SECTION><SECTION>
+<H2>Internals</H2>
+<UL>
+  <LI><A title="A string containing the jQuery version number." class="v1-0 jquery-2" 
+  href="http://api.jquery.com/jquery-2/" data-src="jQuery.fn.jquery">
+  				.jquery			</A></LI>
+  <LI><A title="The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document." 
+  class="v1-3 context v1-10-d" href="http://api.jquery.com/context/" data-src="jQuery.fn.context">
+  				.context			</A></LI>
+  <LI><A title="Takes a string and throws an exception containing it." class="v1-4-1 jQuery-error" 
+  href="http://api.jquery.com/jQuery.error/" data-src="jQuery.error">
+  				jQuery.error()			</A></LI>
+  <LI><A title="The number of elements in the jQuery object." class="v1-0 length" 
+  href="http://api.jquery.com/length/" data-src="jQuery.fn.length">
+  				.length			</A></LI>
+  <LI><A title="Add a collection of DOM elements onto the jQuery stack." class="v1-0 pushStack" 
+  href="http://api.jquery.com/pushStack/" data-src="jQuery.fn.pushStack">
+  				.pushStack()			</A></LI>
+  <LI><A title="A selector representing selector originally passed to jQuery()." 
+  class="v1-3 selector" href="http://api.jquery.com/selector/" data-src="jQuery.fn.selector">
+  				.selector			</A></LI></UL></SECTION><SECTION>
+<H2>Deferred Object</H2>
+<UL>
+  <LI><A title="Add handlers to be called when the Deferred object is either resolved or rejected." 
+  class="v1-6 deferred-always" href="http://api.jquery.com/deferred.always/" 
+  data-src="">				deferred.always()			</A></LI>
+  <LI><A title="Add handlers to be called when the Deferred object is resolved." 
+  class="v1-5 deferred-done" href="http://api.jquery.com/deferred.done/" 
+  data-src="">				deferred.done()			</A></LI>
+  <LI><A title="Add handlers to be called when the Deferred object is rejected." 
+  class="v1-5 deferred-fail" href="http://api.jquery.com/deferred.fail/" 
+  data-src="">				deferred.fail()			</A></LI>
+  <LI><A title="Determine whether a Deferred object has been rejected." class="v1-5 deferred-isRejected v1-7-d v1-8-r" 
+  href="http://api.jquery.com/deferred.isRejected/" data-src="">
+  				deferred.isRejected()			</A></LI>
+  <LI><A title="Determine whether a Deferred object has been resolved." class="v1-5 deferred-isResolved v1-7-d v1-8-r" 
+  href="http://api.jquery.com/deferred.isResolved/" data-src="">
+  				deferred.isResolved()			</A></LI>
+  <LI><A title="Call the progressCallbacks on a Deferred object with the given args." 
+  class="v1-7 deferred-notify" href="http://api.jquery.com/deferred.notify/" 
+  data-src="">				deferred.notify()			</A></LI>
+  <LI><A title="Call the progressCallbacks on a Deferred object with the given context and args." 
+  class="v1-7 deferred-notifyWith" href="http://api.jquery.com/deferred.notifyWith/" 
+  data-src="">				deferred.notifyWith()			</A></LI>
+  <LI><A title="Utility method to filter and/or chain Deferreds." class="v1-6 deferred-pipe v1-8-d" 
+  href="http://api.jquery.com/deferred.pipe/" data-src="">
+  				deferred.pipe()			</A></LI>
+  <LI><A title="Add handlers to be called when the Deferred object generates progress notifications." 
+  class="v1-7 deferred-progress" href="http://api.jquery.com/deferred.progress/" 
+  data-src="">				deferred.progress()			</A></LI>
+  <LI><A title="Return a Deferred's Promise object." class="v1-5 deferred-promise" 
+  href="http://api.jquery.com/deferred.promise/" data-src="">
+  				deferred.promise()			</A></LI>
+  <LI><A title="Reject a Deferred object and call any failCallbacks with the given args." 
+  class="v1-5 deferred-reject" href="http://api.jquery.com/deferred.reject/" 
+  data-src="">				deferred.reject()			</A></LI>
+  <LI><A title="Reject a Deferred object and call any failCallbacks with the given context and args." 
+  class="v1-5 deferred-rejectWith" href="http://api.jquery.com/deferred.rejectWith/" 
+  data-src="">				deferred.rejectWith()			</A></LI>
+  <LI><A title="Resolve a Deferred object and call any doneCallbacks with the given args." 
+  class="v1-5 deferred-resolve" href="http://api.jquery.com/deferred.resolve/" 
+  data-src="">				deferred.resolve()			</A></LI>
+  <LI><A title="Resolve a Deferred object and call any doneCallbacks with the given context and args." 
+  class="v1-5 deferred-resolveWith" href="http://api.jquery.com/deferred.resolveWith/" 
+  data-src="">				deferred.resolveWith()			</A></LI>
+  <LI><A title="Determine the current state of a Deferred object." class="v1-7 deferred-state" 
+  href="http://api.jquery.com/deferred.state/" data-src="">
+  				deferred.state()			</A></LI>
+  <LI><A title="Add handlers to be called when the Deferred object is resolved or rejected." 
+  class="v1-5 deferred-then" href="http://api.jquery.com/deferred.then/" 
+  data-src="">				deferred.then()			</A></LI>
+  <LI><A title="Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished." 
+  class="v1-6 promise" href="http://api.jquery.com/promise/" data-src="">
+  				.promise()			</A></LI></UL></SECTION></DIV>
+<DIV><SECTION>
+<H2>Callbacks Object</H2>
+<UL>
+  <LI><A title="A multi-purpose callbacks list object that provides a powerful way to manage callback lists." 
+  class="v1-7 jQuery-Callbacks" href="http://api.jquery.com/jQuery.Callbacks/" 
+  data-src="jQuery.Callbacks">				jQuery.Callbacks()			</A></LI>
+  <LI><A title="Add a callback or a collection of callbacks to a callback list." 
+  class="v1-7 callbacks-add" href="http://api.jquery.com/callbacks.add/" 
+  data-src="">				callbacks.add()			</A></LI>
+  <LI><A title="Disable a callback list from doing anything more." class="v1-7 callbacks-disable" 
+  href="http://api.jquery.com/callbacks.disable/" data-src="">
+  				callbacks.disable()			</A></LI>
+  <LI><A title="Remove all of the callbacks from a list." class="v1-7 callbacks-empty" 
+  href="http://api.jquery.com/callbacks.empty/" data-src="">
+  				callbacks.empty()			</A></LI>
+  <LI><A title="Call all of the callbacks with the given arguments." class="v1-7 callbacks-fire" 
+  href="http://api.jquery.com/callbacks.fire/" data-src="">
+  				callbacks.fire()			</A></LI>
+  <LI><A title="Determine if the callbacks have already been called at least once." 
+  class="v1-7 callbacks-fired" href="http://api.jquery.com/callbacks.fired/" 
+  data-src="">				callbacks.fired()			</A></LI>
+  <LI><A title="Call all callbacks in a list with the given context and arguments." 
+  class="v1-7 callbacks-fireWith" href="http://api.jquery.com/callbacks.fireWith/" 
+  data-src="">				callbacks.fireWith()			</A></LI>
+  <LI><A title="Determine whether a supplied callback is in a list." class="v1-7 callbacks-has" 
+  href="http://api.jquery.com/callbacks.has/" data-src="">
+  				callbacks.has()			</A></LI>
+  <LI><A title="Lock a callback list in its current state." class="v1-7 callbacks-lock" 
+  href="http://api.jquery.com/callbacks.lock/" data-src="">
+  				callbacks.lock()			</A></LI>
+  <LI><A title="Determine if the callbacks list has been locked." class="v1-7 callbacks-locked" 
+  href="http://api.jquery.com/callbacks.locked/" data-src="">
+  				callbacks.locked()			</A></LI>
+  <LI><A title="Remove a callback or a collection of callbacks from a callback list." 
+  class="v1-7 callbacks-remove" href="http://api.jquery.com/callbacks.remove/" 
+  data-src="">
+				callbacks.remove()			</A></LI></UL></SECTION></DIV></DIV></ARTICLE></DIV>
+<DIV class="ads"><A title="Go to JavaScript++" href="http://www.jspplang.org/" 
+target="_blank"><STRONG>Click here to learn about JavaScript++</STRONG>, which 
+provides classes, type checking, and modules. It also works with jQuery			 </A>
+		 </DIV>
+<DIV class="mfp-hide" id="about">
+<FIELDSET><STRONG>Open links:</STRONG>				 <LABEL><INPUT name="open_links" type="radio" 
+value="modal-window"> Modal window</LABEL><BR><LABEL><INPUT name="open_links" 
+type="radio" value="new-window"> New window</LABEL><BR><LABEL><INPUT name="open_links" 
+type="radio" value="same-window"> Same window</LABEL>			 </FIELDSET>
+<P><A title="Get the code from github" href="https://github.com/oscarotero/jquery-cheatsheet">Source 
+code</A> | by <A href="http://twitter.com/misteroom">@misteroom</A></P></DIV>
+<DIV class="mfp-hide" id="modal">
+<UL>
+  <LI class="link-api"><A href="http://oscarotero.com/jquery/">API doc</A></LI>
+  <LI class="link-src"><A href="http://james.padolsey.com/jquery/">Source 
+  viewer</A></LI></UL>
+<DIV><IFRAME src="about:blank"></IFRAME>			 </DIV></DIV>
+<SCRIPT type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-110819-12']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</SCRIPT>
+	 </BODY></HTML>

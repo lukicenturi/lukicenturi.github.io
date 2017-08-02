@@ -1,58 +1,66 @@
 class Line{
 	constructor(opt){
-		this.x1 = opt.x1,
-		this.y1 = opt.y1,
-		this.x2 = opt.x2,
-		this.y2 = opt.y2,
-		this.x3 = opt.x3,
-		this.y3 = opt.y3,
-		this.x4 = opt.x4,
-		this.y4 = opt.y4,
-		this.point = opt.point;
-		this.linestate = opt.linestate;
+		this.v = opt.v;
 		this.key = opt.key;
-		this.done = opt.done || false;
+		this.linestate = opt.linestate;
+		this.point = opt.point;
+		this.length = Math.ceil(Tile.lineLength(this.v));
 		this.dash = 0;
+		this.queue = 0;
+		this.done = false;
 	}
 
 	draw(){
-		var x = PlayTile.madeTile[this.key].x,
-			y = PlayTile.madeTile[this.key].y,
-			tx = x + width / 2,
-			ty = y + height / 2,
-			r = PlayTile.madeTile[this.key].r;
+		let parent = PlayTile.madeTile[this.key],
+			tx = parent.x + (width / 2),
+			ty = parent.y + (height / 2),
+			r = parent.r;
 
 		ctx.save();
 		ctx.translate(tx,ty);
 		ctx.rotate(r * Math.PI / 180);
-		ctx.translate(-width / 2, -height / 2);
+		ctx.translate(width / -2, height / -2);
 
-		if(this.linestate != 'hidden'){
-			ctx.setLineDash([1000,1000000]);
+		ctx.beginPath();
+		ctx.moveTo(this.v[0][0], this.v[0][1]);
+		ctx.bezierCurveTo(this.v[1][0], this.v[1][1], this.v[2][0], this.v[2][1], this.v[3][0], this.v[3][1]);
 
-			ctx.beginPath();
-			ctx.moveTo(this.x1,this.y1);
-			ctx.bezierCurveTo(this.x2,this.y2,this.x3,this.y3,this.x4,this.y4);
-
-			ctx.strokeStyle = "black";
+		if(this.linestate != Line.State.HIDDEN){
+			ctx.strokeStyle = 'black';
 			ctx.lineWidth = 30;
 			ctx.stroke();
 
-			if(this.linestate == 'white'){
-				if(this.dash < 1000){
-					this.dash+=30;
-					ctx.setLineDash([this.dash,1000000]);
+			ctx.lineWidth = 25;
+
+			if(this.linestate == Line.State.SELECTED){
+				ctx.strokeStyle = 'white';
+				if(this.dash < this.length){
+					if( this.queue == cur ){
+						this.dash += dashSpeed;
+						ctx.setLineDash([this.dash,100000]);
+					}else{
+						ctx.setLineDash([0,100000]);
+					}
+				}else{
+					if(!this.done){
+						this.done = !this.done;
+						cur += 1; 
+					}
 				}
-			}else{
-				ctx.setLineDash([1000,1000000]);
+				ctx.stroke();
+			}
+			else{
+				ctx.strokeStyle = 'black';
+				ctx.stroke();
 			}
 
-			ctx.strokeStyle = this.linestate;
-			ctx.lineWidth = 25;
-			ctx.stroke();
-			ctx.closePath();
-	}
-
+		}
 		ctx.restore();
 	}
+}
+
+Line.State ={
+	get NORMAL() { return 0 },
+	get SELECTED() { return 1 },
+	get HIDDEN() { return 2}
 }
