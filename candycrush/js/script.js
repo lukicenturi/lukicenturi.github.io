@@ -1,0 +1,277 @@
+var $ = document.querySelector.bind(document),
+	canvas = $("#canvas"),
+	ctx = canvas.getContext('2d');
+	image = new Image();
+	image.src = 'image/sprite.png';
+
+window.onload = function(){
+	init();
+}
+
+function init(){
+	size = 10;
+	width = 80;
+	cs = 800;
+	game = new Game();
+}
+
+class Game{
+	constructor(){
+		this.candy = [
+			[],[],[],[],[],[],[],[],[],[],
+		];
+		this.down = [];
+		this.score = 0;
+		this.back = 0;
+		this.list = {};
+		this.generateCandy();
+		this.draw();
+		this.listener();
+	}
+
+	generateCandy(){
+		for(let i = 0 ; i < size; i++){
+			for(let j = 0 ; j < size; j++){
+				this.candy[i][j] = new Candy({
+					x:j * width,
+					y:i * width,
+					sx:Math.floor(Math.random()*6),
+				})
+			}
+		}
+		this.noSame();
+	}
+
+	noSame(){
+		for(let i = 0 ; i < size ; i++){
+			for(let j = 0 ; j < size ; j++){
+				this.around(i,j);
+			}
+		}
+	}
+
+	around(i,j){
+		let array = [];
+
+		let dir = [
+			[-1,0],[0,1],[1,0],[0,-1]
+		];
+
+		dir.forEach((v,g)=>{
+			let y = v[0],
+				x = v[1];
+
+			if(i + y >= 0 && i + y < size && j + x >= 0 && j + x < size && i + y + y >= 0 && i + y + y < size && j + x + x >= 0 && j + x + x < size && this.candy[i][j].sx == this.candy[i + y][j + x].sx && this.candy[i][j].sx == this.candy[i + y + y][j + x + x].sx){
+				let rand = Math.floor(Math.random() * 6);
+				let current = this.candy[i + y][j + x].sx;
+				let array = [0,1,2,3,4,5];
+				dir.forEach((a,b)=>{
+					let c = a[0],
+						d = a[1];
+
+					if(i + y + c >= 0 && i + y + c < size && j + x + d >= 0 && j + x + d < size){
+						let rep = this.candy[i + y + c][j + x + d].sx;
+						let index = array.indexOf(rep);
+						if(index != -1) array.splice(index, 1);
+					}
+				});
+
+				let change = array[Math.floor(Math.random() * array.length)];
+				this.candy[i + y][j + x].sx = change;
+			}	
+		});
+	}
+
+	draw(){
+		ctx.clearRect(0,0,cs,cs);
+		ctx.save();
+		this.candy.forEach((list)=>{
+			list.forEach((candy)=>{
+				candy.draw();			});
+		});
+		$("#score").innerHTML = this.score;
+		ctx.restore();
+
+		setTimeout(()=>{
+			this.draw();
+		},10);
+	}
+
+	listener(){
+		canvas.addEventListener('mousedown',(e)=>{
+			let y = Math.floor(e.offsetY / width);
+			let x = Math.floor(e.offsetX / width);
+			this.down = [y,x];
+		});
+		canvas.addEventListener('mouseup',(e)=>{
+			let y = Math.floor(e.offsetY / width);
+			let x = Math.floor(e.offsetX / width);
+			if(this.down.length > 0){
+				let y1 = this.down[0];
+				let x1 = this.down[1];
+				if(Math.abs(y - y1) <= 1 && Math.abs(x - x1) <= 1 && Math.abs(y - y1) != Math.abs(x - x1)){
+					this.change(y,x,y1,x1);
+				}
+			}
+			this.down = [];
+		});
+	}
+
+	change(y,x,y1,x1){
+		this.candy[y][x].targetX = this.candy[y1][x1].x;
+		this.candy[y][x].targetY = this.candy[y1][x1].y;
+
+		this.candy[y1][x1].targetX = this.candy[y][x].x;
+		this.candy[y1][x1].targetY = this.candy[y][x].y;
+
+		this.swap(y,x,y1,x1);
+	}
+
+	swap(y,x,y1,x1){
+		if(this.candy[y][x].targetX != this.candy[y][x].x || this.candy[y1][x1].targetX != this.candy[y1][x1].x ||
+			this.candy[y][x].targetY != this.candy[y][x].y || this.candy[y1][x1].targetY != this.candy[y1][x1].y ){
+			if(this.candy[y][x].x > this.candy[y][x].targetX) this.candy[y][x].x -= 5;
+			else if(this.candy[y][x].x < this.candy[y][x].targetX) this.candy[y][x].x += 5;
+
+			if(this.candy[y][x].y > this.candy[y][x].targetY) this.candy[y][x].y -= 5;
+			else if(this.candy[y][x].y < this.candy[y][x].targetY) this.candy[y][x].y += 5;
+
+			if(this.candy[y1][x1].x > this.candy[y1][x1].targetX) this.candy[y1][x1].x -= 5;
+			else if(this.candy[y1][x1].x < this.candy[y1][x1].targetX) this.candy[y1][x1].x += 5;
+
+			if(this.candy[y1][x1].y > this.candy[y1][x1].targetY) this.candy[y1][x1].y -= 5;
+			else if(this.candy[y1][x1].y < this.candy[y1][x1].targetY) this.candy[y1][x1].y += 5;
+
+			setTimeout(()=>{
+				this.swap(y,x,y1,x1);
+			},10)
+		}else{
+			let temp = this.candy[y][x];
+			this.candy[y][x] = this.candy[y1][x1];
+			this.candy[y1][x1] = temp;
+
+			if(this.back == 0){
+				if(!this.check()){
+					this.back = 1;
+					this.change(y,x,y1,x1);
+				}else{
+					this.next();
+					this.back = 0;
+				}
+			}else{
+				this.back = 0;
+			}
+		}
+	}
+
+	next(){
+		setTimeout(()=>{
+			if(this.check()){
+				this.next();
+			}
+		},1000);
+	}
+
+	makeNew(){
+		for(let i = 0 ; i < size ; i ++){
+			for(let j = 0 ; j < size ; j++){
+				if(this.candy[i][j].sx == -1){
+					let sum = this.count(i,j);
+					this.goDown(i,j,sum);
+				}
+			}
+		}
+	}
+
+	goDown(i,j,sum){ //5,0,3
+		for(let b = i - 1; b >= 0 ; b--){ //4,3,2,1,0
+			this.candy[b + sum][j] = this.candy[b][j];
+			this.candy[b + sum][j].targetY += (sum * width);
+		}
+		for(let c = sum - 1; c >= 0; c--){ //2,1,0
+			let target = c * width;
+			let rand = Math.floor(Math.random() * 6);
+			this.candy[c][j] = new Candy({
+				x:j * width,
+				y:(c - sum) * width, 
+				sx:rand,
+				targetY: target
+			});
+			console.log(this.candy[c][j]);
+		}
+		for(let a = 0 ; a <= i + sum - 1; a++){//0,1,2,3,4,5,6,7
+			this.animate(a,j);
+		}
+	}
+
+	animate(a,j){
+		if(this.candy[a][j].y < this.candy[a][j].targetY){
+			this.candy[a][j].y += 10;
+			setTimeout(()=>{
+				this.animate(a,j);
+			},10);
+		}else{
+
+		}
+	}
+
+	count(i,j){
+		let sum = 0 ;
+		while(i >= 0 && i < size && this.candy[i][j].sx == -1){
+			sum++;
+			i+=1;
+		}
+		return sum;
+	}
+
+	check(){
+		let sum = 0;
+		for(let i = 0 ; i < size ; i++){
+			for(let j = 0 ; j < size ; j++){
+				if(this.clear(i,j)) sum++;
+			}
+		}
+
+			for(var key in this.list){
+				let y = this.list[key][0];
+				let x = this.list[key][1];
+				this.score ++;
+				this.candy[y][x].temp = this.candy[y][x].sx;
+				this.candy[y][x].sx = -1;
+				delete this.list[key];
+			}
+
+		setTimeout(()=>{
+			this.makeNew();
+		},500);
+		return (sum > 0);
+	}
+
+	clear(i,j){
+		let sum = false;
+		let dir = [
+			[-1,0],[0,1],[1,0],[0,-1]
+		];
+		dir.forEach((v,g)=>{
+			let y = v[0],
+				x = v[1];
+
+			if(i + y >= 0 && i + y < size && j + x >= 0 && j + x < size && i + y + y >= 0 && i + y + y < size && j + x + x >= 0 && j + x + x < size && this.candy[i][j].sx == this.candy[i + y][j + x].sx && this.candy[i][j].sx == this.candy[i + y + y][j + x + x].sx){
+				let si = i;
+				let sj = j;
+				let now = this.candy[i][j].sx;
+				while(si >= 0 && si < size && sj >= 0 && sj < size && this.candy[si][sj].sx == now){
+					if(!this.list[si+"|"+sj]){
+						this.list[si+"|"+sj] = [si,sj];
+					}
+					si += y;
+					sj += x;
+				}
+				sum = true;
+			}	
+		});
+		return sum;
+	}
+
+
+}
