@@ -288,6 +288,18 @@ class Game{
 					si += y;
 					sj += x;
 				}
+				if(this.candy[i][j].sx == 1){
+					if(y == 0){
+						for(let a = 0 ; a < size; a++){
+							if(!this.list[i+"|"+a]) this.list[i+"|"+a] = [i,a];
+						}
+					}
+					if(x == 0){
+						for(let a = 0 ; a < size; a++){
+							if(!this.list[a+"|"+j]) this.list[a+"|"+j] = [a,j];
+						}
+					}
+				}
 				sum = true;
 			}	
 		});
