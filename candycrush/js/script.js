@@ -32,11 +32,22 @@ class Game{
 		this.break = new Audio('music/break.mp3');
 		this.break.volume = 0.5;
 		this.animateDone = false;
+		this.highscore = 0;
+		this.over = false;
+
+		this.miliseconds = 120000;
 
 		this.bg.loop = true;
+		this.init();
 		this.generateCandy();
-		this.draw();
 		this.listener();
+	}
+
+	init(){
+		if(localStorage.luki_candycrush_highscore === undefined) localStorage.luki_candycrush_highscore = 0;
+		this.highscore = localStorage.luki_candycrush_highscore;
+		$("#highscore").innerHTML = this.highscore;
+		$("#ready").classList.add('active');
 	}
 
 	generateCandy(){
@@ -93,6 +104,7 @@ class Game{
 	}
 
 	draw(){
+		if(this.over) return;
 		ctx.clearRect(0,0,cs,cs);
 		ctx.save();
 		this.candy.forEach((list)=>{
@@ -101,14 +113,42 @@ class Game{
 			});
 		});
 		$("#score").innerHTML = this.score;
+		$("#scores").innerHTML = this.score;
 		ctx.restore();
+
+		this.miliseconds -= 10;
+		if(this.miliseconds % 1000 == 0) $("#timer").innerHTML = this.miliseconds / 1000;
+
+		if(this.miliseconds <= 0){
+			this.over = true;
+			this.done();
+		} 
 
 		setTimeout(()=>{
 			this.draw();
 		},10);
 	}
+	
+	done(){
+		$("#gameboard").classList.remove("active");
+		$("#over").classList.add('active');
+		if(this.score > this.highscore) localStorage.luki_candycrush_highscore = this.score;
+	}
+
+	start(){
+		$("#ready").classList.remove('active');
+		$("#gameboard").classList.add('active');
+		this.draw();
+	}
 
 	listener(){
+
+		$("#restart").addEventListener('click',(e)=>{
+			location.reload();
+		})
+		$("#start").addEventListener('click',(e)=>{
+			this.start();			
+		});
 		canvas.addEventListener('mousedown',(e)=>{
 			let y = Math.floor(e.offsetY / width);
 			let x = Math.floor(e.offsetX / width);
@@ -293,6 +333,7 @@ class Game{
 					sj += x;
 				}
 				if(this.candy[i][j].sx == 1){
+					this.miliseconds += 2000;
 					if(y == 0){
 						for(let a = 0 ; a < size; a++){
 							if(!this.list[i+"|"+a]) this.list[i+"|"+a] = [i,a];
