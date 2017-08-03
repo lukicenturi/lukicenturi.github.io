@@ -220,7 +220,7 @@ class Game{
 
 	animate(a,j){
 		if(this.candy[a][j].y < this.candy[a][j].targetY){
-			this.candy[a][j].y += 20;
+			this.candy[a][j].y += 10;
 			setTimeout(()=>{
 				this.animate(a,j);
 			},10);
