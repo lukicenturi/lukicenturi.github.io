@@ -23,7 +23,7 @@ class Game{
 		this.down = [];
 		this.score = 0;
 		this.back = 0;
-		this.isRun = false;
+		this.run = false;
 		this.list = {};
 		this.generateCandy();
 		this.draw();
