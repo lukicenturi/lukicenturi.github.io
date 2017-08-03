@@ -35,7 +35,7 @@ class Game{
 		this.highscore = 0;
 		this.over = false;
 
-		this.miliseconds = 120000;
+		this.miliseconds = 60000;
 
 		this.bg.loop = true;
 		this.init();
