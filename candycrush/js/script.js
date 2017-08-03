@@ -23,6 +23,7 @@ class Game{
 		this.down = [];
 		this.score = 0;
 		this.back = 0;
+		this.isRun = false;
 		this.list = {};
 		this.generateCandy();
 		this.draw();
@@ -87,7 +88,8 @@ class Game{
 		ctx.save();
 		this.candy.forEach((list)=>{
 			list.forEach((candy)=>{
-				candy.draw();			});
+				candy.draw();			
+			});
 		});
 		$("#score").innerHTML = this.score;
 		ctx.restore();
@@ -104,6 +106,10 @@ class Game{
 			this.down = [y,x];
 		});
 		canvas.addEventListener('mouseup',(e)=>{
+			if(this.run){
+				this.down = [];
+				return false;	
+			}
 			let y = Math.floor(e.offsetY / width);
 			let x = Math.floor(e.offsetX / width);
 			if(this.down.length > 0){
@@ -128,6 +134,7 @@ class Game{
 	}
 
 	swap(y,x,y1,x1){
+		this.run = true;
 		if(this.candy[y][x].targetX != this.candy[y][x].x || this.candy[y1][x1].targetX != this.candy[y1][x1].x ||
 			this.candy[y][x].targetY != this.candy[y][x].y || this.candy[y1][x1].targetY != this.candy[y1][x1].y ){
 			if(this.candy[y][x].x > this.candy[y][x].targetX) this.candy[y][x].x -= 5;
@@ -159,6 +166,7 @@ class Game{
 					this.back = 0;
 				}
 			}else{
+				this.run = false;
 				this.back = 0;
 			}
 		}
@@ -197,7 +205,7 @@ class Game{
 				sx:rand,
 				targetY: target
 			});
-			console.log(this.candy[c][j]);
+			// console.log(this.candy[c][j]);
 		}
 		for(let a = 0 ; a <= i + sum - 1; a++){//0,1,2,3,4,5,6,7
 			this.animate(a,j);
@@ -225,6 +233,7 @@ class Game{
 	}
 
 	check(){
+		this.run = true;
 		let sum = 0;
 		for(let i = 0 ; i < size ; i++){
 			for(let j = 0 ; j < size ; j++){
@@ -232,18 +241,20 @@ class Game{
 			}
 		}
 
-			for(var key in this.list){
-				let y = this.list[key][0];
-				let x = this.list[key][1];
-				this.score ++;
-				this.candy[y][x].temp = this.candy[y][x].sx;
-				this.candy[y][x].sx = -1;
-				delete this.list[key];
-			}
+		for(var key in this.list){
+			let y = this.list[key][0];
+			let x = this.list[key][1];
+			this.score ++;
+			this.candy[y][x].temp = this.candy[y][x].sx;
+			this.candy[y][x].sx = -1;
+			delete this.list[key];
+		}
 
 		setTimeout(()=>{
 			this.makeNew();
+			this.run = false;
 		},500);
+		
 		return (sum > 0);
 	}
 
