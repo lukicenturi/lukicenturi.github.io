@@ -170,7 +170,6 @@ class Game{
 					this.back = 1;
 					this.change(y,x,y1,x1);
 				}else{
-					this.next();
 					this.back = 0;
 				}
 			}else{
@@ -183,9 +182,9 @@ class Game{
 	next(){
 		setTimeout(()=>{
 			if(this.check()){
-				this.next();
+				this.check();
 			}
-		},1000);
+		},200);
 	}
 
 	makeNew(){
@@ -226,7 +225,7 @@ class Game{
 				this.animate(a,j);
 			},10);
 		}else{
-
+			this.next();
 		}
 	}
 
@@ -276,7 +275,7 @@ class Game{
 			let y = v[0],
 				x = v[1];
 
-			if(i + y >= 0 && i + y < size && j + x >= 0 && j + x < size && i + y + y >= 0 && i + y + y < size && j + x + x >= 0 && j + x + x < size && this.candy[i][j].sx == this.candy[i + y][j + x].sx && this.candy[i][j].sx == this.candy[i + y + y][j + x + x].sx){
+			if(i + y >= 0 && i + y < size && j + x >= 0 && j + x < size && i + y + y >= 0 && i + y + y < size && j + x + x >= 0 && j + x + x < size && this.candy[i][j].sx == this.candy[i + y][j + x].sx && this.candy[i][j].sx == this.candy[i + y + y][j + x + x].sx && this.candy[i][j].sx != -1){
 				let si = i;
 				let sj = j;
 				let now = this.candy[i][j].sx;
