@@ -215,7 +215,7 @@ class Game{
 			});
 			// console.log(this.candy[c][j]);
 		}
-		for(let a = 0 ; a <= i + sum - 1; a++){//0,1,2,3,4,5,6,7
+		for(let a = i + sum - 1 ; a >= 0; a++){//0,1,2,3,4,5,6,7
 			this.animate(a,j);
 		}
 	}
