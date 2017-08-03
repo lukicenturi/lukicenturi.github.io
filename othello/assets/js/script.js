@@ -291,7 +291,7 @@ class Game{
 		if(!this.start || this.over) return;
 		this.saveLocal();
 			// clear console
-		// console.clear();
+		console.clear();
 		for(let i = 0 ; i < this.size; i ++){
 			for(let j = 0 ; j < this.size ; j++){
 				ctx.beginPath();
