@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<title>Candy Crush</title>
 	<style>
 		*{
@@ -34,8 +35,10 @@
 			margin-bottom:10px;
 			font-family:Raleway;
 			user-select:none;
-			background:white;
+			background:rgba(255,255,255,0.9);
 			padding:10px 30px;
+			border-radius:10000px;
+			font-weight:bold;
 		}
 		div+img{
 			display:none;
@@ -44,7 +47,7 @@
 </head>
 <body>
 	<div class="container">
-		<span>SCORE: <span id='score'>0</span></span>
+		<span id='score'>0</span>
 		<canvas id='canvas' width='800' height='800'></canvas>
 	</div>
 	<img src="image/sprite.png" id='image'>
