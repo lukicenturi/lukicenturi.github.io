@@ -15,7 +15,7 @@ class Candy{
 		if(this.sx == -1){
 			ctx.beginPath();
 			ctx.rect(this.x,this.y,width,width);
-			ctx.fillStyle = '#90EE90';
+			ctx.fillStyle = '#eee';
 			ctx.fill();
 			ctx.drawImage(image,this.temp*width,0,width,width,this.x,this.y,width,width);
 			ctx.closePath();

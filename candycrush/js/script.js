@@ -25,14 +25,22 @@ class Game{
 		this.back = 0;
 		this.run = false;
 		this.list = {};
+		this.bg = new Audio('music/candycrush.mp3');
+		this.bg.volume = 0.2;
+		this.bg.autoplay = true;
+
+		this.break = new Audio('music/break.mp3');
+		this.break.volume = 0.5;
+
+		this.bg.loop = true;
 		this.generateCandy();
 		this.draw();
 		this.listener();
 	}
 
 	generateCandy(){
-		for(let i = 0 ; i < size; i++){
-			for(let j = 0 ; j < size; j++){
+		for(let i = size - 1 ; i >= 0; i--){
+			for(let j = size ; j >= 0; j--){
 				this.candy[i][j] = new Candy({
 					x:j * width,
 					y:i * width,
@@ -227,7 +235,7 @@ class Game{
 		let sum = 0 ;
 		while(i >= 0 && i < size && this.candy[i][j].sx == -1){
 			sum++;
-			i+=1;
+			i-=1;
 		}
 		return sum;
 	}
@@ -241,6 +249,8 @@ class Game{
 			}
 		}
 
+		if(Object.keys(this.list).length > 0) this.break.play();
+		
 		for(var key in this.list){
 			let y = this.list[key][0];
 			let x = this.list[key][1];
