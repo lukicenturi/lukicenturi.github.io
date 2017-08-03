@@ -185,8 +185,8 @@ class Game{
 			this.over = true;
 			$("#over").fadeIn();
 		}else{
-			alert("You can\'t win. Just Try Again");
 			$('#restart').click();
+			alert("You can\'t win. Just Try Again");
 		}
 	}
 	
