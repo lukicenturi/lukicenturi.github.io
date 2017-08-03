@@ -68,7 +68,7 @@ class Game{
 
 	setHighscore(){
 		let highscore = [];
-		if(localStorage.highscore !== undefined) highscore = JSON.parse(localStorage.highscore);
+		if(localStorage.luki_othello_highscore !== undefined) highscore = JSON.parse(localStorage.luki_othello_highscore);
 
 		console.log(highscore);
 
@@ -97,7 +97,7 @@ class Game{
 
 
 		let highscore = [];
-		if(localStorage.highscore !== undefined) highscore = JSON.parse(localStorage.highscore);
+		if(localStorage.luki_othello_highscore !== undefined) highscore = JSON.parse(localStorage.luki_othello_highscore);
 
 		let date = new Date().getDate() + "/" + new Date().getMonth() + "/" + new Date().getFullYear();
 
@@ -107,7 +107,7 @@ class Game{
 		highscore.push(array);
 		console.log(highscore);
 
-		localStorage.highscore = JSON.stringify(highscore);
+		localStorage.luki_othello_highscore = JSON.stringify(highscore);
 		$("#restart").click();
 	}
 
