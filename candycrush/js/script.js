@@ -189,7 +189,7 @@ class Game{
 	}
 
 	makeNew(){
-		for(let i = 0 ; i < size ; i ++){
+		for(let i = size - 1 ; i >= 0 ; i --){
 			for(let j = 0 ; j < size ; j++){
 				if(this.candy[i][j].sx == -1){
 					let sum = this.count(i,j);
@@ -199,8 +199,8 @@ class Game{
 		}
 	}
 
-	goDown(i,j,sum){ //5,0,3
-		for(let b = i - 1; b >= 0 ; b--){ //4,3,2,1,0
+	goDown(i,j,sum){ //7,0,3
+		for(let b = i - sum; b >= 0 ; b--){ //4,3,2,1,0
 			this.candy[b + sum][j] = this.candy[b][j];
 			this.candy[b + sum][j].targetY += (sum * width);
 		}
@@ -213,16 +213,15 @@ class Game{
 				sx:rand,
 				targetY: target
 			});
-			// console.log(this.candy[c][j]);
 		}
-		for(let a = i + sum - 1 ; a >= 0; a++){//0,1,2,3,4,5,6,7
+		for(let a = 0 ; a <= i; a++){//0,1,2,3,4,5,6,7
 			this.animate(a,j);
 		}
 	}
 
 	animate(a,j){
 		if(this.candy[a][j].y < this.candy[a][j].targetY){
-			this.candy[a][j].y += 10;
+			this.candy[a][j].y += 20;
 			setTimeout(()=>{
 				this.animate(a,j);
 			},10);
