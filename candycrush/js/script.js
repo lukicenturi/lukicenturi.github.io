@@ -31,6 +31,7 @@ class Game{
 
 		this.break = new Audio('music/break.mp3');
 		this.break.volume = 0.5;
+		this.animateDone = false;
 
 		this.bg.loop = true;
 		this.generateCandy();
@@ -206,6 +207,7 @@ class Game{
 		for(let c = sum - 1; c >= 0; c--){ //2,1,0
 			let target = c * width;
 			let rand = Math.floor(Math.random() * 6);
+			// let rand = this.candy[sum][j].sx;
 			this.candy[c][j] = new Candy({
 				x:j * width,
 				y:(c - sum) * width, 
@@ -220,12 +222,16 @@ class Game{
 
 	animate(a,j){
 		if(this.candy[a][j].y < this.candy[a][j].targetY){
+			this.animateDone = false;
 			this.candy[a][j].y += 10;
 			setTimeout(()=>{
 				this.animate(a,j);
 			},10);
 		}else{
-			this.next();
+			this.animateDone = true;
+			setTimeout(()=>{
+				if(this.animateDone) this.next();	
+			},50);
 		}
 	}
 
