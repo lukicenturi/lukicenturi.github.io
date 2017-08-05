@@ -140,13 +140,12 @@ class Game{
 
 	generateBird(){
 		if(!this.over && !this.pause){
-
-		}
-		for(let i = 0 ; i < 2 ; i++){
-			let x = Math.floor(Math.random() * 800) + 800;
-			let y = Math.floor(Math.random() * 450);
-			let s = Math.floor(Math.random() * 10) - 5 + speed;
-			this.bird.push(new Bird(x,y,s))
+			for(let i = 0 ; i < 2 ; i++){
+				let x = Math.floor(Math.random() * 800) + 800;
+				let y = Math.floor(Math.random() * 450);
+				let s = Math.floor(Math.random() * 10) - 5 + speed;
+				this.bird.push(new Bird(x,y,s))
+			}
 		}
 
 		setTimeout(()=>{
