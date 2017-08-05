@@ -250,7 +250,7 @@ class Game{
 
 	removeY(object){
 		object.forEach((bird,index)=>{
-			if(bird.x + bird.w < 0) delete game[object][index];
+			if(bird.y + bird.h < 0) delete game[object][index];
 		})
 	}
 
