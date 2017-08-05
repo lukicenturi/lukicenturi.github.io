@@ -163,7 +163,7 @@ class Game{
 		}
 		setTimeout(()=>{
 			this.generateParachute();
-		}, 18000);
+		}, 15000);
 	}
 
 	generateStar(){
@@ -200,7 +200,6 @@ class Game{
 		this.audio.background.pause();
 		this.over = true;
 		if(!this.fuel){
-			console.log('fuel habis');
 			this.audio.finish.play();
 		}
 		this.audio.star.pause();
@@ -234,7 +233,6 @@ class Game{
 					this.audio.star.play();
 				}
 				if(add == 'over'){
-					console.log('ketabrak');
 					this.audio.hit.play();
 				}
 				delete object[index];
@@ -244,13 +242,13 @@ class Game{
 
 	removeX(object){
 		object.forEach((cloud,index)=>{
-			if(cloud.x + cloud.w < 0) delete game[object][index];
+			if(cloud.x + cloud.w < 0) delete object[index];
 		})
 	}
 
 	removeY(object){
 		object.forEach((bird,index)=>{
-			if(bird.y + bird.h < 0) delete game[object][index];
+			if(bird.y > 480) delete object[index];
 		})
 	}
 
