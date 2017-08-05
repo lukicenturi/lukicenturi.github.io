@@ -4,8 +4,8 @@ class Plane{
 		this.image.src = 'sprite/airplane.png';
 		this.x = 20;
 		this.y = 200;
-		this.w = 80;
-		this.h = 50;
+		this.w = 120;
+		this.h = 60;
 		this.pos = {
 			x:0,
 			y:0,

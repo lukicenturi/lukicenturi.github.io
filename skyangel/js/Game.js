@@ -164,7 +164,7 @@ class Game{
 		}
 		setTimeout(()=>{
 			this.generateParachute();
-		}, 13000);
+		}, 18000);
 	}
 
 	generateStar(){

@@ -5,8 +5,8 @@ class Bird{
 		this.x = x;
 		this.y = y;
 		this.speed = speed;
-		this.w = 0.2 * 427;
-		this.h = 0.2 * 291;
+		this.w = 0.15 * 427;
+		this.h = 0.15 * 291;
 		this.pos = {
 			x:0,
 			y:0,
