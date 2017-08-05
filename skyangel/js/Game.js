@@ -244,13 +244,13 @@ class Game{
 
 	removeX(object){
 		object.forEach((cloud,index)=>{
-			if(cloud.x + cloud.w < 0) delete this.cloud[index];
+			if(cloud.x + cloud.w < 0) delete game[object][index];
 		})
 	}
 
 	removeY(object){
 		object.forEach((bird,index)=>{
-			if(bird.x + bird.w < 0) delete this.bird[index];
+			if(bird.x + bird.w < 0) delete game[object][index];
 		})
 	}
 
