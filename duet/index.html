@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Duet</title>
+	<style>
+		*{
+			box-sizing:border-box;
+			font-family:Raleway;
+			outline:none;
+		}
+		body,html{
+			padding:0px;
+			margin:0px;
+			width:100%;
+			height:100%;
+		}
+		.container{
+			width:100%;
+			height:100% ;
+			display:none;
+			flex-direction: column;
+			align-items:center;
+			justify-content:center;
+		}
+		.container.active{
+			display:flex;
+		}
+		button{
+			font-weight:bold;
+			background:none;
+			padding:5px 20px;
+			font-size:1em;
+			border-radius:10000px;
+			border:2px solid black;
+			cursor:pointer;
+			transition:0.5s all;
+		}
+		button:hover{
+			color:white;
+			background:black;
+		}
+		canvas{
+			background:black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container active" id="ready">
+		<h1>Highscore : <span id="highscore">0</h1>
+		<button id='start'>START</button>
+	</div>
+	<div class="container" id="gameboard">
+		<canvas width="360" height="600" id="canvas"></canvas>
+	</div>
+	<div class="container" id="over">
+		<h1>Your Score : <span id="score">10</h1>
+		<button id='restart'>RESTART</button>
+	</div>
+</body>
+	<script src='js/Ball.js'></script>
+	<script src='js/Brick.js'></script>
+	<script src='js/Game.js'></script>
+	<script src='js/Main.js'></script>
+</html>
