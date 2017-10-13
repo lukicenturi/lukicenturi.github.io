@@ -1,6 +1,7 @@
 window.onload = init();
 
 function init(){
+    setTransition();
     setCanvas();
     setProp();
     cekLocal();
@@ -8,7 +9,12 @@ function init(){
     setUsed();
     start();
 }
-
+function setTransition(){
+    canvas.classList.remove('active');
+    setTimeout(()=>{
+        canvas.classList.add('active');
+    },10);
+}
 function cekLocal(){
     if(localStorage.curvy_length === undefined){
         localStorage.curvy_length = JSON.stringify([hor,ver]);
@@ -27,10 +33,6 @@ function setCanvas(){
     ch = canvas.height;
     ctx = canvas.getContext('2d');
 
-    canvas.classList.remove('active');
-    setTimeout(()=>{
-        canvas.classList.add('active');
-    },10);
 }
 
 function setProp(){
