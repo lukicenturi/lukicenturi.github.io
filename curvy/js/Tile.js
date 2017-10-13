@@ -45,7 +45,6 @@ class Tile{
                     ctx.lineTo(x,y);
                 }
             }
-
         ctx.closePath();
 
         ctx.fillStyle = color;
@@ -78,15 +77,12 @@ class Tile{
                 });
                 ctx.stroke();
             ctx.closePath();
-        //less than 1 line
         }
+        //less than 1 line
         else if(this.line.length){
             ctx.beginPath();
-                ctx.arc(0,0,(height - 120) / 2,0, Math.PI * 2);
-                ctx.stroke();
-            ctx.closePath();
+                ctx.arc(0,0,(height - 120) / 2, 0, Math.PI * 2);
 
-            ctx.beginPath();
                 x = linePos[0][1];
                 y = linePos[0][2];
                 x1 = x / 1.6;

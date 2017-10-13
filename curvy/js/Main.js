@@ -154,9 +154,10 @@ function generateSolve(){
             }
         }
     }
+
     let sum = Math.ceil(Math.random() * array.length * 0.2) + Math.floor(array.length * 0.6);
 
-    for( i = 0  ; i < sum/2 ; i++ ){
+    for( i = 0, sum2 = sum / 2  ; i < sum2 ; i++ ){
         let a = array.splice(Math.floor(Math.random() * array.length / 2) * 2, 2);
         let key1 = a[0];
         let key2 = a[1];
