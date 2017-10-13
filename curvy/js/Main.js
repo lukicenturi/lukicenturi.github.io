@@ -63,7 +63,7 @@ function start(){
     generateTile();
     generateSolve();
     randomRotate();
-    drawTile();
+    requestAnimationFrame(drawTile);
 }
 function check(){
     let state = true;
