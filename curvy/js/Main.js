@@ -16,9 +16,8 @@ function cekLocal(){
     curvy_length = JSON.parse(localStorage.curvy_length);
     hor = +curvy_length[0];
     ver = +curvy_length[1];
-    ho.value = hor;
-    ho.value = hor;
-    ve.value = ver;
+    ho.value = hor > 50 ? 50 : hor;
+    ve.value = ver > 50 ? 50 : ver;
 }
 
 function setCanvas(){
