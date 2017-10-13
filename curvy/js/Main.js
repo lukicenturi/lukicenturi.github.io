@@ -283,6 +283,6 @@ ho.addEventListener('keydown', (e)=>{
     if(e.keyCode == 13) ve.focus();
 });
 
-ho.addEventListener('keydown', (e)=>{
+ve.addEventListener('keydown', (e)=>{
     if(e.keyCode == 13) restart.click();
 })
