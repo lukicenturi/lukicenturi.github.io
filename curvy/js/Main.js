@@ -26,6 +26,11 @@ function setCanvas(){
     cw = canvas.width;
     ch = canvas.height;
     ctx = canvas.getContext('2d');
+
+    canvas.classList.remove('active');
+    setTimeout(()=>{
+        canvas.classList.add('active');
+    },10);
 }
 
 function setProp(){
@@ -95,7 +100,7 @@ function check(){
         win = true;
         setTimeout(()=>{
             alert("Game Done!!");
-            location.reload();
+            init();
         }, 1000);
     }
 
@@ -268,7 +273,7 @@ restart.addEventListener('click',(e)=>{
     curvy_length = [ho.value > 50 ? 50 : ho.value < 2 ? 2 : ho.value, ve.value > 50 ? 50 : ve.value < 2 ? 2 : ve.value];
     localStorage.curvy_length = JSON.stringify(curvy_length);
 
-    location.reload();
+   init();
 });
 
 ho.addEventListener('focus', (e)=>{
