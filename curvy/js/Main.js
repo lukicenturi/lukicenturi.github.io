@@ -265,7 +265,7 @@ toggle.addEventListener('click',(e)=>{
 });
 
 restart.addEventListener('click',(e)=>{
-    curvy_length = [ho.value > 50 ? 50 : ho.value < 2 ? 2 : ho.value, ve.value > 50 ? 50 : ve.value < 2 ? 2 : ho.value];
+    curvy_length = [ho.value > 50 ? 50 : ho.value < 2 ? 2 : ho.value, ve.value > 50 ? 50 : ve.value < 2 ? 2 : ve.value];
     localStorage.curvy_length = JSON.stringify(curvy_length);
 
     location.reload();
