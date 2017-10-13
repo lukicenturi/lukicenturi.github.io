@@ -12,9 +12,9 @@ function init(){
 }
 function setTransition(){
     cancelAnimationFrame(req);
-    canvas.classList.remove('active');
+    canvas.classList.remove("active");
     setTimeout(()=>{
-        canvas.classList.add('active');
+        canvas.classList.add("active");
     },10);
 }
 function cekLocal(){
@@ -33,13 +33,13 @@ function setCanvas(){
     canvas.height = window.innerHeight - 40;
     cw = canvas.width;
     ch = canvas.height;
-    ctx = canvas.getContext('2d');
+    ctx = canvas.getContext("2d");
 
 }
 
 function setProp(){
-    color = 'white';
-    color1 = '#990000';
+    color = "white";
+    color1 = "#990000";
     linePos = [];
     rectPos = [];
     win = false;
@@ -254,49 +254,49 @@ function drawTile(){
 
     req = requestAnimationFrame(drawTile);
 }
-window.addEventListener('resize',(e)=>{
+window.addEventListener("resize",(e)=>{
     setCanvas();
     setScale();
     setUsed();
 });
 
-canvas.addEventListener('click',(e)=>{
+canvas.addEventListener("click",(e)=>{
     let x = e.offsetX;
     let y = e.offsetY;
 
     rotate(x,y);
 
 });
-canvas.addEventListener('touchstart',(e)=>{
+canvas.addEventListener("touchstart",(e)=>{
     let x = e.changedTouches.clientX;
     let y = e.changedTouches.clientY;
 
     rotate(x,y);
 });
 
-toggle.addEventListener('click',(e)=>{
-    float.classList.toggle('active');
+toggle.addEventListener("click",(e)=>{
+    float.classList.toggle("active");
 });
 
-restart.addEventListener('click',(e)=>{
+restart.addEventListener("click",(e)=>{
     curvy_length = [ho.value > 30 ? 30 : ho.value < 2 ? 2 : ho.value, ve.value > 30 ? 30 : ve.value < 2 ? 2 : ve.value];
     localStorage.curvy_length = JSON.stringify(curvy_length);
 
    init();
 });
 
-ho.addEventListener('focus', (e)=>{
+ho.addEventListener("focus", (e)=>{
     ho.select();
 });
 
-ve.addEventListener('focus', (e)=>{
+ve.addEventListener("focus", (e)=>{
     ve.select();
 });
 
-ho.addEventListener('keydown', (e)=>{
+ho.addEventListener("keydown", (e)=>{
     if(e.keyCode == 13) ve.focus();
 });
 
-ve.addEventListener('keydown', (e)=>{
+ve.addEventListener("keydown", (e)=>{
     if(e.keyCode == 13) restart.click();
 })
