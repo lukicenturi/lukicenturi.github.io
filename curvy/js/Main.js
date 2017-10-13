@@ -24,8 +24,8 @@ function cekLocal(){
     curvy_length = JSON.parse(localStorage.curvy_length);
     hor = +curvy_length[0];
     ver = +curvy_length[1];
-    ho.value = hor > 50 ? 50 : hor < 2 ? 2 : hor;
-    ve.value = ver > 50 ? 50 : ver < 2 ? 2 : ver;
+    ho.value = hor > 30 ? 30 : hor < 2 ? 2 : hor;
+    ve.value = ver > 30 ? 30 : ver < 2 ? 2 : ver;
 }
 
 function setCanvas(){
@@ -169,18 +169,17 @@ function generateSolve(){
         array = [];
         dist = [];
 
-
         if(tiles[key].line.length > 1){
 
             for(let i = 0, len = tiles[key].line.length ; i < len ; i++){
                 dist[i] = [];
                 array[i] = tiles[key].line.slice(0);
                 for(let j = 0 ; j < i ; j++){
-                    array[i].push(6 + array[i].splice(0,1)[0]);
+                    array[i].push(array[i].splice(0,1)[0]);
                 }
                 array[i].forEach((line, j)=>{
                     if( j < array[i].length - 1){
-                        dist[i].push(array[i][j + 1] - line);
+                        dist[i].push((array[i][j + 1] - line + 6) % 6);
                     }
                 });
             }
@@ -197,10 +196,6 @@ function generateSolve(){
             });
 
             tiles[key].line = array[index];
-
-            tiles[key].line.forEach((line, i)=>{
-                tiles[key].line[i] %= 6;
-            });
         }
     }
 }
@@ -278,7 +273,7 @@ toggle.addEventListener('click',(e)=>{
 });
 
 restart.addEventListener('click',(e)=>{
-    curvy_length = [ho.value > 50 ? 50 : ho.value < 2 ? 2 : ho.value, ve.value > 50 ? 50 : ve.value < 2 ? 2 : ve.value];
+    curvy_length = [ho.value > 30 ? 30 : ho.value < 2 ? 2 : ho.value, ve.value > 30 ? 30 : ve.value < 2 ? 2 : ve.value];
     localStorage.curvy_length = JSON.stringify(curvy_length);
 
    init();
