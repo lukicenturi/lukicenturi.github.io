@@ -93,10 +93,10 @@ function check(){
 
     if(state) {
         win = true;
-        // setTimeout(()=>{
-        //     alert("Game Done!!");
-        //     location.reload();
-        // }, 1000);
+        setTimeout(()=>{
+            alert("Game Done!!");
+            location.reload();
+        }, 1000);
     }
 
 }
