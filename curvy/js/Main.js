@@ -271,6 +271,14 @@ restart.addEventListener('click',(e)=>{
     location.reload();
 });
 
+ho.addEventListener('focus', (e)=>{
+    ho.select();
+});
+
+ve.addEventListener('focus', (e)=>{
+    ve.select();
+});
+
 ho.addEventListener('keydown', (e)=>{
     if(e.keyCode == 13) ve.focus();
 });
