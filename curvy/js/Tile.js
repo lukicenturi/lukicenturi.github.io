@@ -82,9 +82,8 @@ class Tile{
         else if(this.line.length){
             ctx.beginPath();
                 ctx.arc(0,0,(height - 120) / 2, 0, Math.PI * 2);
-
-                x = linePos[0][1];
-                y = linePos[0][2];
+                x = linePos[this.line[0]][1];
+                y = linePos[this.line[0]][2];
                 x1 = x / 1.6;
                 y1 = y / 1.6;
                 ctx.moveTo(x,y);
