@@ -16,8 +16,8 @@ function cekLocal(){
     curvy_length = JSON.parse(localStorage.curvy_length);
     hor = +curvy_length[0];
     ver = +curvy_length[1];
-    ho.value = hor > 50 ? 50 : hor;
-    ve.value = ver > 50 ? 50 : ver;
+    ho.value = hor > 50 ? 50 : hor < 2 ? 2 : hor;
+    ve.value = ver > 50 ? 50 : ver < 2 ? 2 : ver;
 }
 
 function setCanvas(){
@@ -273,7 +273,7 @@ toggle.addEventListener('click',(e)=>{
 });
 
 restart.addEventListener('click',(e)=>{
-    curvy_length = [ho.value > 50 ? 50 : ho.value, ve.value > 50 ? 50 : ve.value];
+    curvy_length = [ho.value > 50 ? 50 : ho.value < 2 ? 2 : ho.value, ve.value > 50 ? 50 : ve.value < 2 ? 2 : ho.value];
     localStorage.curvy_length = JSON.stringify(curvy_length);
 
     location.reload();

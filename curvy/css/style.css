@@ -103,6 +103,7 @@ button{
     padding:10px;
     width:100%;
     transition:0.5s all;
+    cursor:pointer;
 }
 
 button:active{
