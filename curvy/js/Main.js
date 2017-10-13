@@ -105,7 +105,7 @@ function check(){
         setTimeout(()=>{
             alert("Game Done!!");
             init();
-        }, 1000);
+        }, 3000);
     }
 
 }
