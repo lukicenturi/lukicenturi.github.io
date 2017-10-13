@@ -38,6 +38,8 @@ function setCanvas(){
 }
 
 function setProp(){
+    color = 'white';
+    color1 = '#990000';
     win = false;
     width = 400;
     height = 346;
@@ -102,10 +104,11 @@ function check(){
 
     if(state) {
         win = true;
+        color1 = "#16A086";
         setTimeout(()=>{
             alert("Game Done!!");
             init();
-        }, 3000);
+        }, 2000);
     }
 
 }
@@ -239,13 +242,14 @@ function drawTile(){
     ctx.save();
     ctx.scale(scale, scale);
 
+    check();
+
     for(let key in tiles){
         tiles[key].update();
         tiles[key].draw();
     }
-    ctx.restore();
 
-    check();
+    ctx.restore();
 
     req = requestAnimationFrame(drawTile);
 }

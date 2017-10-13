@@ -33,7 +33,7 @@ class Tile{
                 }
             }
 
-            ctx.fillStyle = 'white';
+            ctx.fillStyle = color;
             ctx.strokeStyle= 'black';
             ctx.lineWidth = 10;
             ctx.fill();
@@ -61,7 +61,7 @@ class Tile{
                 x1 = x2;
                 y1 = y2;
             });
-            ctx.strokeStyle = '#990000';
+            ctx.strokeStyle = color1;
             ctx.lineWidth = 30;
             ctx.stroke();
             ctx.closePath();
@@ -71,7 +71,7 @@ class Tile{
 
             ctx.beginPath();
             ctx.arc(0,0,(height - 120) / 2,0, Math.PI * 2);
-            ctx.strokeStyle = '#990000';
+            ctx.strokeStyle = color1;
             ctx.lineWidth = 30;
             ctx.stroke();
             ctx.closePath();
@@ -84,7 +84,7 @@ class Tile{
                 y1 = y / 1.6;
                 ctx.moveTo(x,y);
                 ctx.lineTo(x1,y1);
-                ctx.strokeStyle = '#990000';
+                ctx.strokeStyle = color1;
                 ctx.lineWidth = 30;
                 ctx.stroke();
             ctx.closePath();
