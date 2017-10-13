@@ -40,6 +40,8 @@ function setCanvas(){
 function setProp(){
     color = 'white';
     color1 = '#990000';
+    linePos = [];
+    rectPos = [];
     win = false;
     width = 400;
     height = 346;
@@ -98,8 +100,11 @@ function check(){
                 state = false;
                 return false;
             }
-
         });
+
+        if(!state){
+            return false;
+        }
     }
 
     if(state) {
