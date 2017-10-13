@@ -1,4 +1,5 @@
 window.onload = init();
+var req;
 
 function init(){
     setTransition();
@@ -10,6 +11,7 @@ function init(){
     start();
 }
 function setTransition(){
+    cancelAnimationFrame(req);
     canvas.classList.remove('active');
     setTimeout(()=>{
         canvas.classList.add('active');
@@ -245,7 +247,7 @@ function drawTile(){
 
     check();
 
-    requestAnimationFrame(drawTile);
+    req = requestAnimationFrame(drawTile);
 }
 window.addEventListener('resize',(e)=>{
     setCanvas();
