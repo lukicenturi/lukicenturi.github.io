@@ -5,6 +5,12 @@ class Tile{
         this.key = this.y + "|" + this.x;
         this.deg = 0;
         this.line = [];
+        this.toDeg = this.deg;
+    }
+
+    update(){
+        if(this.deg < this.toDeg) this.deg += 10;
+        else if(this.deg > this.toDeg) this.deg -= 10;
     }
     draw(){
         let deg,x,y,x1,y1,x2,y2;
@@ -56,7 +62,7 @@ class Tile{
                 y1 = y2;
             });
             ctx.strokeStyle = '#990000';
-            ctx.lineWidth = 20;
+            ctx.lineWidth = 30;
             ctx.stroke();
             ctx.closePath();
         //less than 1 line
@@ -66,7 +72,7 @@ class Tile{
             ctx.beginPath();
             ctx.arc(0,0,(height - 120) / 2,0, Math.PI * 2);
             ctx.strokeStyle = '#990000';
-            ctx.lineWidth = 20;
+            ctx.lineWidth = 30;
             ctx.stroke();
             ctx.closePath();
 
@@ -79,7 +85,7 @@ class Tile{
                 ctx.moveTo(x,y);
                 ctx.lineTo(x1,y1);
                 ctx.strokeStyle = '#990000';
-                ctx.lineWidth = 20;
+                ctx.lineWidth = 30;
                 ctx.stroke();
             ctx.closePath();
 

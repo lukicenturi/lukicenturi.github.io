@@ -2,6 +2,7 @@
     box-sizing: border-box;
     outline: none;
     max-width: 100%;
+    font-family:Segoe UI;
 }
 
 html, body {
@@ -24,3 +25,86 @@ html, body {
     display: flex;
 }
 
+
+#float{
+    position:fixed;
+    width:100px;
+    top:0px;
+    left:0px;
+    background:white;
+    padding:10px;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.4);
+    transition:0.5s all;
+    margin-left:-100px;
+}
+
+#float.active{
+    margin-left:0px;
+}
+
+#float #toggle{
+    padding:20px;
+    background:black;
+    position:absolute;
+    top:0px;
+    left:100%;
+    cursor:pointer;
+}
+
+#float #toggle span{
+    height:4px;
+    width:30px;
+    background:white;
+    display:block;
+}
+#float #toggle span:not(:last-child){
+    margin-bottom:6px;
+}
+
+input{
+    background:none;
+    border:none;
+    border-bottom:1px solid #ddd;
+    padding:10px;
+    padding-left:0px;
+    position:relative;
+    display:block;
+}
+
+label{
+    font-size:0.6em;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+input + .border{
+    margin-bottom:10px;
+    height:1px;
+    width:0px;
+    position:absolute;
+    background:#990000;
+    transform:translateY(-1px);
+    transition:0.5s all;
+}
+
+input:focus + .border{
+    width:calc(100% - 20px);
+}
+button{
+    margin-top:10px;
+    background: #990000;
+    border:none;
+    color:white;
+    font-size:0.6em;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding:10px;
+    width:100%;
+    transition:0.5s all;
+}
+
+button:active{
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+}

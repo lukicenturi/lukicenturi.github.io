@@ -3,9 +3,22 @@ window.onload = init();
 function init(){
     setCanvas();
     setProp();
+    cekLocal();
     setScale();
     setUsed();
     start();
+}
+
+function cekLocal(){
+    if(localStorage.curvy_length === undefined){
+        localStorage.curvy_length = JSON.stringify([hor,ver]);
+    }
+    curvy_length = JSON.parse(localStorage.curvy_length);
+    hor = +curvy_length[0];
+    ver = +curvy_length[1];
+    ho.value = hor;
+    ho.value = hor;
+    ve.value = ver;
 }
 
 function setCanvas(){
@@ -44,7 +57,10 @@ function check(){
     let state = true;
     for ( let key in tiles ){
         tiles[key].line.forEach((line)=>{
-
+            if(tiles[key].deg != tiles[key].toDeg){
+                state = false;
+                return;
+            }
             line = (line + (tiles[key].deg / 60)) % 6;
             if(line < 0) line += 6;
 
@@ -60,6 +76,11 @@ function check(){
 
             let nextBrick = tiles[nextKey];
 
+            if(nextBrick.deg != nextBrick.toDeg){
+                state = false;
+                return;
+            }
+
             mustHave = (mustHave - (nextBrick.deg / 60)) % 6;
             if(mustHave < 0) mustHave += 6;
 
@@ -74,7 +95,7 @@ function check(){
     if(state) {
         setTimeout(()=>{
             win = true;
-            alert("Win");
+            alert("Game Done!!");
             location.reload();
         }, 1000);
     }
@@ -182,6 +203,7 @@ function testing(arr){
 }
 
 function rotate(x,y){
+    if(win) return;
     let array = [];
     let temp;
 
@@ -201,12 +223,13 @@ function rotate(x,y){
         return Math.hypot(a.x + width / 2 - x, a.y + height / 2 - y) > Math.hypot(b.x + width / 2 - x, b.y + height / 2 - y);
     });
 
-    if(array.length) array[0].deg += 60;
+    if(array.length) array[0].toDeg += 60;
 }
 
 function randomRotate(){
     for(let key in tiles){
         tiles[key].deg = Math.floor(Math.random() * 6) * 60;
+        tiles[key].toDeg = tiles[key].deg;
     }
 }
 
@@ -217,7 +240,7 @@ function drawTile(){
     ctx.scale(scale, scale);
 
     for(let key in tiles){
-
+        tiles[key].update();
         tiles[key].draw();
     }
     ctx.restore();
@@ -246,3 +269,13 @@ canvas.addEventListener('touchstart',(e)=>{
     rotate(x,y);
 });
 
+toggle.addEventListener('click',(e)=>{
+    float.classList.toggle('active');
+});
+
+restart.addEventListener('click',(e)=>{
+    curvy_length = [ho.value, ve.value];
+    localStorage.curvy_length = JSON.stringify(curvy_length);
+
+    location.reload();
+});

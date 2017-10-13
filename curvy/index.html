@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container" id="ready">
-        <form>
-            <input type="text" placeholder="width" id="width">
-            <input type="text" placeholder="height" id="height">
-            <button id="start"></button>
-        </form>
+    <div id="float">
+        <div id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <label for="ho">Horizontal</label>
+        <input type="number" id="ho">
+        <div class="border"></div>
+        <label for="ve">Vertical</label>
+        <input type="number" id="ve">
+        <div class="border"></div>
+        <button id="restart">New Game</button>
     </div>
     <div class="container active" id="game">
         <canvas id="canvas"></canvas>
-    </div>
-    <div class="container" id="over">
-
     </div>
 </body>
 <script src="js/Tile.js"></script>
