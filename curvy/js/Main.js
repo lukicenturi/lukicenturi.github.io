@@ -274,8 +274,16 @@ toggle.addEventListener('click',(e)=>{
 });
 
 restart.addEventListener('click',(e)=>{
-    curvy_length = [ho.value, ve.value];
+    curvy_length = [ho.value > 50 ? 50 : ho.value, ve.value > 50 ? 50 : ve.value];
     localStorage.curvy_length = JSON.stringify(curvy_length);
 
     location.reload();
 });
+
+ho.addEventListener('keydown', (e)=>{
+    if(e.keyCode == 13) ve.focus();
+});
+
+ho.addEventListener('keydown', (e)=>{
+    if(e.keyCode == 13) restart.click();
+})
