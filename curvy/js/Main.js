@@ -193,16 +193,8 @@ function generateSolve(){
     }
 }
 
-function testing(arr){
-    var len = arr.length - 1;
-    for(let i = 0 ; i < len ; ++i){
-        if(arr[i] > arr[i + 1]) return false;
-    }
-    return true;
-}
-
 function rotate(x,y){
-    if(win) return;
+    if(win) return false;
     let array = [];
     let temp;
 
@@ -233,7 +225,7 @@ function randomRotate(){
 }
 
 function drawTile(){
-    if(win) return;
+    if(win) return false;
     ctx.clearRect(0,0,cw,ch);
     ctx.save();
     ctx.scale(scale, scale);
