@@ -58,7 +58,7 @@ function check(){
         tiles[key].line.forEach((line)=>{
             if(tiles[key].deg != tiles[key].toDeg){
                 state = false;
-                return;
+                return false;
             }
             line = (line + (tiles[key].deg / 60)) % 6;
             if(line < 0) line += 6;
@@ -70,14 +70,14 @@ function check(){
 
             if(Object.keys(tiles).indexOf(nextKey) == -1){
                 state = false;
-                return;
+                return false;
             }
 
             let nextBrick = tiles[nextKey];
 
             if(nextBrick.deg != nextBrick.toDeg){
                 state = false;
-                return;
+                return false;
             }
 
             mustHave = (mustHave - (nextBrick.deg / 60)) % 6;
@@ -85,7 +85,7 @@ function check(){
 
             if(nextBrick.line.indexOf(mustHave) == -1){
                 state = false;
-                return;
+                return false;
             }
 
         });
