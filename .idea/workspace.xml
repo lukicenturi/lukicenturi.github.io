@@ -3,74 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Documentation/jQuery Cheatsheet.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Documentation/jquery_ref.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/JQuery/jquery-2.1.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/JQuery/jquery-2.1.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/running2_Flamme.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/amazon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/bahia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/ground.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/obstacle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/panel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/parana.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/pyre.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/pyre_fire.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/rio.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/runner.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/saopaulo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/sky.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/amazon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/bahia.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/ground.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/obstacle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/panel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/parana.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/pyre.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/pyre_fire.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/rio.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/runner.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/saopaulo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/imgs/sky.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/js/jquery-2.1.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Bird.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Cloud.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Game.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Parachute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Plane.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/Star.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sound/background.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sound/finish.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sound/hit.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sound/star.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sprite/airplane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sprite/bird.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sprite/cloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sprite/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sprite/parachute.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyangel/sprite/stars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack2d/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack2d/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack2d/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack3d/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack3d/js/jquery-1.11.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack3d/js/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack3d/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack3d/style.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+            <state relative-caret-position="693">
+              <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -164,12 +96,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539773249551</updated>
-      <workItem from="1539773250709" duration="836000" />
+      <workItem from="1539773250709" duration="1042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="836000" />
+    <option name="totallyTimeSpent" value="1042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -217,8 +149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+        <state relative-caret-position="693">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
         </state>
       </provider>
     </entry>

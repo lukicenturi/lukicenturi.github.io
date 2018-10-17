@@ -37,6 +37,7 @@
             list-style-type: none;
             transition: 0.5s all;
             border-bottom: 1px solid #efefef;
+            cursor: pointer;
         }
 
         ul li:hover{
@@ -50,7 +51,7 @@
             padding-bottom: 10px;
         }
 
-        a {
+        ul li a {
             text-decoration: none;
             padding: 10px 20px;
             font-size: 1.2em;
@@ -60,8 +61,16 @@
             color: #222;
         }
 
-        a:hover {
+        ul li:hover a{
             color: #F92672;
+        }
+
+        ul li:hover div{
+            color: white;
+        }
+
+        a{
+            color: inherit;
         }
 
         .author{
@@ -88,6 +97,7 @@
     <div class="header">
         <h1>Game List</h1>
         <div class="author">Made By: Luki Centuri</div>
+        <div class="author">Follow my Instagram: <a href="http://instagram.com/lukicenturi">@lukicenturi</a></div>
     </div>
     <ul>
         <li>
