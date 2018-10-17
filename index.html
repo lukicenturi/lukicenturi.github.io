@@ -1,76 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Game List</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<style>
-		*{
-			box-sizing:border-box;
-		}
-		body{
-			margin:0px;
-			padding:0px;
-			font-family:Raleway;
-			background: #efefef
-		}
-		.container{
-			width:960px;
-			margin:0 auto;
-			overflow:hidden;
-		}
-		ul{
-			margin:0px;
-			padding:0px;
-			background:white;
-			border-radius:10px;
-			overflow:hidden;
-		}
-		ul li{
-			list-style-type: none;
-			border-bottom:1px solid #efefef;
-		}
-		a{
-			color:inherit;
-			text-decoration:none;
-			padding:15px 20px;
-			font-size:1.2em;
-			display:block;
-			transition:0.5s all;
-			font-weight:bold;
-			color:#222;
-		}
-		a:hover{
-			color:#F92672;
-		}
-		@media screen and (max-width:960px){
-			.container{
-				width:100%;
-				padding:0px 10px;
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>Game List</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        * {
+            outline: none;
+            max-width: 100%;
+            box-sizing: border-box;
+            font-family: Montserrat;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #efefef;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        ul li {
+            list-style-type: none;
+            transition: 0.5s all;
+            border-bottom: 1px solid #efefef;
+        }
+
+        ul li:hover{
+            background: black;
+        }
+
+        ul li div{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.8em;
+            padding-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            display: block;
+            transition: 0.5s all;
+            font-weight: bold;
+            color: #222;
+        }
+
+        a:hover {
+            color: #F92672;
+        }
+
+        .author{
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .footer{
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .container {
+                width: 100%;
+                padding: 0px 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-	<h1>Game List</h1>
-		<ul>
-			<li><a href="2048/index.html">2048</a></li>
-			<li><a href="dragon/index.html">Dragon</a></li>
-			<li><a href="elastic/index.html">Elastic Pipe</a></li>
-			<li><a href="manaus/index.html">Manaus River</a></li>
-			<li><a href="othello/index.html">Othello</a></li>
-			<li><a href="runner/index.html">Olimpia Runner</a></li>
-			<li><a href="snake/index.html">Snake</a></li>
-			<li><a href="stack2d/index.html">Stack 2D</a></li>
-			<li><a href="stack3d/index.html">Stack 3D</a></li>
-			<li><a href="sudoku/index.html">Sudoku</a></li>
-			<li><a href="candycrush/index.html">Candy Crush</a></li>
-			<li><a href="skyangel/index.html">Sky Angel</a></li>
-			<li><a href="duet/index.html">Duet</a></li>
-			<li><a href="pipe/index.html">Pipe Game</a></li>
-			<li><a href="curvy/index.html">Curvy Game</a></li>
-		</ul>
-	</body>
+    <div class="header">
+        <h1>Game List</h1>
+        <div class="author">Made By: Luki Centuri</div>
+    </div>
+    <ul>
+        <li>
+            <a href="star_battle/index.html">Star Battle</a>
+            <div> (This is ASC 2018 Client Side Task) </div>
+        </li>
+        <li>
+            <a href="brick/index.html">Brick Game</a>
+        </li>
+        <li>
+            <a href="2048/index.html">2048</a>
+        </li>
+        <li>
+            <a href="dragon/index.html">Dragon Game</a>
+        </li>
+        <li>
+            <a href="elastic/index.html">Elastic Pipe</a>
+        </li>
+        <li>
+            <a href="manaus/index.html">Manaus River</a>
+        </li>
+        <li>
+            <a href="othello/index.html">Othello</a>
+        </li>
+        <li>
+            <a href="snake/index.html">Snake</a>
+        </li>
+        <li>
+            <a href="stack_2d/index.html">Stack 2D</a>
+        </li>
+        <li>
+            <a href="stack_3d/index.html">Stack 3D</a>
+        </li>
+        <li>
+            <a href="sudoku/index.html">Sudoku</a>
+        </li>
+        <li>
+            <a href="candycrush/index.html">Candy Crush</a>
+        </li>
+        <li>
+            <a href="duet/index.html">Duet</a>
+        </li>
+        <li>
+            <a href="pipe/index.html">Pipe Game</a>
+        </li>
+        <li>
+            <a href="curvy/index.html">Curvy Game</a>
+        </li>
+    </ul>
+    <div class="footer">
+        This is open source project. You can see the source code on <a href="https://github.com/lukicenturi/lukicenturi.github.io">here</a>
+    </div>
+</body>
 </div>
 </html>

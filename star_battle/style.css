@@ -1,0 +1,783 @@
+/*include cubano font*/
+@font-face {
+    font-family: Cubano;
+    src: url('fonts/Cubano-Regular.otf');
+    font-display: block;
+}
+
+/*global style*/
+*{
+    outline: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: Cubano;
+    user-select: none;
+    color: white;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c1a2a;
+}
+
+/*middled container*/
+.container{
+    width: 1600px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    max-width: none;
+    min-width: 1600px;
+}
+
+.container > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all;
+    z-index: 2;
+}
+
+.container > div.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*all header*/
+.header{
+    background: orangered;
+    border-radius: 1000px;
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1{
+    font-size: 3em;
+}
+
+.header img{
+    height: 100px;
+}
+
+/*instructions*/
+#ready ul{
+    width: 900px;
+    text-align: center;
+    list-style: none;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#ready .header{
+    transform: translateY(-400px);
+    opacity: 0;
+    animation: 0.5s reset forwards cubic-bezier(0.5, -0.2, 0.5, 1.2);
+}
+
+#ready button{
+    transform: translateY(400px);
+    opacity: 0;
+    animation: 0.5s reset forwards cubic-bezier(0.5, -0.2, 0.5, 1.2);
+}
+
+#ready ul li{
+    transform: translateX(-1000px) rotate(20deg) scale(0.7);
+    opacity: 0;
+    animation: 0.5s instructions forwards cubic-bezier(0.5, -0.2, 0.5, 1.2);
+}
+
+#ready ul li:nth-child(n+7){
+    transform: translateX(1000px) rotate(20deg) scale(0.7);
+}
+
+@keyframes instructions {
+    50%{
+        transform: scale(0.7);
+        opacity: 1;
+    }
+
+    60%{
+        transform: scale(0.6);
+    }
+
+    90%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+#ready ul li:nth-child(1),
+#ready ul li:nth-child(13){
+    animation-delay: 100ms;
+}
+
+#ready ul li:nth-child(2),
+#ready ul li:nth-child(12){
+    animation-delay: 200ms;
+}
+
+#ready ul li:nth-child(3),
+#ready ul li:nth-child(11){
+    animation-delay: 300ms;
+}
+
+#ready ul li:nth-child(4),
+#ready ul li:nth-child(10){
+    animation-delay: 400ms;
+}
+
+#ready ul li:nth-child(5),
+#ready ul li:nth-child(9){
+    animation-delay: 500ms;
+}
+
+#ready ul li:nth-child(6),
+#ready ul li:nth-child(8){
+    animation-delay: 600ms;
+}
+
+#ready ul li:nth-child(7){
+    animation-delay: 700ms;
+}
+
+@keyframes reset{
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+/*global button */
+button{
+    background: orangered;
+    font-size: 1.5em;
+    padding: 20px 50px;
+    border: 2px solid white;
+    transition: 0.3s all;
+    position: relative;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #241D4F;
+}
+
+button:after{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+    opacity: 0.5;
+    border-radius: 1000px;
+}
+
+button:active:after{
+    animation: 1s button forwards linear;
+}
+
+button:disabled{
+    background: #333;
+}
+
+@keyframes button {
+    0%{
+        opacity: 0.5;
+        width: 0;
+        height: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+        width: 69px;
+        height: 69px;
+    }
+
+    100%{
+        opacity: 0;
+        width: 69px;
+        height: 69px;
+    }
+}
+
+/*main gameboard*/
+#gameboard{
+    background: #102238;
+    z-index: 1;
+    cursor: grab;
+}
+
+#gameboard > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.button > div{
+    position: absolute;
+    opacity: 0.8;
+}
+
+.button button{
+    width: 73px;
+    height: 73px;
+    padding: 0;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-middle{
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-left{
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-left > div{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.bottom-right{
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/*fuel bar*/
+.bar{
+    width: 300px;
+    height: 40px;
+    background: rgba(255,255,255,0.8);
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fill{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.gradient{
+    width: 300px;
+    min-width: 300px;
+    height: 100%;
+    background: linear-gradient(90deg, green, yellow, red);
+}
+
+#fuel{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+}
+
+.bottom-right img{
+    height: 150px;
+}
+
+.top-middle > .header > div{
+    display: flex;
+    align-items: center;
+}
+
+.font-control{
+    font-size: 1.5em;
+    background: #b60000;
+    padding: 5px 10px;
+    min-width: 70px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.top-middle > .header > div:first-child > div:first-child,
+.top-middle > .header > div:last-child > div:last-child
+{
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    margin: 0 10px;
+}
+
+.top-middle > .header > div:first-child > div:first-child{
+    background-image: url('images/icon/score.png');
+}
+
+.top-middle > .header > div:last-child > div:last-child{
+    background-image: url('images/icon/timer.png');
+}
+
+#mute[data-muted="0"] { background-image: url('images/icon/unmute.png') }
+#mute[data-muted="1"] { background-image: url('images/icon/mute.png') }
+#pause[data-paused="0"] { background-image: url('images/icon/pause.png') }
+#pause[data-paused="1"] { background-image: url('images/icon/arrow.png') }
+
+/*planet in the background*/
+.background > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: 30s bg linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes bg {
+    to{
+        transform: translateX(-1600px);
+    }
+}
+
+.background > div > div{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+
+.background > div > div > div{
+    position: absolute;
+}
+
+.background > div:not(#bg-1) > div > div{
+    animation: 5s rotate linear infinite;
+    animation-play-state: paused;
+    background-size: 100% 100%;
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+#bg-1 > div > div{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg/bg-1.png');
+}
+
+#bg-2 > div > div{
+    top: 100px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background-image: url('images/bg/bg-2.png');
+}
+
+#bg-3 > div > div{
+    top: 200px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/bg/bg-3.png');
+}
+
+#bg-4 > div > div{
+    top: 300px;
+    left: 600px;
+    width: 150px;
+    height: 150px;
+    background-image: url('images/bg/bg-4.png');
+}
+
+#bg-5 > div > div{
+    top: 600px;
+    left: 1200px;
+    width: 200px;
+    height: 200px;
+    background-image: url('images/bg/bg-5.png');
+}
+
+#bg-6 > div > div{
+    top: 100px;
+    left: 1100px;
+    width: 250px;
+    height: 250px;
+    background-image: url('images/bg/bg-6.png');
+}
+
+#bg-7 > div > div{
+    top: 600px;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    background-image: url('images/bg/bg-7.png');
+}
+
+#bg-2{animation-duration:27s}
+#bg-3{animation-duration:23s}
+#bg-4{animation-duration:19s}
+#bg-5{animation-duration:15s}
+#bg-6{animation-duration:11s}
+#bg-7{animation-duration:7s}
+
+
+/*element in game*/
+.element > div{
+    position: absolute;
+}
+
+#player{
+    top: 400px;
+    left: 70px;
+    width: 170px;
+    height: 70px;
+    background-size: 100% 100%;
+    background-image: url('images/ship.png');
+    transition: 0.3s opacity;
+}
+
+#player:before{
+    content: '';
+    width: 70px;
+    height: 40px;
+    background-size: 100% 100%;
+    background-image: url('images/fire.png');
+    position: absolute;
+    right: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: 100% 50%;
+    transition: 0.3s all;
+    animation: 1s breathe infinite alternate;
+}
+
+@keyframes breathe {
+    to{
+        width: 80px;
+        height: 50px;
+    }
+}
+
+#player.up:before{
+    transform: translateY(-50%) skewY(-10deg);
+}
+
+#player.downbefore{
+    transform: translateY(-50%) skewY(10deg);
+}
+
+#player.front:before {
+    transform: translateY(-50%) scale(1.3);
+}
+
+#player.back:before{
+    transform: translateY(-50%) scale(0.7);
+}
+
+#player.front.up:before {
+    transform: translateY(-50%) skewY(-10deg) scale(1.3);
+}
+
+#player.back.up:before{
+    transform: translateY(-50%) skewY(-10deg) scale(0.7);
+}
+
+#player.front.down:before {
+    transform: translateY(-50%) skewY(10deg) scale(1.3);
+}
+
+#player.back.down:before{
+    transform: translateY(-50%) skewY(10deg) scale(0.7);
+}
+
+#player.stop:before{
+    animation-play-state: paused;
+}
+
+#player.invisible{
+    opacity: 0.3;
+    animation: 2s opacity linear alternate infinite;
+}
+
+@keyframes opacity {
+    0%, 100%{
+        opacity: 0.1;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+}
+
+.enemy{
+    width: 70px;
+    height: 70px;
+    background-size: 400% 100%;
+    background-image: url('images/enemy.png');
+    animation: 1s sprite steps(3) infinite;
+}
+
+@keyframes sprite {
+    to{
+        background-position-x: -100%;
+    }
+}
+
+
+.friend{
+    width: 70px;
+    height: 70px;
+    background-size: 400% 100%;
+    background-image: url('images/friend.png');
+    animation: 1s sprite steps(3) infinite;
+}
+
+.asteroid{
+    width: 80px;
+    height: 60px;
+    background-size: 200% 200%;
+    background-image: url('images/asteroid.png');
+    animation: 4s rotate linear infinite;
+}
+
+.asteroid[data-asteroid="1"]{
+    background-position-x: -100%;
+}
+
+.asteroid[data-life="1"]{
+    background-position-y: -100%;
+}
+
+.bullet{
+    width: 50px;
+    height: 4px;
+    background: #47d662;
+}
+
+.bullet:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #47d662);
+    top: 50%;
+    left: 50%;
+    padding: 1px;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 1000px;
+}
+
+.bullet.red{
+    background: red;
+}
+
+.bullet.red:after{
+    background: linear-gradient(90deg, red, transparent);
+}
+
+.fuel{
+    width: 50px;
+    height: 75px;
+    background-size: 100% 100%;
+    background-image: url('images/fuel.png');
+    animation: 4s rotate linear infinite;
+}
+
+.comet{
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(transparent, rgba(255,255,255,0.8));
+    transform: rotate(10deg);
+}
+
+.animation{
+    animation-play-state: paused;
+}
+
+/*submit score modal*/
+#modal #form{
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0;
+}
+
+#modal input{
+    border-radius: 1000px;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    color: black;
+}
+
+/*ranking table*/
+#over .table{
+    width: 900px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead,
+table tbody{
+    display: block;
+}
+
+table tr{
+    display: flex;
+    width: 100%;
+}
+
+table th,
+table td{
+    flex: 1;
+    padding: 10px 5px;
+}
+
+table thead tr{
+    background: orangered;
+}
+
+table tbody{
+    height: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+table tbody::-webkit-scrollbar{
+    display: none;
+}
+
+table tbody tr{
+    border-bottom: 1px solid orangered;
+}
+
+table th:nth-child(1),
+table td:nth-child(1),
+table th:nth-child(3),
+table td:nth-child(3),
+table th:nth-child(4),
+table td:nth-child(4){
+    flex: 1 1 150px;
+    max-width: 150px;
+}
+
+/*additional*/
+.score{
+    font-size: 2em;
+    color: #47d662;
+    text-shadow: 5px 5px 0 black;
+    text-align: center;
+    animation: 0.5s gone 0.5s forwards linear;
+}
+
+.score.red{
+    color: red;
+}
+
+.particle{
+    width: 5px;
+    height: 5px;
+    border-radius: 1000px;
+    background: rgba(255,255,255,0.8);
+    animation: 0.5s gone 0.5s forwards linear;
+}
+
+.blast{
+    width: 110px;
+    height: 100%;
+    background: radial-gradient(circle at -2500px 50%, transparent 96%, rgba(255,255,255,0.5) 98%, transparent 98.5%);
+}
+
+@keyframes gone {
+    to{
+        opacity: 0;
+    }
+}
+
+.animation{
+    animation-play-state: paused;
+}
+
+.red-layer{
+    background: red;
+    opacity: 0;
+}
+
+.red-layer.animate-1{
+    animation: 0.5s animate-1 forwards linear;
+}
+
+.red-layer.animate-2{
+    animation: 0.5s animate-2 forwards linear;
+}
+
+@keyframes animate-1 {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    25%, 75%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.25;
+    }
+}
+
+@keyframes animate-2 {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    25%, 75%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.25;
+    }
+}

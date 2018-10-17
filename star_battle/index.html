@@ -1,0 +1,266 @@
+<!--index html-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Battle</title>
+    <!--link rel-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!--middled container-->
+    <div class="container">
+        <!--instructions page-->
+        <div id="ready" class="active">
+            <div class="header">
+                <img src="images/logo.png" alt="logo">
+                <h1>How to Play Star Battle.</h1>
+            </div>
+            <ul>
+                <li>1. The spaceship must follow the cursor whenever cursor in the game canvas.</li>
+                <li>2. The timer present the time lapsed.</li>
+                <li>3. The fuel counter show the remain fuel.</li>
+                <li>4. During the flight, the spaceship needs to destroy the asteroids and enemy spaceships that are presented in the space.</li>
+                <li>5. You can shoot pressing Space Bar.</li>
+                <li>6. If the spaceship hits a asteroid or another spaceship, you lose 10 points of fuel.</li>
+                <li>7. Enemy spaceship needs 1 shot to be destroyed, you will get 5 points for each enemy destroyed.</li>
+                <li>8. Asteroid needs 2 shots to be destroyed, you will get 10 points for each asteroid destroyed.</li>
+                <li>9. If you destroy a friendly spaceship, you lose 10 points.</li>
+                <li>10. During the flight, the spaceship needs to collect fuel in the space.</li>
+                <li>11. You can pause the game by pressing the "ctrl+p".</li>
+                <li>12. Go beyond all limits.</li>
+                <li>Battle in Space with Star Battle Championship...</li>
+            </ul>
+            <button id="start">START GAME</button>
+        </div>
+        <!--main gameboard page-->
+        <div id="gameboard" class="active">
+            <!--background-->
+            <div class="background">
+                <div id="bg-1" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+                <div id="bg-2" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+                <div id="bg-3" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+                <div id="bg-4" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+                <div id="bg-5" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+                <div id="bg-6" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+                <div id="bg-7" class="animation">
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                    <div>
+                        <div class="animation"></div>
+                    </div>
+                </div>
+            </div>
+            <!--red layer-->
+            <div class="red-layer animation"></div>
+            <!--element in game-->
+            <div class="element">
+                <div id="player" class="stop animation"></div>
+            </div>
+            <!--button in game-->
+            <div class="button">
+                <div class="top-middle">
+                    <div class="header">
+                        <div>
+                            <div></div>
+                            <div id="score" class="font-control">0</div>
+                        </div>
+                        <img src="images/logo.png" alt="logo">
+                        <div>
+                            <div id="timer" class="font-control">0</div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="gradient"></div>
+                        </div>
+                        <div id="fuel">20</div>
+                    </div>
+                    <img src="images/fuel.png" alt="fuel">
+                </div>
+            </div>
+        </div>
+        <!--submit score modal-->
+        <div id="modal" class="">
+            <div class="header">
+                <img src="images/logo.png" alt="logo">
+                <h1>Submit Score.</h1>
+            </div>
+            <div id="form">
+                <input type="text" id="name" placeholder="Name" autocomplete="off">
+                <button id="submit" disabled="disabled">Continue</button>
+            </div>
+        </div>
+        <!--ranking table page-->
+        <div id="over" class="">
+            <div class="header">
+                <img src="images/logo.png" alt="logo">
+                <h1>Ranking Table</h1>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Luki Centuri</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button id="restart">START GAME</button>
+        </div>
+    </div>
+    <!--script in game-->
+    <script src="js/jquery.js"></script>
+    <script src="js/SkyObject.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Friend.js"></script>
+    <script src="js/Asteroid.js"></script>
+    <script src="js/Fuel.js"></script>
+    <script src="js/Bullet.js"></script>
+    <script src="js/Score.js"></script>
+    <script src="js/Comet.js"></script>
+    <script src="js/Particle.js"></script>
+    <script src="js/Blast.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

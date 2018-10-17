@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Documentation/jQuery Cheatsheet.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Documentation/jquery_ref.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/JQuery/jquery-2.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/JQuery/jquery-2.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/runner_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Runner/running2_Flamme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/amazon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/bahia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/ground.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/obstacle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/panel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/parana.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/pyre.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/pyre_fire.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/rio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/runner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/saopaulo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/imgs/sky.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/Media/Web Application/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/amazon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/bahia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/ground.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/obstacle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/panel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/parana.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/pyre.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/pyre_fire.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/rio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/runner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/saopaulo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/imgs/sky.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/js/jquery-2.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Bird.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Cloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Parachute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Plane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/Star.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sound/background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sound/finish.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sound/hit.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sound/star.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sprite/airplane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sprite/bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sprite/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sprite/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sprite/parachute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skyangel/sprite/stars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack2d/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack2d/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack2d/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack3d/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack3d/js/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack3d/js/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack3d/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack3d/style.css" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/runner/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-696" />
+    <option name="y" value="-22" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="" />
+      <created>1539773249551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539773249551</updated>
+      <workItem from="1539773250709" duration="836000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="836000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/runner/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-811" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="128" column="6" lean-forward="true" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
