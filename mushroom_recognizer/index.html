@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mushroom Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mushroom Recognizer</h1>
+        </div>
+        <div class="placeholder">
+            <canvas id="input-canvas" width="229" height="229"></canvas>
+            <div id="loading">Loading</div>
+        </div>
+        <div class="upload">
+            <input type="file" id="upload-image" accept="image/*">
+            <label for="upload-image">Choose a file</label>
+        </div>
+        <div class="predict">
+            <button id="predict">Recognize</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bundle.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
