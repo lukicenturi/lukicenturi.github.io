@@ -10386,7 +10386,7 @@ const model = new __WEBPACK_IMPORTED_MODULE_0_keras_js__["Model"]({
     weights: 'model_mushrooms_weights.buf',
     metadata: 'model_mushrooms_metadata.json'
   },
-  gpu: true
+  gpu: false
 })
 
 window.predict = function () {
