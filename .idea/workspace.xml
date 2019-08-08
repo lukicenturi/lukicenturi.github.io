@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/presentme/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/.idea/presentme.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/js/Line.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/js/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/js/Node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentme/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/higrophorus-marzuolus-demo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/old.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/setas2.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,24 +48,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bundle.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="10388" column="11" lean-forward="true" selection-start-line="10388" selection-start-column="11" selection-end-line="10388" selection-end-column="11" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="635">
+              <caret line="149" column="13" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -91,8 +72,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/runner/js/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -125,17 +106,6 @@
               <item name="lukicenturi.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="lukicenturi.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lukicenturi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lukicenturi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="mushroom_recognizer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lukicenturi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lukicenturi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="mushroom_recognizer" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -144,6 +114,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PureTweet" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -169,41 +140,46 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fe42b6d5-3f8b-48a6-b9bb-152a5192e667" name="Default" comment="" />
+      <changelist id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="" />
       <created>1560809999585</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560809999585</updated>
-      <workItem from="1560810000746" duration="2479000" />
+      <workItem from="1560810000746" duration="3940000" />
+      <workItem from="1560840850256" duration="33000" />
+      <workItem from="1560866049012" duration="866000" />
+      <workItem from="1560914569280" duration="599000" />
+      <workItem from="1560901912673" duration="112000" />
+      <workItem from="1565240562244" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3222000" />
+    <option name="totallyTimeSpent" value="6301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,17 +192,49 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176545">
+          <caret line="10385" column="73" selection-start-line="10385" selection-start-column="73" selection-end-line="10385" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
           <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="10388" column="11" lean-forward="true" selection-start-line="10388" selection-start-column="11" selection-end-line="10388" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="176545">
+          <caret line="10385" column="73" selection-start-line="10385" selection-start-column="73" selection-end-line="10385" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/model_mushrooms.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="10385" column="14" selection-start-line="10385" selection-start-column="14" selection-end-line="10385" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Downloads/Compressed/mushroom-detector-kerasjs-master/predict.py" />
+    <entry file="file://E:/IndexController.php" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="149" column="13" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
         </state>
       </provider>
     </entry>

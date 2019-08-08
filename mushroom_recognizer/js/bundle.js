@@ -10388,7 +10388,7 @@ const model = new __WEBPACK_IMPORTED_MODULE_0_keras_js__["Model"]({
   },
   gpu: true
 })
-
+        
 window.predict = function () {
   model.ready()
   .then(() => {	
