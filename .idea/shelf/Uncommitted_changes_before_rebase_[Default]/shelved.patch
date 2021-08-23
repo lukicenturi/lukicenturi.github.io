@@ -1,0 +1,190 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fb72cd48-1a19-4547-8d33-e995fbc13baf\" name=\"Default\" comment=\"\" />\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\" />\n  </component>\n  <component name=\"FindInProjectRecents\">\n    <findStrings>\n      <find>model</find>\n    </findStrings>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/runner/js/script.js\" />\n        <option value=\"$PROJECT_DIR$/mushroom_recognizer/js/bundle.js\" />\n        <option value=\"$PROJECT_DIR$/index.html\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"JsBuildToolGruntFileManager\" detection-done=\"true\" sorting=\"DEFINITION_ORDER\" />\n  <component name=\"JsBuildToolPackageJson\" detection-done=\"true\" sorting=\"DEFINITION_ORDER\" />\n  <component name=\"JsGulpfileManager\">\n    <detection-done>true</detection-done>\n    <sorting>DEFINITION_ORDER</sorting>\n  </component>\n  <component name=\"NodePackageJsonFileManager\">\n    <packageJsonPaths />\n  </component>\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\n    <option name=\"x\" value=\"-197\" />\n    <option name=\"y\" value=\"23\" />\n    <option name=\"width\" value=\"1925\" />\n    <option name=\"height\" value=\"982\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1b10OkS0k4DI6docKahcKVJmqJa\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectView\">\n    <navigator proportions=\"\" version=\"1\">\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"lukicenturi.github.io\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"lukicenturi.github.io\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../PureTweet\" />\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fb72cd48-1a19-4547-8d33-e995fbc13baf\" name=\"Default\" comment=\"\" />\n      <created>1560809999585</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1560809999585</updated>\n      <workItem from=\"1560810000746\" duration=\"3940000\" />\n      <workItem from=\"1560840850256\" duration=\"33000\" />\n      <workItem from=\"1560866049012\" duration=\"866000\" />\n      <workItem from=\"1560914569280\" duration=\"599000\" />\n      <workItem from=\"1560901912673\" duration=\"112000\" />\n      <workItem from=\"1565240562244\" duration=\"155000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TimeTrackingManager\">\n    <option name=\"totallyTimeSpent\" value=\"6448000\" />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"-8\" y=\"-8\" width=\"1936\" height=\"1056\" extended-state=\"6\" />\n    <layout>\n      <window_info content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.25266525\" />\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\n      <window_info anchor=\"bottom\" id=\"Docker\" order=\"7\" show_stripe_button=\"false\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"7\" side_tool=\"true\" />\n      <window_info anchor=\"right\" id=\"Database\" order=\"3\" />\n      <window_info anchor=\"bottom\" id=\"Database Changes\" order=\"7\" show_stripe_button=\"false\" />\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"7\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info active=\"true\" anchor=\"bottom\" id=\"Terminal\" order=\"7\" visible=\"true\" weight=\"0.32900432\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\n    </layout>\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/index.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1751\">\n          <caret line=\"103\" column=\"13\" selection-start-line=\"103\" selection-start-column=\"13\" selection-end-line=\"103\" selection-end-column=\"13\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176545\">\n          <caret line=\"10385\" column=\"73\" selection-start-line=\"10385\" selection-start-column=\"73\" selection-end-line=\"10385\" selection-end-column=\"73\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/index.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1751\">\n          <caret line=\"103\" column=\"13\" lean-forward=\"true\" selection-start-line=\"103\" selection-start-column=\"13\" selection-end-line=\"103\" selection-end-column=\"13\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176545\">\n          <caret line=\"10385\" column=\"73\" selection-start-line=\"10385\" selection-start-column=\"73\" selection-end-line=\"10385\" selection-end-column=\"73\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mushroom_recognizer/model_mushrooms.json\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-612\" />\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"357\">\n          <caret line=\"10385\" column=\"14\" selection-start-line=\"10385\" selection-start-column=\"14\" selection-end-line=\"10385\" selection-end-column=\"14\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://D:/Downloads/Compressed/mushroom-detector-kerasjs-master/predict.py\" />\n    <entry file=\"file://E:/IndexController.php\" />\n    <entry file=\"file://$PROJECT_DIR$/index.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"586\">\n          <caret line=\"152\" column=\"120\" lean-forward=\"true\" selection-start-line=\"152\" selection-start-column=\"120\" selection-end-line=\"152\" selection-end-column=\"120\" />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 546cd0dfda05612015bc357638279f58e9d2aba9)
++++ b/.idea/workspace.xml	(date 1587791167580)
+@@ -1,16 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="" />
++    <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+-    <option name="TRACKING_ENABLED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="FileEditorManager">
+-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
++  <component name="ComposerSettings">
++    <execution>
++      <executable />
++    </execution>
+   </component>
+   <component name="FindInProjectRecents">
+     <findStrings>
+@@ -20,51 +23,8 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="IdeDocumentHistory">
+-    <option name="CHANGED_PATHS">
+-      <list>
+-        <option value="$PROJECT_DIR$/runner/js/script.js" />
+-        <option value="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js" />
+-        <option value="$PROJECT_DIR$/index.html" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+-  <component name="JsGulpfileManager">
+-    <detection-done>true</detection-done>
+-    <sorting>DEFINITION_ORDER</sorting>
+-  </component>
+-  <component name="NodePackageJsonFileManager">
+-    <packageJsonPaths />
+-  </component>
+-  <component name="ProjectFrameBounds" extendedState="6">
+-    <option name="x" value="-197" />
+-    <option name="y" value="23" />
+-    <option name="width" value="1925" />
+-    <option name="height" value="982" />
+-  </component>
+   <component name="ProjectId" id="1b10OkS0k4DI6docKahcKVJmqJa" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+-  <component name="ProjectView">
+-    <navigator proportions="" version="1">
+-      <foldersAlwaysOnTop value="true" />
+-    </navigator>
+-    <panes>
+-      <pane id="Scope" />
+-      <pane id="ProjectPane">
+-        <subPane>
+-          <expand>
+-            <path>
+-              <item name="lukicenturi.github.io" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="lukicenturi.github.io" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-          </expand>
+-          <select />
+-        </subPane>
+-      </pane>
+-    </panes>
+-  </component>
+   <component name="PropertiesComponent">
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PureTweet" />
+@@ -104,91 +64,22 @@
+       <workItem from="1560914569280" duration="599000" />
+       <workItem from="1560901912673" duration="112000" />
+       <workItem from="1565240562244" duration="155000" />
++      <workItem from="1587784263451" duration="280000" />
+     </task>
+     <servers />
+   </component>
+-  <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="6448000" />
+-  </component>
+-  <component name="ToolWindowManager">
+-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+-    <layout>
+-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+-      <window_info anchor="bottom" id="TODO" order="6" />
+-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+-      <window_info anchor="right" id="Database" order="3" />
+-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Run" order="2" />
+-      <window_info anchor="bottom" id="Version Control" order="7" />
+-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32900432" />
+-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+-      <window_info id="Favorites" order="2" side_tool="true" />
+-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+-      <window_info anchor="bottom" id="Message" order="0" />
+-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+-      <window_info anchor="bottom" id="Find" order="1" />
+-    </layout>
+-  </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="1" />
+   </component>
+-  <component name="VcsContentAnnotationSettings">
+-    <option name="myLimit" value="2678400000" />
+-  </component>
+-  <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/index.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1751">
+-          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="176545">
+-          <caret line="10385" column="73" selection-start-line="10385" selection-start-column="73" selection-end-line="10385" selection-end-column="73" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/index.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1751">
+-          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="176545">
+-          <caret line="10385" column="73" selection-start-line="10385" selection-start-column="73" selection-end-line="10385" selection-end-column="73" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/model_mushrooms.json">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-612" />
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mushroom_recognizer/js/bundle.js">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="357">
+-          <caret line="10385" column="14" selection-start-line="10385" selection-start-column="14" selection-end-line="10385" selection-end-column="14" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://D:/Downloads/Compressed/mushroom-detector-kerasjs-master/predict.py" />
+-    <entry file="file://E:/IndexController.php" />
+-    <entry file="file://$PROJECT_DIR$/index.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="586">
+-          <caret line="152" column="120" lean-forward="true" selection-start-line="152" selection-start-column="120" selection-end-line="152" selection-end-column="120" />
+-        </state>
+-      </provider>
+-    </entry>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+ </project>
+\ No newline at end of file
