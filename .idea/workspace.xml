@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/.idea/dist.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/fonts/Raleway-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/js/bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/model_mushrooms.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/model_mushrooms_metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/model_mushrooms_weights.buf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mushroom_recognizer/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thaiblog/Desktop_ThailandFoodGuides.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/worldfashion/Desktop_WorldFashion.png" beforeDir="false" />
-    </list>
+    <list default="true" id="fb72cd48-1a19-4547-8d33-e995fbc13baf" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +57,7 @@
       <workItem from="1560901912673" duration="112000" />
       <workItem from="1565240562244" duration="155000" />
       <workItem from="1587784263451" duration="280000" />
-      <workItem from="1629723199967" duration="75000" />
+      <workItem from="1629723199967" duration="429000" />
     </task>
     <servers />
   </component>
